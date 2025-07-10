@@ -1,49 +1,138 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
-import GuidesIndex from './pages/guides';
-import TwitchStreamingGuide from './pages/guides/how-to-start-streaming-on-twitch/page';
-import LiveStreamingGuide from './pages/guides/how-to-live-stream/page';
-import AVIELiveStreamingGuide from './pages/guides/how-to-live-stream-on-AVIE-Streaming/page';
-import BestPlacesToLiveStream from './pages/guides/best-places-to-live-stream/page';
-import StreamSetupPage from './pages/category/stream-setup/page';
-import GrowthMarketingPage from './pages/category/growth-marketing/page';
-import CommunityBuildingPage from './pages/category/community-building/page';
-import MonetizationPage from './pages/category/monetization/page';
-import ContentStrategyPage from './pages/category/content-strategy/page';
-import MobileStreamingGuide from './pages/guides/how-to-stream-from-mobile/page';
-import EarnMoreAsALiveStreamerWithAVIE from './pages/guides/earn-more-from-live-streaming-with-avie/page';
-import EarnMoreMultiStreaming from './pages/guides/earn-more-multi-streaming/page';
-import MonetizeYourLiveStreamContent from './pages/guides/monetize-your-live-stream-content/page';
-import MonetizeYourClips from './pages/guides/monetize-your-clips/page';
-import StrategiesToMakeMoneyFromLiveStreaming from './pages/guides/strategies-to-make-money-from-live-streaming/page';
+
+// Lazy load all routes
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+const GuidesIndex = React.lazy(() => import('./pages/guides'));
+
+// Lazy load guide pages
+const TwitchStreamingGuide = React.lazy(() => import('./pages/guides/how-to-start-streaming-on-twitch/page'));
+const LiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream/page'));
+const AVIELiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream-on-AVIE-Streaming/page'));
+const BestPlacesToLiveStream = React.lazy(() => import('./pages/guides/best-places-to-live-stream/page'));
+const MobileStreamingGuide = React.lazy(() => import('./pages/guides/how-to-stream-from-mobile/page'));
+const EarnMoreAsALiveStreamerWithAVIE = React.lazy(() => import('./pages/guides/earn-more-from-live-streaming-with-avie/page'));
+const EarnMoreMultiStreaming = React.lazy(() => import('./pages/guides/earn-more-multi-streaming/page'));
+const MonetizeYourLiveStreamContent = React.lazy(() => import('./pages/guides/monetize-your-live-stream-content/page'));
+const MonetizeYourClips = React.lazy(() => import('./pages/guides/monetize-your-clips/page'));
+const StrategiesToMakeMoneyFromLiveStreaming = React.lazy(() => import('./pages/guides/strategies-to-make-money-from-live-streaming/page'));
+
+// Lazy load category pages
+const StreamSetupPage = React.lazy(() => import('./pages/category/stream-setup/page'));
+const GrowthMarketingPage = React.lazy(() => import('./pages/category/growth-marketing/page'));
+const CommunityBuildingPage = React.lazy(() => import('./pages/category/community-building/page'));
+const MonetizationPage = React.lazy(() => import('./pages/category/monetization/page'));
+const ContentStrategyPage = React.lazy(() => import('./pages/category/content-strategy/page'));
+
+// Loading component for Suspense fallback
+const LoadingSpinner = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+  </div>
+);
 
 const App = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/guides" element={<GuidesIndex />} />
-        <Route path="/guides/how-to-start-streaming-on-twitch" element={<TwitchStreamingGuide />} />
-        <Route path="/guides/earn-more-from-live-streaming-with-avie" element={<EarnMoreAsALiveStreamerWithAVIE />} />
-        <Route path="/guides/best-places-to-live-stream" element={<BestPlacesToLiveStream />} />
-        <Route path="/guides/how-to-live-stream" element={<LiveStreamingGuide />} />
-        <Route path="/guides/how-to-live-stream-on-AVIE-Streaming" element={<AVIELiveStreamingGuide />} />
-        <Route path="/guides/how-to-stream-from-mobile" element={<MobileStreamingGuide />} />
-        <Route path="/category/stream-setup" element={<StreamSetupPage />} />
-        <Route path="/category/growth-marketing" element={<GrowthMarketingPage />} />
-        <Route path="/category/community-building" element={<CommunityBuildingPage />} />
-        <Route path="/category/monetization" element={<MonetizationPage />} />
-        <Route path="/category/content-strategy" element={<ContentStrategyPage />} />
-        <Route path="/guides/earn-more-multi-streaming" element={<EarnMoreMultiStreaming />} />
-        <Route path="/guides/monetize-your-live-stream-content" element={<MonetizeYourLiveStreamContent />} />
-        <Route path="/guides/monetize-your-clips" element={<MonetizeYourClips />} />
-        <Route path="/guides/strategies-to-make-money-from-live-streaming" element={<StrategiesToMakeMoneyFromLiveStreaming />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <Home />
+          </Suspense>
+        } />
+        <Route path="/about" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <About />
+          </Suspense>
+        } />
+        <Route path="/guides" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <GuidesIndex />
+          </Suspense>
+        } />
+        <Route path="/guides/how-to-start-streaming-on-twitch" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <TwitchStreamingGuide />
+          </Suspense>
+        } />
+        <Route path="/guides/earn-more-from-live-streaming-with-avie" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <EarnMoreAsALiveStreamerWithAVIE />
+          </Suspense>
+        } />
+        <Route path="/guides/best-places-to-live-stream" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <BestPlacesToLiveStream />
+          </Suspense>
+        } />
+        <Route path="/guides/how-to-live-stream" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <LiveStreamingGuide />
+          </Suspense>
+        } />
+        <Route path="/guides/how-to-live-stream-on-AVIE-Streaming" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <AVIELiveStreamingGuide />
+          </Suspense>
+        } />
+        <Route path="/guides/how-to-stream-from-mobile" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <MobileStreamingGuide />
+          </Suspense>
+        } />
+        <Route path="/category/stream-setup" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <StreamSetupPage />
+          </Suspense>
+        } />
+        <Route path="/category/growth-marketing" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <GrowthMarketingPage />
+          </Suspense>
+        } />
+        <Route path="/category/community-building" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <CommunityBuildingPage />
+          </Suspense>
+        } />
+        <Route path="/category/monetization" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <MonetizationPage />
+          </Suspense>
+        } />
+        <Route path="/category/content-strategy" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <ContentStrategyPage />
+          </Suspense>
+        } />
+        <Route path="/guides/earn-more-multi-streaming" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <EarnMoreMultiStreaming />
+          </Suspense>
+        } />
+        <Route path="/guides/monetize-your-live-stream-content" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <MonetizeYourLiveStreamContent />
+          </Suspense>
+        } />
+        <Route path="/guides/monetize-your-clips" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <MonetizeYourClips />
+          </Suspense>
+        } />
+        <Route path="/guides/strategies-to-make-money-from-live-streaming" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <StrategiesToMakeMoneyFromLiveStreaming />
+          </Suspense>
+        } />
+        <Route path="*" element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <NotFound />
+          </Suspense>
+        } />
       </Route>
     </Routes>
   );

@@ -18,30 +18,12 @@ export default defineConfig({
             './src/components/Header.tsx',
             './src/components/Footer.tsx'
           ]
-        },
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name.endsWith('.css')) {
-            return 'assets/styles.[hash].css';
-          }
-          if (assetInfo.name.endsWith('.png') || 
-              assetInfo.name.endsWith('.jpg') || 
-              assetInfo.name.endsWith('.svg')) {
-            return 'assets/images/[name].[hash][extname]';
-          }
-          return 'assets/[name].[hash][extname]';
-        },
-        chunkFileNames: 'assets/js/[name].[hash].js',
-        entryFileNames: 'assets/js/[name].[hash].js'
+        }
       }
     },
     chunkSizeWarningLimit: 1000,
     minify: 'esbuild',
-    target: 'es2015',
-    cssCodeSplit: true,
-    assetsInlineLimit: 4096
+    target: 'es2015'
   },
   assetsInclude: ['**/*.svg'],
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom']
-  }
 }); 

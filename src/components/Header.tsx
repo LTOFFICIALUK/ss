@@ -64,7 +64,7 @@ const Header = () => {
               <img 
                 src={logo} 
                 alt="Successful Streamer" 
-                className="h-10 w-auto object-contain"
+                className="h-8 w-auto object-contain"
                 style={{ maxWidth: 'none' }}
               />
             </Link>

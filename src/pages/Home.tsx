@@ -154,9 +154,9 @@ const Home = () => {
                             to={guide.path}
                             className="block px-3 py-2 hover:bg-gray-100 rounded-lg"
                           >
-                            <div className="font-medium text-left"> <div className={`text-sm text-gray-500 ${guide.readTime}`}>
-                              {guide.readTime}
-                            </div> {guide.title} </div>                          </Link>
+                            <div className="font-medium text-left"> <div className={`text-sm text-gray-500 ${guide.readTime}`}> 
+  {guide.readTime} read
+</div> {guide.title} </div>                          </Link>
                         ))}
                       </div>
                     )}

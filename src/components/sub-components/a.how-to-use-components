@@ -1,0 +1,32 @@
+<Title 
+  title="Getting Started with Streaming"
+  description="Learn everything you need to know about setting up your streaming channel."
+  align="center"
+  className="my-8"
+/>
+
+<RichText 
+  heading="Equipment Setup"
+  content="Choose the right streaming equipment for your needs..."
+  headingSize="medium"
+  className="my-12"
+/>
+
+<CTAButtons 
+  title="Ready to Start?"
+  description="Join our community and start your streaming journey today."
+  align="center"
+  buttons={[
+    {
+      label: "Get Started",
+      href: "/start",
+      variant: "primary"
+    },
+    {
+      label: "Learn More",
+      href: "https://docs.example.com",
+      variant: "outline",
+      isExternal: true
+    }
+  ]}
+/>

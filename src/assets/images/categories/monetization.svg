@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="225" viewBox="0 0 400 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <rect width="400" height="225" fill="url(#gradient)"/>
+    
+    <!-- Dollar Sign -->
+    <path d="M190 70 V180" stroke="#ffffff" stroke-width="6"/>
+    <path d="M175 80 C175 75, 190 70, 205 75 C220 80, 220 95, 205 100 C190 105, 175 100, 175 95"
+          stroke="#ffffff" stroke-width="6" fill="none"/>
+    <path d="M175 130 C175 125, 190 120, 205 125 C220 130, 220 145, 205 150 C190 155, 175 150, 175 145"
+          stroke="#ffffff" stroke-width="6" fill="none"/>
+    
+    <!-- Coins -->
+    <circle cx="280" cy="90" r="25" fill="#D97706" stroke="#ffffff" stroke-width="3"/>
+    <circle cx="290" cy="140" r="25" fill="#D97706" stroke="#ffffff" stroke-width="3"/>
+    <circle cx="270" cy="170" r="25" fill="#D97706" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Growth Arrow -->
+    <path d="M100 150 L140 110 L120 90 L160 50" stroke="#ffffff" stroke-width="4" fill="none"/>
+    <path d="M160 50 L140 70 L160 50 L140 50" stroke="#ffffff" stroke-width="4" fill="none"/>
+    
+    <!-- Decorative Elements -->
+    <circle cx="50" cy="50" r="25" fill="#D97706" fill-opacity="0.2"/>
+    <circle cx="350" cy="175" r="30" fill="#D97706" fill-opacity="0.2"/>
+    
+    <!-- Gradient definition -->
+    <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="400" y2="225" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D97706"/>
+            <stop offset="100%" stop-color="#92400E"/>
+        </linearGradient>
+    </defs>
+</svg>

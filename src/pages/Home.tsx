@@ -107,14 +107,16 @@ const Home = () => {
   };
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-8 md:space-y-16">
       {/* Hero Section with Search */}
-      <section className="text-center py-16 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Your non-technical <span className="text-blue-600">streaming</span>
-          <br />guide to everything content
+      <section className="text-center py-8 md:py-16 px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6">
+          Your non-technical{' '}
+          <span className="text-blue-600">streaming</span>
+          <br className="hidden sm:block" />
+          <span className="inline sm:block">guide to everything content</span>
         </h1>
-        <div className="max-w-2xl mx-auto mt-8">
+        <div className="max-w-2xl mx-auto mt-4 md:mt-8">
           <form onSubmit={handleSearch} className="relative">
             <input
               type="text"
@@ -123,24 +125,24 @@ const Home = () => {
               onFocus={() => setIsSearching(true)}
               onBlur={handleSearchBlur}
               placeholder="Try 'How to grow my audience?'"
-              className="w-full px-6 py-4 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
+              className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base sm:text-lg"
               aria-label="Search guides"
             />
             <button
               type="submit"
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition-colors"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 text-white p-2 sm:p-3 rounded-full hover:bg-blue-600 transition-colors"
               aria-label="Submit search"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
 
             {/* Search Results Dropdown */}
             {isSearching && searchQuery.trim() && (
-              <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl border border-gray-200 max-h-96 overflow-y-auto z-50">
+              <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl border border-gray-200 max-h-[80vh] sm:max-h-96 overflow-y-auto z-50">
                 {searchResults.categories.length === 0 && searchResults.guides.length === 0 ? (
-                  <div className="p-4 text-gray-500 text-center">
+                  <div className="p-3 sm:p-4 text-gray-500 text-center text-sm sm:text-base">
                     No results found for "{searchQuery}"
                   </div>
                 ) : (
@@ -154,9 +156,13 @@ const Home = () => {
                             to={guide.path}
                             className="block px-3 py-2 hover:bg-gray-100 rounded-lg"
                           >
-                            <div className="font-medium text-left"> <div className={`text-sm text-gray-500 ${guide.readTime}`}> 
-  {guide.readTime} read
-</div> {guide.title} </div>                          </Link>
+                            <div className="font-medium text-left text-sm sm:text-base">
+                              <div className="text-xs sm:text-sm text-gray-500">
+                                {guide.readTime} read
+                              </div>
+                              {guide.title}
+                            </div>
+                          </Link>
                         ))}
                       </div>
                     )}
@@ -193,7 +199,7 @@ const Home = () => {
 
       {/* Recently Added Guides */}
       {availableGuides.length > 0 && (
-        <section className="py-16">
+        <section className="py-8 md:py-16">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold">Recently added guides</h2>
             <Link

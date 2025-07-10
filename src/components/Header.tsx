@@ -55,16 +55,17 @@ const Header = () => {
           </button>
 
           {/* Logo - Centered on mobile */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none">
+          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none flex-shrink-0">
             <Link 
               to="/" 
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity block"
               aria-label="Successful Streamer Home"
             >
               <img 
                 src={logo} 
                 alt="Successful Streamer" 
-                className="h-10 w-auto"
+                className="h-10 w-auto object-contain"
+                style={{ maxWidth: 'none' }}
               />
             </Link>
           </div>

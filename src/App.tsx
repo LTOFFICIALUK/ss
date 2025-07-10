@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 
 // Lazy load all routes
 const Home = React.lazy(() => import('./pages/Home'));
@@ -36,105 +37,108 @@ const LoadingSpinner = () => (
 
 const App = () => {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <Home />
-          </Suspense>
-        } />
-        <Route path="/about" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <About />
-          </Suspense>
-        } />
-        <Route path="/guides" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <GuidesIndex />
-          </Suspense>
-        } />
-        <Route path="/guides/how-to-start-streaming-on-twitch" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <TwitchStreamingGuide />
-          </Suspense>
-        } />
-        <Route path="/guides/earn-more-from-live-streaming-with-avie" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <EarnMoreAsALiveStreamerWithAVIE />
-          </Suspense>
-        } />
-        <Route path="/guides/best-places-to-live-stream" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <BestPlacesToLiveStream />
-          </Suspense>
-        } />
-        <Route path="/guides/how-to-live-stream" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <LiveStreamingGuide />
-          </Suspense>
-        } />
-        <Route path="/guides/how-to-live-stream-on-AVIE-Streaming" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <AVIELiveStreamingGuide />
-          </Suspense>
-        } />
-        <Route path="/guides/how-to-stream-from-mobile" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <MobileStreamingGuide />
-          </Suspense>
-        } />
-        <Route path="/category/stream-setup" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <StreamSetupPage />
-          </Suspense>
-        } />
-        <Route path="/category/growth-marketing" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <GrowthMarketingPage />
-          </Suspense>
-        } />
-        <Route path="/category/community-building" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <CommunityBuildingPage />
-          </Suspense>
-        } />
-        <Route path="/category/monetization" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <MonetizationPage />
-          </Suspense>
-        } />
-        <Route path="/category/content-strategy" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <ContentStrategyPage />
-          </Suspense>
-        } />
-        <Route path="/guides/earn-more-multi-streaming" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <EarnMoreMultiStreaming />
-          </Suspense>
-        } />
-        <Route path="/guides/monetize-your-live-stream-content" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <MonetizeYourLiveStreamContent />
-          </Suspense>
-        } />
-        <Route path="/guides/monetize-your-clips" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <MonetizeYourClips />
-          </Suspense>
-        } />
-        <Route path="/guides/strategies-to-make-money-from-live-streaming" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <StrategiesToMakeMoneyFromLiveStreaming />
-          </Suspense>
-        } />
-        <Route path="*" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <NotFound />
-          </Suspense>
-        } />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Home />
+            </Suspense>
+          } />
+          <Route path="/about" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <About />
+            </Suspense>
+          } />
+          <Route path="/guides" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GuidesIndex />
+            </Suspense>
+          } />
+          <Route path="/guides/how-to-start-streaming-on-twitch" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <TwitchStreamingGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/earn-more-from-live-streaming-with-avie" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <EarnMoreAsALiveStreamerWithAVIE />
+            </Suspense>
+          } />
+          <Route path="/guides/best-places-to-live-stream" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <BestPlacesToLiveStream />
+            </Suspense>
+          } />
+          <Route path="/guides/how-to-live-stream" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <LiveStreamingGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/how-to-live-stream-on-AVIE-Streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <AVIELiveStreamingGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/how-to-stream-from-mobile" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MobileStreamingGuide />
+            </Suspense>
+          } />
+          <Route path="/category/stream-setup" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StreamSetupPage />
+            </Suspense>
+          } />
+          <Route path="/category/growth-marketing" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GrowthMarketingPage />
+            </Suspense>
+          } />
+          <Route path="/category/community-building" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CommunityBuildingPage />
+            </Suspense>
+          } />
+          <Route path="/category/monetization" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MonetizationPage />
+            </Suspense>
+          } />
+          <Route path="/category/content-strategy" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ContentStrategyPage />
+            </Suspense>
+          } />
+          <Route path="/guides/earn-more-multi-streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <EarnMoreMultiStreaming />
+            </Suspense>
+          } />
+          <Route path="/guides/monetize-your-live-stream-content" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MonetizeYourLiveStreamContent />
+            </Suspense>
+          } />
+          <Route path="/guides/monetize-your-clips" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MonetizeYourClips />
+            </Suspense>
+          } />
+          <Route path="/guides/strategies-to-make-money-from-live-streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StrategiesToMakeMoneyFromLiveStreaming />
+            </Suspense>
+          } />
+          <Route path="*" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <NotFound />
+            </Suspense>
+          } />
+        </Route>
+      </Routes>
+    </>
   );
 };
 

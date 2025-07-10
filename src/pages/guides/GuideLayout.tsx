@@ -32,11 +32,6 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
   const location = useLocation();
   const currentSlug = location.pathname.split('/').pop() || '';
 
-  // Scroll to top on mount and route change
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
   // Get related guides from the same category that have actual pages
   const relatedGuides = Object.entries(ALL_GUIDES)
     .filter(([slug, guide]) => {

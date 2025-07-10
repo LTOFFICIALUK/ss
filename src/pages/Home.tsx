@@ -179,13 +179,13 @@ const Home = () => {
           >
             <img
               src={image}
-              alt={title}
+              alt={`${title} Successful Streamer Guides`}
               className="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <h3 className="text-white font-semibold text-lg text-center px-2">
+              <h2 className="text-white font-semibold text-lg text-center px-2">
                 {title}
-              </h3>
+              </h2>
             </div>
           </Link>
         ))}

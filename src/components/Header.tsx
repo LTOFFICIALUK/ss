@@ -55,17 +55,16 @@ const Header = () => {
           </button>
 
           {/* Logo - Centered on mobile */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none flex-shrink-0">
+          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none">
             <Link 
               to="/" 
-              className="hover:opacity-80 transition-opacity block"
+              className="hover:opacity-80 transition-opacity"
               aria-label="Successful Streamer Home"
             >
               <img 
                 src={logo} 
                 alt="Successful Streamer" 
-                className="h-8 w-auto object-contain"
-                style={{ maxWidth: 'none' }}
+                className="h-10 w-auto"
               />
             </Link>
           </div>
@@ -93,7 +92,7 @@ const Header = () => {
           <div
             id="mobile-menu"
             className={`
-              absolute top-[calc(100%+12px)] -left-2 -right-2 bg-white
+              absolute top-[calc(100%+12px)] left-4 right-4 bg-white
               border-b border-l border-r border-gray-200 rounded-b-lg shadow-lg
               transform transition-all duration-300 ease-in-out md:hidden z-50
               ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0 pointer-events-none'}

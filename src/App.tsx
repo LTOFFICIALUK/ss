@@ -1,7 +1,8 @@
-import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { Suspense, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import { initGA, pageview } from './utils/analytics';
 
 // Lazy load all routes
 const Home = React.lazy(() => import('./pages/Home'));
@@ -36,6 +37,18 @@ const LoadingSpinner = () => (
 );
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Initialize Google Analytics
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    // Track page views on route change
+    pageview(location.pathname + location.search);
+  }, [location]);
+
   return (
     <>
       <ScrollToTop />

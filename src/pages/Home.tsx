@@ -112,9 +112,9 @@ const Home = () => {
       <section className="text-center py-8 md:py-16 px-4">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6">
           Your non-technical{' '}
-          <span className="text-blue-600">streaming guide</span>
+          <span className="text-blue-600">streaming </span>
           <br className="hidden sm:block" />
-          <span className="inline sm:block">to everything content</span>
+          <span className="inline sm:block">guide to everything content</span>
         </h1>
         <div className="max-w-2xl mx-auto mt-4 md:mt-8">
           <form onSubmit={handleSearch} className="relative">

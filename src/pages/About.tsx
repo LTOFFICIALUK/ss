@@ -1,5 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { 
+  HiChartBar, 
+  HiBeaker, 
+  HiLocationMarker, 
+  HiSearch, 
+  HiCog, 
+  HiTrendingUp, 
+  HiCash, 
+  HiDesktopComputer, 
+  HiUsers, 
+  HiAcademicCap, 
+  HiStar 
+} from 'react-icons/hi';
 
 const About = () => {
   return (
@@ -35,23 +48,23 @@ const About = () => {
           <h2 className="text-2xl font-bold mb-4">Our Approach</h2>
           <ul className="space-y-4 text-gray-600">
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">📊</span>
+              <HiChartBar className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Research-driven recommendations
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">🧪</span>
+              <HiBeaker className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Real-world testing and validation
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">🎯</span>
+              <HiLocationMarker className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Focus on actionable insights
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">🔍</span>
+              <HiSearch className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Transparent methodology
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">🏗️</span>
+              <HiCog className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Platform-agnostic foundation
             </li>
           </ul>
@@ -61,23 +74,23 @@ const About = () => {
           <h2 className="text-2xl font-bold mb-4">What We Cover</h2>
           <ul className="space-y-4 text-gray-600">
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">⚙️</span>
+              <HiCog className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Technical setup and optimization
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">📈</span>
+              <HiTrendingUp className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Growth strategies and audience building
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">💰</span>
+              <HiCash className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Monetization methods and revenue streams
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">🎮</span>
+              <HiDesktopComputer className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Platform comparisons and recommendations
             </li>
             <li className="flex items-start">
-              <span className="text-blue-500 mr-2">🤝</span>
+              <HiUsers className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
               Community building and engagement
             </li>
           </ul>
@@ -133,21 +146,27 @@ const About = () => {
         <h2 className="text-2xl font-bold mb-4">Our Key Principles</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
-            <div className="text-3xl mb-3">🎯</div>
+            <div className="flex justify-center mb-3">
+              <HiLocationMarker className="text-blue-500" size={32} />
+            </div>
             <h3 className="text-lg font-semibold mb-2">Creator-First</h3>
             <p className="text-gray-600 text-sm">
               Every decision we make prioritizes what's best for content creators, not platforms or sponsors.
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl mb-3">🔬</div>
+            <div className="flex justify-center mb-3">
+              <HiAcademicCap className="text-blue-500" size={32} />
+            </div>
             <h3 className="text-lg font-semibold mb-2">Evidence-Based</h3>
             <p className="text-gray-600 text-sm">
               Our recommendations are backed by research, testing, and real-world data analysis.
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl mb-3">🌟</div>
+            <div className="flex justify-center mb-3">
+              <HiStar className="text-blue-500" size={32} />
+            </div>
             <h3 className="text-lg font-semibold mb-2">Continuously Updated</h3>
             <p className="text-gray-600 text-sm">
               We regularly review and update our guidance as platforms evolve and new data emerges.

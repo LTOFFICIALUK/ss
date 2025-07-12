@@ -7,6 +7,8 @@ import { initGA, pageview } from './utils/analytics';
 // Lazy load all routes
 const Home = React.lazy(() => import('./pages/Home'));
 const About = React.lazy(() => import('./pages/About'));
+const Privacy = React.lazy(() => import('./pages/privacy'));
+const Terms = React.lazy(() => import('./pages/terms'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 const GuidesIndex = React.lazy(() => import('./pages/guides'));
 
@@ -63,6 +65,16 @@ const App = () => {
           <Route path="/about" element={
             <Suspense fallback={<LoadingSpinner />}>
               <About />
+            </Suspense>
+          } />
+          <Route path="/privacy" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Privacy />
+            </Suspense>
+          } />
+          <Route path="/terms" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Terms />
             </Suspense>
           } />
           <Route path="/guides" element={

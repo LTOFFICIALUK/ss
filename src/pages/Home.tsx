@@ -7,7 +7,7 @@ import growthMarketingImg from '../assets/images/categories/growth-marketing.svg
 import communityBuildingImg from '../assets/images/categories/community-building.svg';
 import monetizationImg from '../assets/images/categories/monetization.svg';
 import contentStrategyImg from '../assets/images/categories/content-strategy.svg';
-import { ALL_GUIDES } from '../constants/guides';
+import { ALL_GUIDES, GUIDE_CATEGORIES } from '../constants/guides';
 
 // Sample categories data - replace with actual images and data
 const categories = [
@@ -39,7 +39,7 @@ const categories = [
 ];
 
 // Get the most recent guides that have actual pages
-const availableGuides = Object.entries(ALL_GUIDES)
+const implementedGuides = Object.entries(ALL_GUIDES)
   .filter(([slug]) => {
     // Only show guides that have actual pages
     return [
@@ -54,13 +54,17 @@ const availableGuides = Object.entries(ALL_GUIDES)
       'monetize-your-clips',
       'strategies-to-make-money-from-live-streaming'
     ].includes(slug);
-  })
-  .map(([slug, guide]) => ({
-    title: guide.title,
-    description: guide.description,
-    path: `/guides/${slug}`,
-    readTime: guide.readTime,
-  }));
+  });
+
+// Convert to array format for search
+const availableGuides = implementedGuides.map(([slug, guide]) => ({
+  title: guide.title,
+  description: guide.description,
+  path: `/guides/${slug}`,
+  readTime: guide.readTime,
+  difficulty: guide.difficulty,
+  category: guide.category
+}));
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -68,26 +72,17 @@ const Home = () => {
 
   // Memoize search results to avoid unnecessary recalculations
   const searchResults = useMemo(() => {
-    if (!searchQuery.trim()) return { guides: [], categories: [] };
+    if (!searchQuery.trim()) return [];
 
     const query = searchQuery.toLowerCase();
     
     // Search through guides
-    const matchingGuides = availableGuides.filter(guide => 
+    return availableGuides.filter(guide => 
       guide.title.toLowerCase().includes(query) || 
-      guide.description.toLowerCase().includes(query)
+      guide.description.toLowerCase().includes(query) ||
+      GUIDE_CATEGORIES[guide.category].toLowerCase().includes(query)
     );
-
-    // Search through categories
-    const matchingCategories = categories.filter(category =>
-      category.title.toLowerCase().includes(query)
-    );
-
-    return {
-      guides: matchingGuides,
-      categories: matchingCategories
-    };
-  }, [searchQuery]);
+  }, [searchQuery, availableGuides]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -122,7 +117,7 @@ const Home = () => {
               onChange={handleSearchChange}
               onFocus={() => setIsSearching(true)}
               onBlur={handleSearchBlur}
-              placeholder="Try 'How to grow my audience?'"
+              placeholder="Search guides... Try 'monetization' or 'streaming setup'"
               className="w-full px-6 py-4 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
               aria-label="Search guides"
             />
@@ -139,28 +134,46 @@ const Home = () => {
             {/* Search Results Dropdown */}
             {isSearching && searchQuery.trim() && (
               <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl border border-gray-200 max-h-96 overflow-y-auto z-50">
-                {searchResults.categories.length === 0 && searchResults.guides.length === 0 ? (
+                {searchResults.length === 0 ? (
                   <div className="p-4 text-gray-500 text-center">
                     No results found for "{searchQuery}"
                   </div>
                 ) : (
-                  <>
-                    {/* Guides Results */}
-                    {searchResults.guides.length > 0 && (
-                      <div className="p-2 border-t border-gray-100">
-                        {searchResults.guides.map((guide) => (
-                          <Link
-                            key={guide.path}
-                            to={guide.path}
-                            className="block px-3 py-2 hover:bg-gray-100 rounded-lg"
-                          >
-                            <div className="font-medium text-left"> <div className={`text-sm text-gray-500 ${guide.readTime}`}> 
-  {guide.readTime} read
-</div> {guide.title} </div>                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </>
+                  <div className="p-2">
+                    {searchResults.map((guide) => (
+                      <Link
+                        key={guide.path}
+                        to={guide.path}
+                        className="block px-3 py-2 hover:bg-gray-100 rounded-lg"
+                      >
+                        <div className="flex justify-between items-start text-left">
+                          <div className="flex-1">
+                            <div className="font-medium text-left">{guide.title}</div>
+                            <div className="text-sm text-gray-500 mt-1">{guide.description}</div>
+                            <div className="text-xs text-blue-600 mt-1">
+                              {GUIDE_CATEGORIES[guide.category]}
+                            </div>
+                          </div>
+                          <div className="flex flex-col items-end space-y-1 ml-4">
+                            {guide.readTime && (
+                              <span className="text-xs text-gray-500">
+                                {guide.readTime}
+                              </span>
+                            )}
+                            {guide.difficulty && (
+                              <span className={`text-xs px-2 py-1 rounded-full ${
+                                guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-800' :
+                                guide.difficulty === 'Intermediate' ? 'bg-blue-100 text-blue-800' :
+                                'bg-purple-100 text-purple-800'
+                              }`}>
+                                {guide.difficulty}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                 )}
               </div>
             )}

@@ -29,6 +29,7 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
 }) => {
   const [tableOfContents, setTableOfContents] = useState<TableOfContentsItem[]>([]);
   const [activeSection, setActiveSection] = useState<string>('');
+  const [isTocOpen, setIsTocOpen] = useState(false);
   const location = useLocation();
   const currentSlug = location.pathname.split('/').pop() || '';
 
@@ -108,6 +109,10 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
     return names[category] || category;
   };
 
+  const handleTocToggle = () => {
+    setIsTocOpen(!isTocOpen);
+  };
+
   return (
     <>
       <Helmet>
@@ -120,6 +125,7 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
           {`
             article h2 {
@@ -129,12 +135,11 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
         </style>
       </Helmet>
       
-      <div className="relative max-w-7xl mx-auto">
-        <article className="py-8 sm:py-12 pr-0 lg:pr-80">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article className="py-6 sm:py-12 lg:pr-80">
           <div className="max-w-4xl">
-
             {/* Breadcrumbs */}
-            <nav className="mb-8 pl-8" aria-label="Breadcrumb">
+            <nav className="mb-6 sm:mb-8 overflow-x-auto whitespace-nowrap" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2 text-sm text-gray-500">
                 <li>
                   <Link to="/" className="hover:text-gray-700">Home</Link>
@@ -162,11 +167,72 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
               </ol>
             </nav>
 
+            {/* Mobile ToC Toggle Button */}
+            <button
+              onClick={handleTocToggle}
+              className="lg:hidden mb-6 flex items-center text-sm font-medium text-gray-600 hover:text-gray-900"
+              aria-expanded={isTocOpen}
+              aria-controls="mobile-toc"
+            >
+              <svg
+                className={`w-5 h-5 mr-2 transform transition-transform ${isTocOpen ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+              Table of Contents
+            </button>
+
+            {/* Mobile ToC Panel */}
+            <div
+              id="mobile-toc"
+              className={`lg:hidden mb-6 bg-gray-50 rounded-lg p-4 ${isTocOpen ? 'block' : 'hidden'}`}
+            >
+              <nav className="space-y-2">
+                {tableOfContents.map((item) => (
+                  <a
+                    key={item.id}
+                    href={`#${item.id}`}
+                    onClick={() => setIsTocOpen(false)}
+                    className={`block text-sm ${
+                      activeSection === item.id
+                        ? 'text-blue-600 font-medium'
+                        : 'text-gray-600 hover:text-gray-900'
+                    }`}
+                  >
+                    {item.text}
+                  </a>
+                ))}
+              </nav>
+            </div>
+
             {children}
             
+            {/* Mobile Related Guides */}
+            {relatedGuides.length > 0 && (
+              <div className="lg:hidden mt-12 pt-8 border-t border-gray-200">
+                <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                  Related Guides
+                </h4>
+                <div className="space-y-3">
+                  {relatedGuides.map(([slug, guide]) => (
+                    <Link
+                      key={slug}
+                      to={`/guides/${slug}`}
+                      className="block text-sm text-gray-600 hover:text-gray-900"
+                    >
+                      {guide.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Guide Footer */}
             <footer className="mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center justify-between text-sm text-gray-600">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-600 space-y-2 sm:space-y-0">
                 {publishDate && (
                   <time dateTime={publishDate}>
                     Published: {new Date(publishDate).toLocaleDateString()}
@@ -178,8 +244,8 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
           </div>
         </article>
 
-        {/* Table of Contents Sidebar */}
-        <div className="hidden lg:block fixed top-24 right-60 w-72 overflow-auto max-h-[calc(100vh-8rem)]">
+        {/* Desktop Table of Contents Sidebar */}
+        <div className="hidden lg:block fixed top-24 right-8 xl:right-60 w-72 overflow-auto max-h-[calc(100vh-8rem)]">
           <div className="bg-gray-50 rounded-lg p-6">
             <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
               Table of contents

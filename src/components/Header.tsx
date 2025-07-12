@@ -26,51 +26,55 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-100 relative z-50">
-      <nav className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between md:justify-between relative">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="h-16 flex items-center justify-between relative">
           {/* Hamburger Menu Button - Only visible on mobile */}
-          <button
-            className="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            onClick={handleMenuToggle}
-            onKeyDown={handleKeyDown}
-            aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation menu"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              className="h-6 w-6 text-gray-600"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div className="pl-4 flex items-center">
+            <button
+              className="md:hidden -ml-2 p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              onClick={handleMenuToggle}
+              onKeyDown={handleKeyDown}
+              aria-expanded={isMenuOpen}
+              aria-label="Toggle navigation menu"
+              aria-controls="mobile-menu"
             >
-              {isMenuOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="h-6 w-6 text-gray-600"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
 
-          {/* Logo - Centered on mobile */}
+          {/* Logo - Centered on mobile, left-aligned on desktop */}
           <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none">
             <Link 
               to="/" 
-              className="hover:opacity-80 transition-opacity"
+              className="block hover:opacity-80 transition-opacity"
               aria-label="Successful Streamer Home"
             >
-              <img 
-                src={logo} 
-                alt="Successful Streamer" 
-                className="h-10 w-auto"
-              />
+              <div className="flex items-center justify-center">
+                <img 
+                  src={logo} 
+                  alt="Successful Streamer" 
+                  className="h-8 w-auto object-contain"
+                />
+              </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-6">
+          <ul className="hidden md:flex items-center space-x-6">
             {navItems.map(({ path, label }) => (
               <li key={path}>
                 <Link
@@ -92,22 +96,21 @@ const Header = () => {
           <div
             id="mobile-menu"
             className={`
-              absolute top-[calc(100%+12px)] left-4 right-4 bg-white
-              border-b border-l border-r border-gray-200 rounded-b-lg shadow-lg
-              transform transition-all duration-300 ease-in-out md:hidden z-50
-              ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0 pointer-events-none'}
+              absolute top-full left-0 right-0 bg-white
+              border-b border-gray-200 shadow-lg
+              transform transition-all duration-200 ease-in-out md:hidden
+              ${isMenuOpen ? 'translate-y-0 opacity-100 visible' : '-translate-y-2 opacity-0 invisible'}
             `}
           >
-            <ul className="py-2">
+            <ul className="py-2 px-4">
               {navItems.map(({ path, label }) => (
                 <li key={path}>
                   <Link
                     to={path}
                     className={`
-                      block py-3 px-4 transition-colors text-base font-medium
+                      block py-3 px-4 rounded-md transition-colors text-base font-medium
                       hover:bg-gray-50 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-400
                       ${isActive(path) ? 'text-blue-600 bg-gray-50' : 'text-gray-600'}
-                      ${path === navItems[navItems.length - 1].path ? 'rounded-b-lg' : ''}
                     `}
                     aria-current={isActive(path) ? 'page' : undefined}
                     onClick={() => setIsMenuOpen(false)}

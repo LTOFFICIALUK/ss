@@ -29,9 +29,9 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between relative">
           {/* Hamburger Menu Button - Only visible on mobile */}
-          <div className="pl-4 flex items-center">
+          <div className="pl-4 flex items-center md:hidden">
             <button
-              className="md:hidden -ml-2 p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="-ml-2 p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
               onClick={handleMenuToggle}
               onKeyDown={handleKeyDown}
               aria-expanded={isMenuOpen}
@@ -57,19 +57,17 @@ const Header = () => {
           </div>
 
           {/* Logo - Centered on mobile, left-aligned on desktop */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none">
+          <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none md:flex md:items-center">
             <Link 
               to="/" 
               className="block hover:opacity-80 transition-opacity"
               aria-label="Successful Streamer Home"
             >
-              <div className="flex items-center justify-center">
-                <img 
-                  src={logo} 
-                  alt="Successful Streamer" 
-                  className="h-8 w-auto object-contain"
-                />
-              </div>
+              <img 
+                src={logo} 
+                alt="Successful Streamer" 
+                className="h-8 w-auto object-contain"
+              />
             </Link>
           </div>
 

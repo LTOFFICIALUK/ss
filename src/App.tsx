@@ -21,6 +21,7 @@ const EarnMoreMultiStreaming = React.lazy(() => import('./pages/guides/earn-more
 const MonetizeYourLiveStreamContent = React.lazy(() => import('./pages/guides/monetize-your-live-stream-content/page'));
 const MonetizeYourClips = React.lazy(() => import('./pages/guides/monetize-your-clips/page'));
 const StrategiesToMakeMoneyFromLiveStreaming = React.lazy(() => import('./pages/guides/strategies-to-make-money-from-live-streaming/page'));
+const BestMicForStreaming = React.lazy(() => import('./pages/guides/what-is-the-best-mic-for-streaming/page'));
 
 // Lazy load category pages
 const StreamSetupPage = React.lazy(() => import('./pages/category/stream-setup/page'));
@@ -142,6 +143,11 @@ const App = () => {
           <Route path="/guides/strategies-to-make-money-from-live-streaming" element={
             <Suspense fallback={<LoadingSpinner />}>
               <StrategiesToMakeMoneyFromLiveStreaming />
+            </Suspense>
+          } />
+          <Route path="/guides/what-is-the-best-mic-for-streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <BestMicForStreaming />
             </Suspense>
           } />
           <Route path="*" element={

@@ -16,6 +16,13 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     readTime: '7 min',
     difficulty: 'Beginner'
   },
+  'what-is-the-best-mic-for-streaming': {
+    title: 'What is the Best Mic for Streaming?',
+    description: 'Learn about the best mic for streaming with our comprehensive guide. We\'ll discuss the pros and cons of each mic and help you decide which one is right for you.',
+    category: 'stream-setup',
+    readTime: '5 min',
+    difficulty: 'Beginner'
+  },
   'monetize-your-clips': {
     title: 'Monetize Your Clips',
     description: 'Learn how to monetize your clips with our comprehensive guide. From setting up your account to going live, discover everything you need to become a successful streamer.',

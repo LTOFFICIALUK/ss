@@ -23,7 +23,8 @@ const FeaturedGuides: React.FC<FeaturedGuidesProps> = ({ category }) => {
         'earn-more-multi-streaming',
         'monetize-your-live-stream-content',
         'monetize-your-clips',
-        'strategies-to-make-money-from-live-streaming'
+        'strategies-to-make-money-from-live-streaming',
+        'what-is-the-best-mic-for-streaming'
       ].includes(slug);
     })
     .slice(0, 3); // Show only first 3 guides

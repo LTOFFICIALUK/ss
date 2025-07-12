@@ -26,7 +26,9 @@ const FeaturedGuides: React.FC<FeaturedGuidesProps> = ({ category }) => {
         'strategies-to-make-money-from-live-streaming',
         'what-is-the-best-mic-for-streaming',
         'obs-setup-guide',
-        'streaming-equipment-guide'
+        'streaming-equipment-guide',
+        'how-much-revenue-can-you-make-from-streaming',
+        'using-avie-multistreaming-to-earn-more'
       ].includes(slug);
     })
     .slice(0, 3); // Show only first 3 guides

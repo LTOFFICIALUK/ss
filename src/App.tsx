@@ -26,6 +26,8 @@ const StrategiesToMakeMoneyFromLiveStreaming = React.lazy(() => import('./pages/
 const BestMicForStreaming = React.lazy(() => import('./pages/guides/what-is-the-best-mic-for-streaming/page'));
 const StreamingEquipmentGuide = React.lazy(() => import('./pages/guides/streaming-equipment-guide/page'));
 const OBSSetupGuide = React.lazy(() => import('./pages/guides/obs-setup-guide/page'));
+const MultiStreamRevenue = React.lazy(() => import('./pages/guides/using-avie-multistreaming-to-earn-more/page'));
+
 
 // Lazy load category pages
 const StreamSetupPage = React.lazy(() => import('./pages/category/stream-setup/page'));
@@ -92,6 +94,11 @@ const App = () => {
           <Route path="/guides/earn-more-from-live-streaming-with-avie" element={
             <Suspense fallback={<LoadingSpinner />}>
               <EarnMoreAsALiveStreamerWithAVIE />
+            </Suspense>
+          } />
+          <Route path="/guides/using-avie-multistreaming-to-earn-more" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MultiStreamRevenue />
             </Suspense>
           } />
           <Route path="/guides/best-places-to-live-stream" element={

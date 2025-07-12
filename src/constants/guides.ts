@@ -65,6 +65,20 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     readTime: '10 min',
     difficulty: 'Beginner'
   },
+  'how-much-revenue-can-you-make-from-streaming': {
+    title: 'How Much Revenue Can You Make From Streaming?',
+    description: 'Explore the various ways to earn income through streaming platforms, including AVIE\'s unique AP reward system, subscriptions, donations, and more.',
+    category: 'monetization',
+    readTime: '10 min',
+    difficulty: 'Intermediate'
+  },
+  'using-avie-multistreaming-to-earn-more': {
+    title: 'Using AVIE Multistreaming To Earn More',
+    description: 'Learn how to use AVIE\'s multistreaming feature to earn more from your streaming.',
+    category: 'monetization',
+    readTime: '10 min',
+    difficulty: 'Intermediate'
+  },
   'how-to-stream-from-mobile': {
     title: 'How To Stream From Mobile',
     description: 'Learn how to easily stream from mobile with our comprehensive guide.',

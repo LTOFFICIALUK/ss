@@ -63,7 +63,9 @@ const implementedGuides = Object.entries(ALL_GUIDES)
       'twitch-monetization',
       'sponsorship-guide',
       'building-community',
-      'discord-server-setup'
+      'discord-server-setup',
+      'how-much-revenue-can-you-make-from-streaming',
+      'using-avie-multistreaming-to-earn-more'
     ].includes(slug);
   });
 

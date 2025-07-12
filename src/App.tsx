@@ -24,6 +24,8 @@ const MonetizeYourLiveStreamContent = React.lazy(() => import('./pages/guides/mo
 const MonetizeYourClips = React.lazy(() => import('./pages/guides/monetize-your-clips/page'));
 const StrategiesToMakeMoneyFromLiveStreaming = React.lazy(() => import('./pages/guides/strategies-to-make-money-from-live-streaming/page'));
 const BestMicForStreaming = React.lazy(() => import('./pages/guides/what-is-the-best-mic-for-streaming/page'));
+const StreamingEquipmentGuide = React.lazy(() => import('./pages/guides/streaming-equipment-guide/page'));
+const OBSSetupGuide = React.lazy(() => import('./pages/guides/obs-setup-guide/page'));
 
 // Lazy load category pages
 const StreamSetupPage = React.lazy(() => import('./pages/category/stream-setup/page'));
@@ -110,6 +112,16 @@ const App = () => {
           <Route path="/guides/how-to-stream-from-mobile" element={
             <Suspense fallback={<LoadingSpinner />}>
               <MobileStreamingGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/obs-setup-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <OBSSetupGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/streaming-equipment-guide" element={
+            <Suspense fallback={<LoadingSpinner />}> 
+              <StreamingEquipmentGuide />
             </Suspense>
           } />
           <Route path="/category/stream-setup" element={

@@ -52,7 +52,18 @@ const implementedGuides = Object.entries(ALL_GUIDES)
       'earn-more-multi-streaming',
       'monetize-your-live-stream-content',
       'monetize-your-clips',
-      'strategies-to-make-money-from-live-streaming'
+      'strategies-to-make-money-from-live-streaming',
+      'what-is-the-best-mic-for-streaming',
+      'obs-setup-guide',
+      'streaming-equipment-guide',
+      'content-planning-strategy',
+      'content-calendar-creation',
+      'growth-hacking-twitch',
+      'social-media-for-streamers',
+      'twitch-monetization',
+      'sponsorship-guide',
+      'building-community',
+      'discord-server-setup'
     ].includes(slug);
   });
 

@@ -50,7 +50,9 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
               'monetize-your-live-stream-content',
               'monetize-your-clips',
               'strategies-to-make-money-from-live-streaming',
-              'what-is-the-best-mic-for-streaming'
+              'what-is-the-best-mic-for-streaming',
+              'streaming-equipment-guide',
+              'obs-setup-guide'
             ].includes(slug);
     })
     .slice(0, 3); // Limit to 3 related guides

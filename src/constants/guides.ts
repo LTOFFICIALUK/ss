@@ -16,6 +16,13 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     readTime: '7 min',
     difficulty: 'Beginner'
   },
+  'obs-setup-guide': {
+    title: 'OBS Setup Guide',
+    description: 'Learn how to setup OBS Studio for streaming with our comprehensive guide.',
+    category: 'stream-setup',
+    readTime: '5 min',
+    difficulty: 'Beginner'
+  },
   'what-is-the-best-mic-for-streaming': {
     title: 'What is the Best Mic for Streaming?',
     description: 'Learn about the best mic for streaming with our comprehensive guide. We\'ll discuss the pros and cons of each mic and help you decide which one is right for you.',
@@ -92,13 +99,6 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     category: 'stream-setup',
     readTime: '12 min',
     difficulty: 'Intermediate'
-  },
-  'obs-setup-guide': {
-    title: 'Complete OBS Setup Guide',
-    description: 'Master OBS Studio with our comprehensive setup and configuration guide.',
-    category: 'stream-setup',
-    readTime: '20 min',
-    difficulty: 'Beginner'
   },
   'content-planning-strategy': {
     title: 'Content Planning for Streamers',

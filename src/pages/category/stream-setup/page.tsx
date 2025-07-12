@@ -23,6 +23,12 @@ const StreamSetupPage = () => {
       readTime: '12 min read',
       difficulty: 'Beginner',
     },
+    {
+      title: 'OBS Setup Guide',
+      description: 'Learn how to setup OBS Studio for streaming with our comprehensive guide.',
+      readTime: '8 min read',
+      difficulty: 'Intermediate',
+    },
   ];
 
   return (

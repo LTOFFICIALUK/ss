@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Title from '../components/sub-components/title';
 import RichText from '../components/sub-components/rich-text';
 import CTAButtons from '../components/sub-components/cta-buttons';
@@ -87,80 +88,127 @@ const MonetizationGuide: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <Title 
-          title="The Monetization Master Guide for Streamers: Turn Your Passion into Profit in 2025"
-          description="Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies. Learn how to build sustainable income from your streaming content."
-          level={1}
-          size="large"
-          align="center"
-          showDivider={true}
-          maxWidth="6xl"
-        />
-
-        <div className="mt-12 space-y-12">
-          <RichText
-            heading="The Business of Streaming: Beyond Just Playing Games"
-            headingLevel={2}
-            content="Streaming monetization has evolved from simple donations to complex business models involving multiple revenue streams. Successful streamers treat their channels as businesses, diversifying income sources and building sustainable financial foundations. This guide covers every monetization method available to streamers, from beginner-friendly options to advanced business strategies used by top earners."
-            maxWidth="6xl"
-          />
-
-          <HowToComponent
-            title="5-Step Monetization Launch Strategy"
-            description="Build a comprehensive monetization system that maximizes your earning potential"
-            steps={monetizationSteps}
-            totalTime="PT240M"
-            difficulty="Intermediate"
-            maxWidth="6xl"
-          />
-
-          <RichText
-            heading="Subscription-Based Revenue: Building Recurring Income"
-            headingLevel={2}
-            content="Subscriptions provide the most stable income stream for streamers. Platforms like Twitch, YouTube, and AVIE offer subscription systems with different revenue sharing models. Create compelling subscriber benefits including exclusive emotes, subscriber-only chat, Discord access, and special content. Develop multiple subscription tiers with escalating benefits to maximize revenue per subscriber. Promote subscriptions subtly through content value rather than aggressive sales tactics."
-            maxWidth="6xl"
-          />
-
-          <RichText
-            heading="Sponsorship and Brand Partnership Mastery"
-            headingLevel={2}
-            content="Sponsorships offer the highest earning potential for established streamers. Build relationships with brands in your niche through professional outreach and authentic product integration. Create media kits showcasing your audience demographics, engagement rates, and previous successful partnerships. Negotiate fair compensation based on your audience size, engagement quality, and brand alignment. Maintain authenticity by only partnering with brands you genuinely support."
-            maxWidth="6xl"
-          />
-
-          <CTAButtons
-            title="Maximize Your Revenue Streams"
-            description="Learn advanced monetization strategies that top streamers use to build sustainable income"
-            buttons={revenueStreamButtons}
+    <>
+      <Helmet>
+        <title>Streaming Monetization Guide 2025 - Turn Your Stream into Profit</title>
+        <meta name="description" content="Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies. Learn how to build sustainable income from streaming." />
+        <meta name="keywords" content="streaming monetization, streaming revenue, stream income, streaming donations, streaming sponsorships, streaming subscriptions, make money streaming" />
+        <link rel="canonical" href="https://successfulstreamer.com/streaming-monetization-guide" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Streaming Monetization Guide 2025 - Turn Your Stream into Profit" />
+        <meta property="og:description" content="Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://successfulstreamer.com/streaming-monetization-guide" />
+        <meta property="og:image" content="https://successfulstreamer.com/images/monetization-guide-cover.jpg" />
+        <meta property="og:site_name" content="Successful Streamer" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Streaming Monetization Guide 2025 - Turn Your Stream into Profit" />
+        <meta name="twitter:description" content="Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies." />
+        <meta name="twitter:image" content="https://successfulstreamer.com/images/monetization-guide-cover.jpg" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Streaming Monetization Guide 2025 - Turn Your Stream into Profit",
+            "description": "Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies.",
+            "author": {
+              "@type": "Organization",
+              "name": "Successful Streamer"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Successful Streamer"
+            },
+            "datePublished": "2025-01-01",
+            "dateModified": "2025-01-01",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://successfulstreamer.com/streaming-monetization-guide"
+            }
+          })}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <Title 
+            title="The Monetization Master Guide for Streamers: Turn Your Passion into Profit in 2025"
+            description="Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies. Learn how to build sustainable income from your streaming content."
+            level={1}
+            size="large"
             align="center"
+            showDivider={true}
             maxWidth="6xl"
           />
 
-          <RichText
-            heading="Platform-Specific Monetization Features"
-            headingLevel={2}
-            content="Each platform offers unique monetization tools and revenue sharing models. Twitch provides bits, subscriptions, and ad revenue with 50/50 revenue sharing. YouTube offers super chats, channel memberships, and ad revenue with 70/30 sharing. AVIE provides competitive revenue sharing and innovative monetization features. Understanding platform-specific features helps optimize earnings across multiple channels."
-            maxWidth="6xl"
-          />
+          <div className="mt-12 space-y-12">
+            <RichText
+              heading="The Business of Streaming: Beyond Just Playing Games"
+              headingLevel={2}
+              content="Streaming monetization has evolved from simple donations to complex business models involving multiple revenue streams. Successful streamers treat their channels as businesses, diversifying income sources and building sustainable financial foundations. This guide covers every monetization method available to streamers, from beginner-friendly options to advanced business strategies used by top earners."
+              maxWidth="6xl"
+            />
 
-          <CTAButtons
-            title="Discover AVIE's Monetization Advantages"
-            description="Learn how AVIE's unique features can boost your streaming income"
-            buttons={avieMonetizationButtons}
-            align="center"
-            maxWidth="6xl"
-          />
+            <HowToComponent
+              title="5-Step Monetization Launch Strategy"
+              description="Build a comprehensive monetization system that maximizes your earning potential"
+              steps={monetizationSteps}
+              totalTime="PT240M"
+              difficulty="Intermediate"
+              maxWidth="6xl"
+            />
 
-          <FAQComponent
-            title="Streaming Monetization FAQ"
-            faqs={monetizationFaqs}
-            maxWidth="6xl"
-          />
+            <RichText
+              heading="Subscription-Based Revenue: Building Recurring Income"
+              headingLevel={2}
+              content="Subscriptions provide the most stable income stream for streamers. Platforms like Twitch, YouTube, and AVIE offer subscription systems with different revenue sharing models. Create compelling subscriber benefits including exclusive emotes, subscriber-only chat, Discord access, and special content. Develop multiple subscription tiers with escalating benefits to maximize revenue per subscriber. Promote subscriptions subtly through content value rather than aggressive sales tactics."
+              maxWidth="6xl"
+            />
+
+            <RichText
+              heading="Sponsorship and Brand Partnership Mastery"
+              headingLevel={2}
+              content="Sponsorships offer the highest earning potential for established streamers. Build relationships with brands in your niche through professional outreach and authentic product integration. Create media kits showcasing your audience demographics, engagement rates, and previous successful partnerships. Negotiate fair compensation based on your audience size, engagement quality, and brand alignment. Maintain authenticity by only partnering with brands you genuinely support."
+              maxWidth="6xl"
+            />
+
+            <CTAButtons
+              title="Maximize Your Revenue Streams"
+              description="Learn advanced monetization strategies that top streamers use to build sustainable income"
+              buttons={revenueStreamButtons}
+              align="center"
+              maxWidth="6xl"
+            />
+
+            <RichText
+              heading="Platform-Specific Monetization Features"
+              headingLevel={2}
+              content="Each platform offers unique monetization tools and revenue sharing models. Twitch provides bits, subscriptions, and ad revenue with 50/50 revenue sharing. YouTube offers super chats, channel memberships, and ad revenue with 70/30 sharing. AVIE provides competitive revenue sharing and innovative monetization features. Understanding platform-specific features helps optimize earnings across multiple channels."
+              maxWidth="6xl"
+            />
+
+            <CTAButtons
+              title="Discover AVIE's Monetization Advantages"
+              description="Learn how AVIE's unique features can boost your streaming income"
+              buttons={avieMonetizationButtons}
+              align="center"
+              maxWidth="6xl"
+            />
+
+            <FAQComponent
+              title="Streaming Monetization FAQ"
+              faqs={monetizationFaqs}
+              maxWidth="6xl"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

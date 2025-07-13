@@ -211,33 +211,33 @@ const GuidesIndex: React.FC = () => {
                         to={pillarPagePaths[slug] || `/guides/${slug}`}
                         className="block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6"
                       >
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                            {title}
-                          </h3>
-                          <p className="text-gray-600">
-                            {description}
-                          </p>
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                              {title}
+                            </h3>
+                            <p className="text-gray-600">
+                              {description}
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-end space-y-2 ml-4">
+                            {readTime && (
+                              <span className="text-sm text-gray-500">
+                                {readTime}
+                              </span>
+                            )}
+                            {difficulty && (
+                              <span className={`text-sm px-3 py-1 rounded-full ${
+                                difficulty === 'Beginner' ? 'bg-green-100 text-green-800' :
+                                difficulty === 'Intermediate' ? 'bg-blue-100 text-blue-800' :
+                                'bg-purple-100 text-purple-800'
+                              }`}>
+                                {difficulty}
+                              </span>
+                            )}
+                          </div>
                         </div>
-                        <div className="flex flex-col items-end space-y-2 ml-4">
-                          {readTime && (
-                            <span className="text-sm text-gray-500">
-                              {readTime}
-                            </span>
-                          )}
-                          {difficulty && (
-                            <span className={`text-sm px-3 py-1 rounded-full ${
-                              difficulty === 'Beginner' ? 'bg-green-100 text-green-800' :
-                              difficulty === 'Intermediate' ? 'bg-blue-100 text-blue-800' :
-                              'bg-purple-100 text-purple-800'
-                            }`}>
-                              {difficulty}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </Link>
+                      </Link>
                     );
                   })}
                 </div>

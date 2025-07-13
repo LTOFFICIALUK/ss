@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Title from '../components/sub-components/title';
 import RichText from '../components/sub-components/rich-text';
 import CTAButtons from '../components/sub-components/cta-buttons';
@@ -87,80 +88,127 @@ const CommunityBuildingGuide: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <Title 
-          title="Complete Community Building Guide for Streamers: Build an Engaged, Loyal Audience in 2025"
-          description="Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase."
-          level={1}
-          size="large"
-          align="center"
-          showDivider={true}
-          maxWidth="6xl"
-        />
-
-        <div className="mt-12 space-y-12">
-          <RichText
-            heading="Why Community Building is Essential for Streaming Success"
-            headingLevel={2}
-            content="Community is the foundation of sustainable streaming success. While content attracts viewers, community keeps them engaged and loyal. A strong community provides consistent viewership, word-of-mouth promotion, and emotional support during challenging times. This guide teaches you how to build, nurture, and scale a thriving community that supports your streaming career long-term."
-            maxWidth="6xl"
-          />
-
-          <HowToComponent
-            title="5-Step Community Building Framework"
-            description="Build a thriving community that supports your streaming success"
-            steps={communityBuildingSteps}
-            totalTime="PT300M"
-            difficulty="Intermediate"
-            maxWidth="6xl"
-          />
-
-          <RichText
-            heading="Creating Your Community Identity and Culture"
-            headingLevel={2}
-            content="Every successful community has a distinct identity that attracts like-minded individuals. Define your community values, tone, and personality. Create shared language, inside jokes, and traditions that make members feel special. Establish clear behavioral expectations and consistently model the behavior you want to see. Your community culture should align with your streaming persona while encouraging positive interactions and mutual respect."
-            maxWidth="6xl"
-          />
-
-          <RichText
-            heading="Discord Server Setup and Management"
-            headingLevel={2}
-            content="Discord servers provide essential community spaces outside of streaming hours. Create organized channels for different topics, implement role systems for community hierarchy, and use bots for moderation and engagement. Start with basic channels like general chat, announcements, and feedback, then expand based on community needs. Regular events and activities keep Discord servers active and engaging."
-            maxWidth="6xl"
-          />
-
-          <CTAButtons
-            title="Build Your Community Hub"
-            description="Create and manage Discord servers that become the heart of your community"
-            buttons={discordButtons}
+    <>
+      <Helmet>
+        <title>Community Building Guide for Streamers 2025 - Build an Engaged, Loyal Audience</title>
+        <meta name="description" content="Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase." />
+        <meta name="keywords" content="community building, streaming community, Discord server, audience engagement, viewer retention, streaming fanbase, community management" />
+        <link rel="canonical" href="https://successfulstreamer.com/streamer-community-building-guide" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Community Building Guide for Streamers 2025 - Build an Engaged, Loyal Audience" />
+        <meta property="og:description" content="Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://successfulstreamer.com/streamer-community-building-guide" />
+        <meta property="og:image" content="https://successfulstreamer.com/images/community-building-guide-cover.jpg" />
+        <meta property="og:site_name" content="Successful Streamer" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Community Building Guide for Streamers 2025 - Build an Engaged, Loyal Audience" />
+        <meta name="twitter:description" content="Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase." />
+        <meta name="twitter:image" content="https://successfulstreamer.com/images/community-building-guide-cover.jpg" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Community Building Guide for Streamers 2025 - Build an Engaged, Loyal Audience",
+            "description": "Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase.",
+            "author": {
+              "@type": "Organization",
+              "name": "Successful Streamer"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Successful Streamer"
+            },
+            "datePublished": "2025-01-01",
+            "dateModified": "2025-01-01",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://successfulstreamer.com/streamer-community-building-guide"
+            }
+          })}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <Title 
+            title="Complete Community Building Guide for Streamers: Build an Engaged, Loyal Audience in 2025"
+            description="Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase."
+            level={1}
+            size="large"
             align="center"
+            showDivider={true}
             maxWidth="6xl"
           />
 
-          <RichText
-            heading="Engagement Strategies That Build Loyalty"
-            headingLevel={2}
-            content="Consistent engagement transforms casual viewers into dedicated community members. Remember and acknowledge regular viewers by name, respond to chat messages personally, and create content that encourages participation. Use polls, Q&A sessions, and interactive games to involve your audience. Share personal stories and experiences to build emotional connections. Celebrate community milestones and individual member achievements."
-            maxWidth="6xl"
-          />
+          <div className="mt-12 space-y-12">
+            <RichText
+              heading="Why Community Building is Essential for Streaming Success"
+              headingLevel={2}
+              content="Community is the foundation of sustainable streaming success. While content attracts viewers, community keeps them engaged and loyal. A strong community provides consistent viewership, word-of-mouth promotion, and emotional support during challenging times. This guide teaches you how to build, nurture, and scale a thriving community that supports your streaming career long-term."
+              maxWidth="6xl"
+            />
 
-          <CTAButtons
-            title="Maximize Community Engagement"
-            description="Learn advanced strategies to keep your community active and growing"
-            buttons={engagementButtons}
-            align="center"
-            maxWidth="6xl"
-          />
+            <HowToComponent
+              title="5-Step Community Building Framework"
+              description="Build a thriving community that supports your streaming success"
+              steps={communityBuildingSteps}
+              totalTime="PT300M"
+              difficulty="Intermediate"
+              maxWidth="6xl"
+            />
 
-          <FAQComponent
-            title="Community Building FAQ"
-            faqs={communityFaqs}
-            maxWidth="6xl"
-          />
+            <RichText
+              heading="Creating Your Community Identity and Culture"
+              headingLevel={2}
+              content="Every successful community has a distinct identity that attracts like-minded individuals. Define your community values, tone, and personality. Create shared language, inside jokes, and traditions that make members feel special. Establish clear behavioral expectations and consistently model the behavior you want to see. Your community culture should align with your streaming persona while encouraging positive interactions and mutual respect."
+              maxWidth="6xl"
+            />
+
+            <RichText
+              heading="Discord Server Setup and Management"
+              headingLevel={2}
+              content="Discord servers provide essential community spaces outside of streaming hours. Create organized channels for different topics, implement role systems for community hierarchy, and use bots for moderation and engagement. Start with basic channels like general chat, announcements, and feedback, then expand based on community needs. Regular events and activities keep Discord servers active and engaging."
+              maxWidth="6xl"
+            />
+
+            <CTAButtons
+              title="Build Your Community Hub"
+              description="Create and manage Discord servers that become the heart of your community"
+              buttons={discordButtons}
+              align="center"
+              maxWidth="6xl"
+            />
+
+            <RichText
+              heading="Engagement Strategies That Build Loyalty"
+              headingLevel={2}
+              content="Consistent engagement transforms casual viewers into dedicated community members. Remember and acknowledge regular viewers by name, respond to chat messages personally, and create content that encourages participation. Use polls, Q&A sessions, and interactive games to involve your audience. Share personal stories and experiences to build emotional connections. Celebrate community milestones and individual member achievements."
+              maxWidth="6xl"
+            />
+
+            <CTAButtons
+              title="Maximize Community Engagement"
+              description="Learn advanced strategies to keep your community active and growing"
+              buttons={engagementButtons}
+              align="center"
+              maxWidth="6xl"
+            />
+
+            <FAQComponent
+              title="Community Building FAQ"
+              faqs={communityFaqs}
+              maxWidth="6xl"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

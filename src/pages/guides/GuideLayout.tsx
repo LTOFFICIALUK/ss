@@ -9,13 +9,13 @@ interface GuideLayoutProps {
   title: string;
   description: string;
   publishDate?: string;
-  lastModified?: string; // New prop for dateModified
+  lastModified?: string;
   author?: string;
   category: GuideCategory;
-  featuredImage?: string; // New prop for article image
-  keywords?: string[]; // New prop for keywords
-  wordCount?: number; // New prop for word count
-  readingTime?: string; // New prop for reading time estimate
+  featuredImage?: string;
+  keywords?: string[];
+  wordCount?: number;
+  readingTime?: string;
 }
 
 interface TableOfContentsItem {
@@ -55,7 +55,6 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
   // Get related guides from the same category that have actual pages
   const relatedGuides = Object.entries(ALL_GUIDES)
     .filter(([slug, guide]) => {
-      // Only show guides that have actual pages
       return guide.category === category && 
              slug !== currentSlug && 
              [
@@ -84,7 +83,39 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
               'discord-server-setup'
             ].includes(slug);
     })
-    .slice(0, 3); // Limit to 3 related guides
+    .slice(0, 3);
+
+  // Generate breadcrumb structured data
+  const breadcrumbStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://successfulstreamer.com'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Guides',
+        item: 'https://successfulstreamer.com/guides'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: getCategoryName(category),
+        item: `https://successfulstreamer.com/category/${category}`
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: title,
+        item: fullUrl
+      }
+    ]
+  };
 
   // Generate Article structured data
   const articleStructuredData = {
@@ -96,7 +127,12 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
     },
     headline: title,
     description: description,
-    image: featuredImage || defaultFeaturedImage,
+    image: {
+      '@type': 'ImageObject',
+      url: featuredImage || defaultFeaturedImage,
+      width: 1200,
+      height: 630
+    },
     author: {
       '@type': 'Organization',
       name: author,
@@ -107,7 +143,9 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
       name: 'Successful Streamer',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://successfulstreamer.com/images/logo.png'
+        url: 'https://successfulstreamer.com/images/logo.png',
+        width: 279,
+        height: 40
       },
       url: 'https://successfulstreamer.com'
     },
@@ -117,7 +155,6 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
     ...(wordCount && { wordCount }),
     ...(estimatedReadingTime && { 
       timeRequired: `PT${estimatedReadingTime}M`,
-      // Add reading time in a more readable format
       additionalProperty: {
         '@type': 'PropertyValue',
         name: 'readingTime',
@@ -131,9 +168,52 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
     },
     articleSection: getCategoryName(category),
     inLanguage: 'en-US',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'Successful Streamer',
+      url: 'https://successfulstreamer.com'
+    },
     ...(relatedGuides.length > 0 && {
       relatedLink: relatedGuides.map(([slug]) => `https://successfulstreamer.com/guides/${slug}`)
     })
+  };
+
+  // Generate WebSite structured data
+  const websiteStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Successful Streamer',
+    url: 'https://successfulstreamer.com',
+    description: 'Your comprehensive guide to streaming success',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://successfulstreamer.com/guides?search={search_term_string}'
+      },
+      'query-input': 'required name=search_term_string'
+    }
+  };
+
+  // Generate organization structured data
+  const organizationStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Successful Streamer',
+    url: 'https://successfulstreamer.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://successfulstreamer.com/images/logo.png'
+    },
+    sameAs: [
+      'https://twitter.com/successfulstreamer',
+      'https://youtube.com/successfulstreamer'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      url: 'https://successfulstreamer.com/contact'
+    }
   };
 
   useEffect(() => {
@@ -154,7 +234,7 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
       toc.push({
         id: heading.id,
         text: heading.textContent || '',
-        level: 2 // All headings are h2
+        level: 2
       });
     });
 
@@ -198,32 +278,91 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
   return (
     <>
       <Helmet>
+        {/* Primary Meta Tags */}
         <title>{`${title} | Successful Streamer Guides`}</title>
+        <meta name="title" content={`${title} | Successful Streamer Guides`} />
         <meta name="description" content={description} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <link rel="canonical" href={fullUrl} />
+        
+        {/* Keywords and Language */}
+        {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+        <meta name="language" content="English" />
+        <meta httpEquiv="Content-Language" content="en" />
+        
+        {/* Authorship and Publication */}
+        <meta name="author" content={author} />
+        <meta name="publisher" content="Successful Streamer" />
+        <meta name="copyright" content="Successful Streamer" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={fullUrl} />
-        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Successful Streamer" />
         <meta property="og:image" content={featuredImage || defaultFeaturedImage} />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        
+        {/* Article specific Open Graph */}
         <meta property="article:published_time" content={publishDate || new Date().toISOString()} />
         <meta property="article:modified_time" content={lastModified || publishDate || new Date().toISOString()} />
         <meta property="article:author" content={author} />
         <meta property="article:section" content={getCategoryName(category)} />
-        {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+        <meta property="article:publisher" content="https://successfulstreamer.com" />
         {keywords.map((keyword, index) => (
           <meta key={index} property="article:tag" content={keyword} />
         ))}
+        
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@successfulstreamer" />
+        <meta name="twitter:creator" content="@successfulstreamer" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={featuredImage || defaultFeaturedImage} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href={fullUrl} />
+        <meta name="twitter:image:alt" content={title} />
         
-        {/* Article Structured Data */}
+        {/* Additional SEO Meta Tags */}
+        <meta name="theme-color" content="#3B82F6" />
+        <meta name="msapplication-TileColor" content="#3B82F6" />
+        <meta name="application-name" content="Successful Streamer" />
+        <meta name="apple-mobile-web-app-title" content="Successful Streamer" />
+        <meta name="format-detection" content="telephone=no" />
+        
+        {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(articleStructuredData)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbStructuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(websiteStructuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationStructuredData)}
+        </script>
+        
+        {/* Performance and Technical SEO */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        
+        {/* Preconnect to external domains for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Favicon and Icons */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <meta name="msapplication-TileImage" content="/favicon.png" />
         
         <style>
           {`

@@ -15,12 +15,6 @@ const StreamingEquipmentGuide: React.FC = () => {
       publishDate={today}
       category="stream-setup"
     >
-      <Title
-        title="Your Guide To Finding The Best Streaming Equipment"
-        description="Looking for the best streaming equipment to level up your content in 2025? This complete streaming equipment guide breaks down everything you need — from cameras to microphones, capture cards, lighting, and more — to stream like a pro on Twitch, YouTube, Kick, and other platforms."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="What Equipment Do You Need to Start Streaming?"

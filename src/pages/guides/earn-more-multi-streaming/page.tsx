@@ -14,13 +14,7 @@ const EarnMoreMultiStreaming: React.FC = () => {
       publishDate={today}
       category="growth-marketing"
     >
-      <Title
-        title="Earn More With MultiStreaming: The Complete Guide"
-        description="Discover how to leverage multistreaming to grow your audience and increase your earnings across multiple platforms simultaneously."
-        align="left"
-        className="mb-12"
-      />
-
+      
       <RichText
         heading="Setting Up Your MultiStream Environment"
         content={

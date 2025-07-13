@@ -14,12 +14,6 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-      title="How to Make Money Live Streaming: 11 Tried & Tested Strategies"
-      description="Whether you're a gamer, musician, educator, or just passionate about your content, live streaming is one of the most accessible ways to build a community and earn real income. With so many monetization tools available, the challenge isn't how to make money—it's knowing which strategies actually work."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="1. Live Shopping & Product Showcases"

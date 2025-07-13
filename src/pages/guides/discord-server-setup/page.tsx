@@ -14,12 +14,6 @@ const DiscordServerSetup: React.FC = () => {
       publishDate={today}
       category="community-building"
     >
-      <Title
-        title="Setting Up a Discord Community for Your Stream"
-        description="Learn how to create and manage a Discord server for your streaming community. Complete guide with setup instructions, moderation tips, and community building strategies."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Why Discord is Essential for Streamers"

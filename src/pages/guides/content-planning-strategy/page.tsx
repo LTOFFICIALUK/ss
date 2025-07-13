@@ -14,12 +14,6 @@ const ContentPlanningStrategy: React.FC = () => {
       publishDate={today}
       category="content-strategy"
     >
-      <Title
-        title="Content Planning for Streamers: The Complete Strategy Guide"
-        description="Master content planning for streaming success. Learn proven strategies, tools, and frameworks to create engaging content that grows your audience and keeps viewers coming back."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Why Content Planning is Essential for Streaming Success"

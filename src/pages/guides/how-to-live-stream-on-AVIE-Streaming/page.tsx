@@ -14,12 +14,6 @@ const AVIELiveStreamingGuide: React.FC = () => {
       publishDate={today}
       category="stream-setup"
     >
-      <Title
-        title="How To Live Stream On AVIE Streaming"
-        description="Ready to start your streaming journey? This step-by-step guide will walk you through everything you need to know to begin streaming on AVIE, from basic setup to going live."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="What You'll Need to Live Stream On AVIE"

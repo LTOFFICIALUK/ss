@@ -6,6 +6,8 @@ interface CTAButton {
   href: string;
   variant?: 'primary' | 'secondary' | 'outline';
   isExternal?: boolean;
+  ariaLabel?: string; // For better accessibility
+  trackingId?: string; // For analytics
 }
 
 interface CTAButtonsProps {
@@ -14,6 +16,11 @@ interface CTAButtonsProps {
   buttons: CTAButton[];
   className?: string;
   align?: 'left' | 'center' | 'right';
+  titleLevel?: 1 | 2 | 3 | 4 | 5 | 6; // Heading level for better SEO hierarchy
+  maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '4xl' | '6xl';
+  showDivider?: boolean;
+  contentType?: 'section' | 'aside' | 'div'; // Semantic HTML element type
+  addStructuredData?: boolean; // Add promotional structured data
 }
 
 const CTAButtons: React.FC<CTAButtonsProps> = ({
@@ -21,12 +28,27 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
   description,
   buttons,
   className = '',
-  align = 'center'
+  align = 'center',
+  titleLevel = 2,
+  maxWidth = '4xl',
+  showDivider = false,
+  contentType = 'section',
+  addStructuredData = false
 }) => {
   const alignmentClasses = {
     left: 'text-left',
     center: 'text-center items-center',
     right: 'text-right items-end'
+  };
+
+  const maxWidthClasses = {
+    sm: 'max-w-sm',
+    md: 'max-w-md',
+    lg: 'max-w-lg',
+    xl: 'max-w-xl',
+    '2xl': 'max-w-2xl',
+    '4xl': 'max-w-4xl',
+    '6xl': 'max-w-6xl'
   };
 
   const buttonVariants = {
@@ -35,12 +57,38 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
     outline: 'bg-transparent text-blue-600 border-2 border-blue-600 hover:bg-blue-50 focus:ring-blue-500'
   };
 
+  // Dynamic heading component based on level
+  const HeadingComponent = title ? `h${titleLevel}` as keyof JSX.IntrinsicElements : null;
+
+  // Dynamic container component based on content type
+  const ContainerComponent = contentType as keyof JSX.IntrinsicElements;
+
+  // Structured data for promotional content
+  const structuredData = addStructuredData && title ? {
+    '@context': 'https://schema.org',
+    '@type': 'PromotionalOffer',
+    name: title,
+    description: description || title,
+    url: buttons[0]?.href || '',
+    seller: {
+      '@type': 'Organization',
+      name: 'SuccessfulStreamer.com'
+    }
+  } : null;
+
+  // Schema.org props for structured data
+  const schemaProps = addStructuredData ? {
+    itemScope: true,
+    itemType: 'https://schema.org/PromotionalOffer'
+  } : {};
+
   const ButtonComponent = ({ button }: { button: CTAButton }) => {
     const baseClasses = `
       inline-flex items-center px-6 py-3 rounded-lg
       font-semibold text-base sm:text-lg
       transition-all duration-200
       focus:outline-none focus:ring-2 focus:ring-offset-2
+      disabled:opacity-50 disabled:cursor-not-allowed
     `;
 
     const content = (
@@ -52,6 +100,7 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path
               strokeLinecap="round"
@@ -64,19 +113,26 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
       </>
     );
 
+    const commonProps = {
+      className: `${baseClasses} ${buttonVariants[button.variant || 'primary']}`,
+      'aria-label': button.ariaLabel || button.label,
+      'data-tracking-id': button.trackingId,
+      itemProp: addStructuredData ? 'url' : undefined
+    };
+
     return button.isExternal ? (
       <a
         href={button.href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${baseClasses} ${buttonVariants[button.variant || 'primary']}`}
+        {...commonProps}
       >
         {content}
       </a>
     ) : (
       <Link
         to={button.href}
-        className={`${baseClasses} ${buttonVariants[button.variant || 'primary']}`}
+        {...commonProps}
       >
         {content}
       </Link>
@@ -84,25 +140,49 @@ const CTAButtons: React.FC<CTAButtonsProps> = ({
   };
 
   return (
-    <div className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`} data-cta-buttons>
-      <div className={`flex flex-col ${alignmentClasses[align]}`}>
-        {title && (
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-            {title}
-          </h2>
+    <ContainerComponent 
+      className={`${maxWidthClasses[maxWidth]} mx-auto ${className}`} 
+      data-cta-buttons
+      {...schemaProps}
+    >
+      <div className={`flex flex-col ${alignmentClasses[align]} ${showDivider ? 'border-t border-gray-200 pt-8' : ''}`}>
+        {title && HeadingComponent && (
+          <header className="mb-4">
+            <HeadingComponent 
+              className="text-2xl sm:text-3xl font-bold text-gray-900"
+              itemProp={addStructuredData ? 'name' : undefined}
+            >
+              {title}
+            </HeadingComponent>
+          </header>
         )}
+        
         {description && (
-          <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl">
+          <p 
+            className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed"
+            itemProp={addStructuredData ? 'description' : undefined}
+          >
             {description}
           </p>
         )}
+        
         <div className={`flex flex-wrap gap-4 ${align === 'center' ? 'justify-center' : `justify-${align}`}`}>
           {buttons.map((button, index) => (
             <ButtonComponent key={index} button={button} />
           ))}
         </div>
       </div>
-    </div>
+
+      {/* Add structured data script if enabled */}
+      {addStructuredData && structuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData)
+          }}
+        />
+      )}
+    </ContainerComponent>
   );
 };
 

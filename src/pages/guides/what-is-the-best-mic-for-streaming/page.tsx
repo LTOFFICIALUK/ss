@@ -14,12 +14,6 @@ const BestMicForStreaming: React.FC = () => {
       publishDate={today}
       category="stream-setup"
     >
-      <Title
-        title="What is the Best Mic for Streaming?"
-        description="Looking to upgrade your microphone for live streaming? Discover the best mic options, including the top XLR microphones for pro-quality sound that takes your content to the next level."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Why Choosing the Best Mic for Streaming Matters"

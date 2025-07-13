@@ -14,12 +14,6 @@ const ContentCalendarCreation: React.FC = () => {
       publishDate={today}
       category="content-strategy"
     >
-      <Title
-        title="Creating an Effective Content Calendar for Streamers"
-        description="Build a content calendar that keeps you organized and consistent. Learn templates, tools, and strategies to plan your streaming content weeks and months in advance."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Why Every Streamer Needs a Content Calendar"

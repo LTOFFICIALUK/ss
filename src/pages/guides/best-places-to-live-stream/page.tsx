@@ -14,13 +14,7 @@ const BestPlacesToLiveStream: React.FC = () => {
       publishDate={today}
       category="content-strategy"
     >
-      <Title
-        title="Best Places To Live Stream"
-        description="Learn about the best places to live stream with our comprehensive guide. We'll discuss the pros and cons of each platform and help you decide which one is right for you."
-        align="left"
-        className="mb-12"
-      />
-
+      
       <RichText
         heading="What Platforms Do We Recommend?"
         content={

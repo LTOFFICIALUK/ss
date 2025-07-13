@@ -14,12 +14,6 @@ const GrowthHackingTwitch: React.FC = () => {
       publishDate={today}
       category="growth-marketing"
     >
-      <Title
-        title="Growth Hacking Your Twitch Channel: Proven Strategies to Increase Viewership"
-        description="Discover proven growth hacking strategies to grow your Twitch channel fast. Learn advanced techniques for increasing viewership, building community, and standing out in a crowded platform."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="What is Growth Hacking for Twitch Streamers?"

@@ -14,12 +14,6 @@ const TwitchMonetization: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-        title="How to Monetize Your Twitch Stream: Complete Revenue Guide"
-        description="Learn all the ways to monetize your Twitch stream and turn your passion into income. Discover subscriptions, donations, sponsorships, and advanced revenue strategies."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Understanding Twitch Monetization Fundamentals"

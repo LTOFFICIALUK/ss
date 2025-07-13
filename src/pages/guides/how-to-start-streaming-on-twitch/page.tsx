@@ -14,12 +14,6 @@ const TwitchStreamingGuide: React.FC = () => {
       publishDate={today}
       category="stream-setup"
     >
-      <Title
-        title="How to Start Streaming on Twitch: Complete Beginner's Guide"
-        description="Ready to start your streaming journey? This step-by-step guide will walk you through everything you need to know to begin streaming on Twitch, from basic setup to going live."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="What You'll Need to Start Streaming"

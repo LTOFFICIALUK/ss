@@ -14,12 +14,6 @@ const OBSSetupGuide: React.FC = () => {
       publishDate={today}
       category="stream-setup"
     >
-      <Title
-        title="OBS Setup Guide"
-        description="Learn how to setup OBS Studio for streaming with our comprehensive guide."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="What is OBS Studio?"

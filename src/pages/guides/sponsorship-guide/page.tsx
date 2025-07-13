@@ -14,13 +14,7 @@ const SponsorshipGuide: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-        title="Complete Guide to Stream Sponsorships: Get Paid to Stream"
-        description="Everything you need to know about getting and maintaining sponsorships as a streamer. Learn how to find sponsors, negotiate deals, and build lasting partnerships."
-        align="left"
-        className="mb-12"
-      />
-
+      
       <RichText
         heading="Understanding Sponsorships in the Streaming World"
         content={

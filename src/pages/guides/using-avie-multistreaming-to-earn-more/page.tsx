@@ -14,12 +14,6 @@ const MultiStreamRevenue: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-        title="Maximize Your Income with AVIE's Free Multistreaming"
-        description="Learn how to leverage AVIE's free multistreaming feature to earn revenue from multiple platforms simultaneously while growing your audience across different platforms."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="1. What is AVIE Multistreaming?"

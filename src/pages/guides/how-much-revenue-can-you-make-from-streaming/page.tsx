@@ -14,12 +14,6 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-        title="How Much Revenue Can You Make From Streaming? Complete Income Guide"
-        description="Discover realistic income expectations for streamers. Learn about revenue streams, earning potential, and strategies to maximize your streaming income across platforms."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Income Tiers: What Streamers Actually Earn"

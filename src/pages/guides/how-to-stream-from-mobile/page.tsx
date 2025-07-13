@@ -14,12 +14,6 @@ const MobileStreamingGuide: React.FC = () => {
       publishDate={today}
       category="stream-setup"
     >
-      <Title
-        title="How To Stream From Your Phone or Mobile Device"
-        description="Learn how to easily stream from your phone or mobile device with our comprehensive guide. Perfect for IRL streaming and content creation on the go."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="What You'll Need to Start Streaming From Your Phone"

@@ -14,13 +14,6 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-        title="Monetize Your Live Stream Content"
-        description="Learn proven strategies to monetize your live streaming content across multiple platforms. From multi-streaming to brand deals, discover how to build a sustainable streaming income."
-        align="left"
-        className="mb-12"
-      />
-
       <RichText
         heading="Multi-Platform Streaming: Maximize Your Reach and Revenue"
         content={

@@ -14,12 +14,6 @@ const MonetizeYourClips: React.FC = () => {
       publishDate={today}
       category="monetization"
     >
-      <Title
-        title="Monetize Your Clips"
-        description="Learn how to maximize your clip revenue across all major platforms. Master the art of clip creation, distribution, and monetization."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="AVIE's AP Rewards System for Clips"

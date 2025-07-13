@@ -1,92 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
+import FAQComponent from './faq-component';
+import { FAQItem } from './faq-component.types';
 
 const FAQ: React.FC = () => {
-  const faqs = [
+  const faqs: FAQItem[] = [
     {
       question: 'What is the best streaming equipment for beginners?',
-      answer: 'Start with a Logitech C920 webcam, Blue Yeti mic, and OBS Studio. Add a ring light and you’re good to go.',
-      schema: {
-        '@type': 'Question',
-        name: 'What is the best streaming equipment for beginners?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The best beginner streaming setup includes a Logitech C920 webcam, Blue Yeti microphone, and OBS Studio. This combo delivers great video and audio without advanced setup.'
-        }
-      }
+      answer: 'For beginners, start with a Logitech C920 webcam ($70), Blue Yeti microphone ($100), and OBS Studio (free). Add a ring light for better lighting ($30-50). This setup provides excellent video and audio quality without complex configuration and costs under $250 total.'
     },
     {
       question: 'What do I need to stream on Twitch or YouTube?',
-      answer: 'You need a camera, mic, lighting, a stable PC, and streaming software like OBS or AVIE’s MultiStream plugin.',
-      schema: {
-        '@type': 'Question',
-        name: 'What do I need to stream on Twitch or YouTube?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'You need a camera, mic, lighting, a stable PC, and streaming software like OBS or AVIE’s MultiStream plugin.'
-        }
-      }
+      answer: 'You need: 1) A camera (webcam or DSLR), 2) A microphone for clear audio, 3) Proper lighting (ring light or softbox), 4) A stable PC with good CPU/GPU, 5) Streaming software like OBS Studio or AVIE\'s MultiStream plugin, and 6) A reliable internet connection (minimum 5 Mbps upload speed).'
     },
     {
       question: 'Is a capture card necessary for PC streaming?',
-      answer: 'No, only if you are streaming console gameplay or using a DSLR as your webcam.',
-      schema: {
-        '@type': 'Question',
-        name: 'Is a capture card necessary for PC streaming?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'A capture card is only needed if you are streaming console gameplay or using a DSLR/mirrorless camera. For PC-only streaming, it’s not required.'
-        }
-      }
+      answer: 'No, a capture card is not necessary for PC-only streaming. You only need a capture card if you\'re streaming console gameplay (PS5, Xbox, Nintendo Switch) or using a DSLR/mirrorless camera as your webcam. For streaming PC games directly, your graphics card handles the encoding.'
     },
     {
       question: 'Do I need a powerful PC to stream?',
-      answer: 'Yes, for high-quality 1080p60 streaming, you’ll need a strong CPU and GPU. A dual-PC setup is ideal for advanced streamers.',
-      schema: {
-        '@type': 'Question',
-        name: 'Do I need a powerful PC to stream?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, for high-quality 1080p60 streaming, you’ll need a strong CPU and GPU. A dual-PC setup is ideal for advanced streamers.'
-        }
-      }
+      answer: 'Yes, for high-quality 1080p60 streaming, you need a strong CPU (Intel i5-8400 or AMD Ryzen 5 2600 minimum) and GPU (GTX 1660 or better). For 4K streaming or dual-PC setups, consider higher-end hardware. A dual-PC setup is ideal for professional streamers who want maximum performance.'
+    },
+    {
+      question: 'How much does it cost to start streaming?',
+      answer: 'Basic setup: $200-400 (webcam, USB mic, free software). Intermediate setup: $500-1000 (DSLR camera, audio interface, lighting). Professional setup: $1500+ (dual PC, professional audio/video equipment). Many successful streamers started with just a webcam and built up over time.'
+    },
+    {
+      question: 'What internet speed do I need for streaming?',
+      answer: 'For 1080p streaming: minimum 5 Mbps upload speed, recommended 10+ Mbps. For 4K streaming: minimum 20 Mbps upload. Use a wired ethernet connection for stability. Test your upload speed at speedtest.net and ensure it\'s consistent throughout the day.'
     }
   ];
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-4">Common Questions About Streaming Equipment (2025)</h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border rounded-lg overflow-hidden">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full text-left p-4 bg-gray-100 hover:bg-gray-200 transition-colors flex justify-between items-center"
-            >
-              <span>{faq.question}</span>
-              <span>{openIndex === index ? '-' : '+'}</span>
-            </button>
-            {openIndex === index && (
-              <div className="p-4 bg-white text-gray-600">
-                {faq.answer}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-      <script type="application/ld+json">
-        {JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: faqs.map(faq => faq.schema)
-        })}
-      </script>
-    </div>
+    <FAQComponent
+      title="Frequently Asked Questions About Streaming Equipment (2025)"
+      faqs={faqs}
+      titleSize="medium"
+      showLastUpdated={true}
+      maxWidth="4xl"
+    />
   );
 };
 

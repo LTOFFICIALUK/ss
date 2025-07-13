@@ -14,12 +14,6 @@ const BuildingCommunity: React.FC = () => {
       publishDate={today}
       category="community-building"
     >
-      <Title
-        title="Building a Strong Stream Community: From Viewers to Loyal Fans"
-        description="Learn how to create and nurture an engaged community around your stream. Discover strategies for building lasting relationships, increasing viewer retention, and creating a loyal fanbase."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="The Foundation of Stream Community Building"

@@ -14,12 +14,6 @@ const EarnMoreAsALiveStreamerWithAVIE: React.FC = () => {
       publishDate={today}
       category="growth-marketing"
     >
-      <Title
-        title="How To Earn More As A Live Streamer With AVIE"
-        description="Looking to maximize your earnings as a live streamer? Learn why AVIE is the best platform for income generation, featuring unique tools like the AP Reward System and MultiStream capabilities."
-        align="left"
-        className="mb-12"
-      />
 
       <RichText
         heading="Why AVIE Is the Best Platform for Streaming Income"

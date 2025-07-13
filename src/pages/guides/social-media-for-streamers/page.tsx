@@ -14,13 +14,7 @@ const SocialMediaForStreamers: React.FC = () => {
       publishDate={today}
       category="growth-marketing"
     >
-      <Title
-        title="Social Media Strategy for Streamers: Grow Your Audience Across Platforms"
-        description="Master social media marketing for streaming success. Learn how to leverage Twitter, TikTok, Instagram, and YouTube to grow your streaming audience and build a loyal community."
-        align="left"
-        className="mb-12"
-      />
-
+      
       <RichText
         heading="Why Social Media is Essential for Streaming Success"
         content={

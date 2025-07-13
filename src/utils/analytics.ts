@@ -6,8 +6,13 @@ declare global {
   }
 }
 
-// Initialize Google Analytics
-export const initGA = () => {
+let isGAInitialized = false;
+let pendingEvents: Array<() => void> = [];
+
+// Load Google Analytics script
+const loadGoogleAnalytics = () => {
+  if (isGAInitialized) return;
+  
   const script1 = document.createElement('script');
   script1.async = true;
   script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-6FW6C7L7MC';
@@ -22,14 +27,70 @@ export const initGA = () => {
   
   document.head.appendChild(script1);
   document.head.appendChild(script2);
+  
+  isGAInitialized = true;
+  
+  // Execute any pending events
+  pendingEvents.forEach(event => event());
+  pendingEvents = [];
+};
+
+// Initialize Google Analytics with deferred loading
+export const initGA = () => {
+  if (isGAInitialized) return;
+  
+  // Load GA immediately if user has already interacted
+  if (document.readyState === 'complete') {
+    loadGoogleAnalytics();
+    return;
+  }
+  
+  // Set up event listeners for user interaction
+  const handleUserInteraction = () => {
+    loadGoogleAnalytics();
+    // Remove event listeners after first interaction
+    document.removeEventListener('click', handleUserInteraction);
+    document.removeEventListener('scroll', handleUserInteraction);
+    document.removeEventListener('keydown', handleUserInteraction);
+    document.removeEventListener('mousemove', handleUserInteraction);
+    document.removeEventListener('touchstart', handleUserInteraction);
+  };
+  
+  // Add interaction event listeners
+  document.addEventListener('click', handleUserInteraction);
+  document.addEventListener('scroll', handleUserInteraction);
+  document.addEventListener('keydown', handleUserInteraction);
+  document.addEventListener('mousemove', handleUserInteraction);
+  document.addEventListener('touchstart', handleUserInteraction);
+  
+  // Fallback: load after 3 seconds if no interaction
+  setTimeout(() => {
+    if (!isGAInitialized) {
+      loadGoogleAnalytics();
+      // Clean up event listeners
+      document.removeEventListener('click', handleUserInteraction);
+      document.removeEventListener('scroll', handleUserInteraction);
+      document.removeEventListener('keydown', handleUserInteraction);
+      document.removeEventListener('mousemove', handleUserInteraction);
+      document.removeEventListener('touchstart', handleUserInteraction);
+    }
+  }, 3000);
 };
 
 // Track page views
 export const pageview = (url: string) => {
-  if (typeof window.gtag === 'function') {
-    window.gtag('config', 'G-6FW6C7L7MC', {
-      page_path: url,
-    });
+  const trackPageview = () => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'G-6FW6C7L7MC', {
+        page_path: url,
+      });
+    }
+  };
+  
+  if (isGAInitialized) {
+    trackPageview();
+  } else {
+    pendingEvents.push(trackPageview);
   }
 };
 
@@ -40,11 +101,19 @@ export const event = ({ action, category, label, value }: {
   label?: string;
   value?: number;
 }) => {
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    });
+  const trackEvent = () => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', action, {
+        event_category: category,
+        event_label: label,
+        value: value,
+      });
+    }
+  };
+  
+  if (isGAInitialized) {
+    trackEvent();
+  } else {
+    pendingEvents.push(trackEvent);
   }
 }; 

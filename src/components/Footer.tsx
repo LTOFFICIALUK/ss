@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { GUIDE_CATEGORIES } from '../constants/guides';
-// Import optimized logo images
+// Import optimized logo images - WebP versions
+import logo300x43_webp from '../assets/images/webp/logo-300x43.webp';
+import logo200x29_webp from '../assets/images/webp/logo-200x29.webp';
+import logo200x29_2x_webp from '../assets/images/webp/logo-200x29@2x.webp';
+// Import PNG fallbacks
 import logo300x43 from '../assets/images/optimized/logo-300x43.png';
 import logo200x29 from '../assets/images/optimized/logo-200x29.png';
 import logo200x29_2x from '../assets/images/optimized/logo-200x29@2x.png';
@@ -32,14 +36,23 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <picture>
-                {/* Mobile logo */}
+                {/* Mobile WebP with fallback */}
+                <source 
+                  media="(max-width: 768px)" 
+                  type="image/webp"
+                  srcSet={`${logo200x29_webp} 1x, ${logo200x29_2x_webp} 2x`}
+                />
+                {/* Mobile PNG fallback */}
                 <source 
                   media="(max-width: 768px)" 
                   srcSet={`${logo200x29} 1x, ${logo200x29_2x} 2x`}
-                  width="200"
-                  height="29"
                 />
-                {/* Desktop logo */}
+                {/* Desktop WebP */}
+                <source 
+                  type="image/webp"
+                  srcSet={`${logo300x43_webp} 1x`}
+                />
+                {/* Desktop PNG fallback */}
                 <img 
                   src={logo300x43}
                   alt="SuccessfulStreamer Logo" 

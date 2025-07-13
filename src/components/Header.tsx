@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// Import optimized logo images
+// Import optimized logo images - WebP versions
+import logo279x40_webp from '../assets/images/webp/logo-279x40.webp';
+import logo279x40_2x_webp from '../assets/images/webp/logo-279x40@2x.webp';
+import logo200x29_webp from '../assets/images/webp/logo-200x29.webp';
+import logo200x29_2x_webp from '../assets/images/webp/logo-200x29@2x.webp';
+// Import PNG fallbacks
 import logo279x40 from '../assets/images/optimized/logo-279x40.png';
 import logo279x40_2x from '../assets/images/optimized/logo-279x40@2x.png';
 import logo200x29 from '../assets/images/optimized/logo-200x29.png';
@@ -68,14 +73,23 @@ const Header = () => {
               aria-label="Successful Streamer Home"
             >
               <picture>
-                {/* Mobile logo */}
+                {/* Mobile WebP with fallback */}
+                <source 
+                  media="(max-width: 768px)" 
+                  type="image/webp"
+                  srcSet={`${logo200x29_webp} 1x, ${logo200x29_2x_webp} 2x`}
+                />
+                {/* Mobile PNG fallback */}
                 <source 
                   media="(max-width: 768px)" 
                   srcSet={`${logo200x29} 1x, ${logo200x29_2x} 2x`}
-                  width="200"
-                  height="29"
                 />
-                {/* Desktop logo */}
+                {/* Desktop WebP */}
+                <source 
+                  type="image/webp"
+                  srcSet={`${logo279x40_webp} 1x, ${logo279x40_2x_webp} 2x`}
+                />
+                {/* Desktop PNG fallback */}
                 <img 
                   src={logo279x40}
                   srcSet={`${logo279x40} 1x, ${logo279x40_2x} 2x`}

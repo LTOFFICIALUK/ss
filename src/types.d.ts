@@ -15,6 +15,12 @@ declare module '*.png' {
   export default value;
 }
 
+// WebP module declarations
+declare module '*.webp' {
+  const content: string;
+  export default content;
+}
+
 export type GuideCategory = 'stream-setup' | 'content-strategy' | 'growth-marketing' | 'monetization' | 'community-building';
 
 export interface GuideMetadata {

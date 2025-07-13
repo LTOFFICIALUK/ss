@@ -36,6 +36,7 @@ const StreamSetupPage = () => {
       title="Stream Setup"
       description="Everything you need to know about setting up your streaming equipment and software"
       headerImage={streamSetupImg}
+      category="stream-setup"
     >
       <div className="space-y-12">
         {/* Quick Start Guide */}

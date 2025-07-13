@@ -26,8 +26,12 @@ const optimizeResourcesPlugin = () => {
 };
 
 export default defineConfig({
+  base: '/',
   plugins: [react(), optimizeResourcesPlugin()],
   server: {
+    port: 3000,
+  },
+  preview: {
     port: 3000,
   },
   build: {
@@ -90,7 +94,7 @@ export default defineConfig({
   },
   experimental: {
     renderBuiltUrl(filename) {
-      return filename;
+      return '/' + filename;
     }
   }
 }); 

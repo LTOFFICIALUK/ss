@@ -9,6 +9,24 @@ import monetizationImg from '../assets/images/categories/monetization.svg';
 import contentStrategyImg from '../assets/images/categories/content-strategy.svg';
 import { ALL_GUIDES, GUIDE_CATEGORIES } from '../constants/guides';
 
+// Category-specific overlay colors
+const getCategoryOverlay = (path: string) => {
+  switch (path) {
+    case '/category/stream-setup':
+      return 'bg-blue-900 bg-opacity-20';
+    case '/category/growth-marketing':
+      return 'bg-green-900 bg-opacity-20';
+    case '/category/community-building':
+      return 'bg-pink-900 bg-opacity-20';
+    case '/category/monetization':
+      return 'bg-yellow-900 bg-opacity-20';
+    case '/category/content-strategy':
+      return 'bg-purple-900 bg-opacity-20';
+    default:
+      return 'bg-black bg-opacity-30';
+  }
+};
+
 // Sample categories data - replace with actual images and data
 const categories = [
   {
@@ -208,7 +226,7 @@ const Home = () => {
               alt={title}
               className="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div className={`absolute inset-0 ${getCategoryOverlay(path)} flex items-center justify-center`}>
               <h2 className="text-white font-semibold text-lg text-center px-2">
                 {title}
               </h2>

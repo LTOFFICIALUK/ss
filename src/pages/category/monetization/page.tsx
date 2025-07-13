@@ -42,6 +42,7 @@ const MonetizationPage = () => {
       title="Monetization"
       description="Learn how to turn your streaming passion into a sustainable income"
       headerImage={monetizationImg}
+      category="monetization"
     >
       <div className="space-y-12">
         {/* Income Potential */}

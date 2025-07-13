@@ -42,6 +42,7 @@ const GrowthMarketingPage = () => {
       title="Growth & Marketing"
       description="Proven strategies to grow your streaming channel and build your audience"
       headerImage={growthMarketingImg}
+      category="growth-marketing"
     >
       <div className="space-y-12">
         {/* Growth Statistics */}

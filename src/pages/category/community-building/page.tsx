@@ -42,6 +42,7 @@ const CommunityBuildingPage = () => {
       title="Community Building"
       description="Create and nurture an engaged streaming community that grows together"
       headerImage={communityBuildingImg}
+      category="community-building"
     >
       <div className="space-y-12">
         {/* Community Values */}

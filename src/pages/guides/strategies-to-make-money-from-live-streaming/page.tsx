@@ -261,7 +261,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
         buttons={[
           {
             label: "Create Your AVIE Account",
-            href: "https://avie.live/register",
+            href: "https://https://avie.live",
             variant: "primary",
             isExternal: true
           }

@@ -28,7 +28,15 @@ const FeaturedGuides: React.FC<FeaturedGuidesProps> = ({ category }) => {
         'obs-setup-guide',
         'streaming-equipment-guide',
         'how-much-revenue-can-you-make-from-streaming',
-        'using-avie-multistreaming-to-earn-more'
+        'using-avie-multistreaming-to-earn-more',
+        'content-planning-strategy',
+        'content-calendar-creation',
+        'growth-hacking-twitch',
+        'social-media-for-streamers',
+        'twitch-monetization',
+        'sponsorship-guide',
+        'building-community',
+        'discord-server-setup'
       ].includes(slug);
     })
     .slice(0, 3); // Show only first 3 guides

@@ -27,6 +27,15 @@ const BestMicForStreaming = React.lazy(() => import('./pages/guides/what-is-the-
 const StreamingEquipmentGuide = React.lazy(() => import('./pages/guides/streaming-equipment-guide/page'));
 const OBSSetupGuide = React.lazy(() => import('./pages/guides/obs-setup-guide/page'));
 const MultiStreamRevenue = React.lazy(() => import('./pages/guides/using-avie-multistreaming-to-earn-more/page'));
+const ContentPlanningStrategy = React.lazy(() => import('./pages/guides/content-planning-strategy/page'));
+const ContentCalendarCreation = React.lazy(() => import('./pages/guides/content-calendar-creation/page'));
+const GrowthHackingTwitch = React.lazy(() => import('./pages/guides/growth-hacking-twitch/page'));
+const SocialMediaForStreamers = React.lazy(() => import('./pages/guides/social-media-for-streamers/page'));
+const TwitchMonetization = React.lazy(() => import('./pages/guides/twitch-monetization/page'));
+const SponsorshipGuide = React.lazy(() => import('./pages/guides/sponsorship-guide/page'));
+const BuildingCommunity = React.lazy(() => import('./pages/guides/building-community/page'));
+const DiscordServerSetup = React.lazy(() => import('./pages/guides/discord-server-setup/page'));
+const HowMuchRevenueFromStreaming = React.lazy(() => import('./pages/guides/how-much-revenue-can-you-make-from-streaming/page'));
 
 
 // Lazy load category pages
@@ -179,6 +188,51 @@ const App = () => {
           <Route path="/guides/what-is-the-best-mic-for-streaming" element={
             <Suspense fallback={<LoadingSpinner />}>
               <BestMicForStreaming />
+            </Suspense>
+          } />
+          <Route path="/guides/content-planning-strategy" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ContentPlanningStrategy />
+            </Suspense>
+          } />
+          <Route path="/guides/content-calendar-creation" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ContentCalendarCreation />
+            </Suspense>
+          } />
+          <Route path="/guides/growth-hacking-twitch" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GrowthHackingTwitch />
+            </Suspense>
+          } />
+          <Route path="/guides/social-media-for-streamers" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <SocialMediaForStreamers />
+            </Suspense>
+          } />
+          <Route path="/guides/twitch-monetization" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <TwitchMonetization />
+            </Suspense>
+          } />
+          <Route path="/guides/sponsorship-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <SponsorshipGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/building-community" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <BuildingCommunity />
+            </Suspense>
+          } />
+          <Route path="/guides/discord-server-setup" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <DiscordServerSetup />
+            </Suspense>
+          } />
+          <Route path="/guides/how-much-revenue-can-you-make-from-streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <HowMuchRevenueFromStreaming />
             </Suspense>
           } />
           <Route path="*" element={

@@ -191,7 +191,7 @@ const MonetizeYourClips: React.FC = () => {
         buttons={[
           {
             label: "Join AVIE Now",
-            href: "https://avie.live/register",
+            href: "https://https://avie.live",
             variant: "primary",
             isExternal: true
           },

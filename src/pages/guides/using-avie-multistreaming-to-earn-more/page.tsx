@@ -95,7 +95,7 @@ const MultiStreamRevenue: React.FC = () => {
         buttons={[
           {
             label: "Create Your Free AVIE Account",
-            href: "https://avie.live/register",
+            href: "https://https://avie.live",
             variant: "primary",
             isExternal: true
           },

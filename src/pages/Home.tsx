@@ -83,19 +83,37 @@ const implementedGuides = Object.entries(ALL_GUIDES)
       'building-community',
       'discord-server-setup',
       'how-much-revenue-can-you-make-from-streaming',
-      'using-avie-multistreaming-to-earn-more'
+      'using-avie-multistreaming-to-earn-more',
+      'stream-setup-guide',
+      'content-strategy-for-streamers',
+      'grow-your-stream',
+      'streaming-monetization-guide',
+      'streamer-community-building-guide',
+      'avie-streaming-guide'
     ].includes(slug);
   });
 
-// Convert to array format for search
-const availableGuides = implementedGuides.map(([slug, guide]) => ({
-  title: guide.title,
-  description: guide.description,
-  path: `/guides/${slug}`,
-  readTime: guide.readTime,
-  difficulty: guide.difficulty,
-  category: guide.category
-}));
+// Convert to array format for search with correct paths
+const availableGuides = implementedGuides.map(([slug, guide]) => {
+  // Use correct paths for pillar pages
+  const pillarPagePaths: Record<string, string> = {
+    'stream-setup-guide': '/stream-setup-guide',
+    'content-strategy-for-streamers': '/content-strategy-for-streamers',
+    'grow-your-stream': '/grow-your-stream',
+    'streaming-monetization-guide': '/streaming-monetization-guide',
+    'streamer-community-building-guide': '/streamer-community-building-guide',
+    'avie-streaming-guide': '/avie-streaming-guide'
+  };
+  
+  return {
+    title: guide.title,
+    description: guide.description,
+    path: pillarPagePaths[slug] || `/guides/${slug}`,
+    readTime: guide.readTime,
+    difficulty: guide.difficulty,
+    category: guide.category
+  };
+});
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');

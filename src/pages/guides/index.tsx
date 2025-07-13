@@ -32,19 +32,37 @@ const GuidesIndex: React.FC = () => {
       'twitch-monetization',
       'sponsorship-guide',
       'building-community',
-      'discord-server-setup'
+      'discord-server-setup',
+      'stream-setup-guide',
+      'content-strategy-for-streamers',
+      'grow-your-stream',
+      'streaming-monetization-guide',
+      'streamer-community-building-guide',
+      'avie-streaming-guide'
     ].includes(slug);
   });
 
-  // Convert to array format for search
-  const availableGuides = implementedGuides.map(([slug, guide]) => ({
-    title: guide.title,
-    description: guide.description,
-    path: `/guides/${slug}`,
-    readTime: guide.readTime,
-    difficulty: guide.difficulty,
-    category: guide.category
-  }));
+  // Convert to array format for search with correct paths
+  const availableGuides = implementedGuides.map(([slug, guide]) => {
+    // Use correct paths for pillar pages
+    const pillarPagePaths: Record<string, string> = {
+      'stream-setup-guide': '/stream-setup-guide',
+      'content-strategy-for-streamers': '/content-strategy-for-streamers',
+      'grow-your-stream': '/grow-your-stream',
+      'streaming-monetization-guide': '/streaming-monetization-guide',
+      'streamer-community-building-guide': '/streamer-community-building-guide',
+      'avie-streaming-guide': '/avie-streaming-guide'
+    };
+    
+    return {
+      title: guide.title,
+      description: guide.description,
+      path: pillarPagePaths[slug] || `/guides/${slug}`,
+      readTime: guide.readTime,
+      difficulty: guide.difficulty,
+      category: guide.category
+    };
+  });
 
   // Memoize search results to avoid unnecessary recalculations
   const searchResults = useMemo(() => {
@@ -176,12 +194,23 @@ const GuidesIndex: React.FC = () => {
                   {GUIDE_CATEGORIES[category]}
                 </h2>
                 <div className="space-y-4">
-                  {guides.map(({ slug, title, description, readTime, difficulty }) => (
-                    <Link
-                      key={slug}
-                      to={`/guides/${slug}`}
-                      className="block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6"
-                    >
+                  {guides.map(({ slug, title, description, readTime, difficulty }) => {
+                    // Use correct paths for pillar pages
+                    const pillarPagePaths: Record<string, string> = {
+                      'stream-setup-guide': '/stream-setup-guide',
+                      'content-strategy-for-streamers': '/content-strategy-for-streamers',
+                      'grow-your-stream': '/grow-your-stream',
+                      'streaming-monetization-guide': '/streaming-monetization-guide',
+                      'streamer-community-building-guide': '/streamer-community-building-guide',
+                      'avie-streaming-guide': '/avie-streaming-guide'
+                    };
+                    
+                    return (
+                      <Link
+                        key={slug}
+                        to={pillarPagePaths[slug] || `/guides/${slug}`}
+                        className="block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6"
+                      >
                       <div className="flex justify-between items-start">
                         <div>
                           <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -209,7 +238,8 @@ const GuidesIndex: React.FC = () => {
                         </div>
                       </div>
                     </Link>
-                  ))}
+                    );
+                  })}
                 </div>
               </section>
             );

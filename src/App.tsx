@@ -44,6 +44,14 @@ const GrowthMarketingCategory = React.lazy(() => import('./pages/category/growth
 const MonetizationCategory = React.lazy(() => import('./pages/category/monetization/page'));
 const CommunityBuildingCategory = React.lazy(() => import('./pages/category/community-building/page'));
 
+// Pillar page lazy loading
+const StreamSetupGuide = React.lazy(() => import('./pages/StreamSetupGuide'));
+const ContentStrategyGuide = React.lazy(() => import('./pages/ContentStrategyGuide'));
+const GrowthMarketingGuide = React.lazy(() => import('./pages/GrowthMarketingGuide'));
+const MonetizationGuide = React.lazy(() => import('./pages/MonetizationGuide'));
+const CommunityBuildingGuide = React.lazy(() => import('./pages/CommunityBuildingGuide'));
+const AVIEStreamingGuide = React.lazy(() => import('./pages/AVIEStreamingGuide'));
+
 // Optimized loading spinner with better UX
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center min-h-screen">
@@ -232,6 +240,36 @@ const App = () => {
           <Route path="/guides/how-much-revenue-can-you-make-from-streaming" element={
             <Suspense fallback={<LoadingSpinner />}>
               <HowMuchRevenueFromStreaming />
+            </Suspense>
+          } />
+          <Route path="/stream-setup-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StreamSetupGuide />
+            </Suspense>
+          } />
+          <Route path="/content-strategy-for-streamers" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ContentStrategyGuide />
+            </Suspense>
+          } />
+          <Route path="/grow-your-stream" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GrowthMarketingGuide />
+            </Suspense>
+          } />
+          <Route path="/streaming-monetization-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MonetizationGuide />
+            </Suspense>
+          } />
+          <Route path="/streamer-community-building-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CommunityBuildingGuide />
+            </Suspense>
+          } />
+          <Route path="/avie-streaming-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <AVIEStreamingGuide />
             </Suspense>
           } />
           <Route path="*" element={

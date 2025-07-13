@@ -169,5 +169,47 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     category: 'community-building',
     readTime: '12 min',
     difficulty: 'Intermediate'
+  },
+  'stream-setup-guide': {
+    title: 'Ultimate Stream Setup Guide: Everything You Need to Start Streaming in 2025',
+    description: 'Complete beginner\'s guide to setting up your live stream. Learn about equipment, software, platforms, and get streaming within hours, not days.',
+    category: 'stream-setup',
+    readTime: '20 min',
+    difficulty: 'Beginner'
+  },
+  'content-strategy-for-streamers': {
+    title: 'Complete Content Strategy Guide for Streamers: Build an Engaged Audience in 2025',
+    description: 'Master content planning, scheduling, and engagement strategies that successful streamers use to grow their audience and increase revenue.',
+    category: 'content-strategy',
+    readTime: '18 min',
+    difficulty: 'Intermediate'
+  },
+  'grow-your-stream': {
+    title: 'Stream Growth & Marketing Blueprint: Proven Strategies to Build Your Audience in 2025',
+    description: 'Master the marketing strategies that successful streamers use to grow from zero to thousands of viewers. Learn audience building, social media marketing, and networking techniques.',
+    category: 'growth-marketing',
+    readTime: '22 min',
+    difficulty: 'Intermediate'
+  },
+  'streaming-monetization-guide': {
+    title: 'The Monetization Master Guide for Streamers: Turn Your Passion into Profit in 2025',
+    description: 'Complete guide to streaming monetization including subscriptions, donations, sponsorships, merchandise, and advanced revenue strategies. Learn how to build sustainable income from your streaming content.',
+    category: 'monetization',
+    readTime: '25 min',
+    difficulty: 'Advanced'
+  },
+  'streamer-community-building-guide': {
+    title: 'Complete Community Building Guide for Streamers: Build an Engaged, Loyal Audience in 2025',
+    description: 'Master the art of building and managing thriving streaming communities. Learn how to create lasting connections, foster engagement, and turn viewers into a dedicated fanbase.',
+    category: 'community-building',
+    readTime: '20 min',
+    difficulty: 'Intermediate'
+  },
+  'avie-streaming-guide': {
+    title: 'Streaming With AVIE: The Complete Guide to Next-Generation Streaming in 2025',
+    description: 'Master AVIE Streaming platform with this comprehensive guide. Learn about unique features, monetization advantages, multi-streaming capabilities, and why AVIE is the future of live streaming.',
+    category: 'stream-setup',
+    readTime: '15 min',
+    difficulty: 'Beginner'
   }
 }; 

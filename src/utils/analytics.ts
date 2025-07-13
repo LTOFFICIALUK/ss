@@ -39,15 +39,16 @@ const loadGoogleAnalytics = () => {
 export const initGA = () => {
   if (isGAInitialized) return;
   
-  // Load GA immediately if user has already interacted
-  if (document.readyState === 'complete') {
-    loadGoogleAnalytics();
-    return;
-  }
+  // Use requestIdleCallback for better performance
+  const loadGA = () => {
+    if (!isGAInitialized) {
+      loadGoogleAnalytics();
+    }
+  };
   
   // Set up event listeners for user interaction
   const handleUserInteraction = () => {
-    loadGoogleAnalytics();
+    loadGA();
     // Remove event listeners after first interaction
     document.removeEventListener('click', handleUserInteraction);
     document.removeEventListener('scroll', handleUserInteraction);
@@ -63,10 +64,10 @@ export const initGA = () => {
   document.addEventListener('mousemove', handleUserInteraction);
   document.addEventListener('touchstart', handleUserInteraction);
   
-  // Fallback: load after 3 seconds if no interaction
+  // Fallback: load after 2 seconds if no interaction
   setTimeout(() => {
     if (!isGAInitialized) {
-      loadGoogleAnalytics();
+      loadGA();
       // Clean up event listeners
       document.removeEventListener('click', handleUserInteraction);
       document.removeEventListener('scroll', handleUserInteraction);
@@ -74,7 +75,7 @@ export const initGA = () => {
       document.removeEventListener('mousemove', handleUserInteraction);
       document.removeEventListener('touchstart', handleUserInteraction);
     }
-  }, 3000);
+  }, 2000);
 };
 
 // Track page views

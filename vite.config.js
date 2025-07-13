@@ -10,18 +10,28 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: false, // Disable sourcemaps for production
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-components': [
+          // Separate vendor chunks for better caching
+          'react-core': ['react', 'react-dom'],
+          'router': ['react-router-dom'],
+          // UI framework chunks
+          'ui-base': [
             './src/components/Layout.tsx',
             './src/components/Header.tsx',
             './src/components/Footer.tsx'
+          ],
+          // Guide-specific components (loaded on demand)
+          'guide-utils': [
+            './src/components/sub-components/cta-buttons.tsx',
+            './src/components/sub-components/faq-component.tsx',
+            './src/components/sub-components/how-to-component.tsx',
+            './src/components/sub-components/rich-text.tsx',
+            './src/components/sub-components/title.tsx'
           ]
         },
-        // Better asset naming for caching
         assetFileNames: (assetInfo) => {
           if (assetInfo.name && assetInfo.name.endsWith('.css')) {
             return 'assets/styles.[hash].css';
@@ -35,15 +45,14 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name].[hash].js'
       }
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
     minify: 'esbuild',
-    target: 'es2015',
-    cssCodeSplit: true, // Enable CSS code splitting
-    reportCompressedSize: false, // Disable for faster builds
-    assetsInlineLimit: 4096, // Inline assets smaller than 4KB
+    target: 'es2020', // Updated target for better performance
+    cssCodeSplit: false, // Keep CSS in single file for better caching
+    reportCompressedSize: false,
+    assetsInlineLimit: 1024, // Reduce inline limit for better HTTP/2 performance
   },
   assetsInclude: ['**/*.svg'],
-  // Optimize CSS
   css: {
     devSourcemap: false,
     postcss: {
@@ -53,12 +62,10 @@ export default defineConfig({
       ]
     }
   },
-  // Improve dependency pre-bundling
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
     exclude: ['@vite/client', '@vite/env']
   },
-  // Enable gzip compression for better performance
   experimental: {
     renderBuiltUrl(filename) {
       return filename;

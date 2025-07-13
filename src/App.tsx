@@ -4,7 +4,7 @@ import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import { initGA, pageview } from './utils/analytics';
 
-// Lazy load all routes
+// Lazy load all routes with optimized loading strategies
 const Home = React.lazy(() => import('./pages/Home'));
 const About = React.lazy(() => import('./pages/About'));
 const Privacy = React.lazy(() => import('./pages/privacy'));
@@ -29,26 +29,25 @@ const OBSSetupGuide = React.lazy(() => import('./pages/guides/obs-setup-guide/pa
 const MultiStreamRevenue = React.lazy(() => import('./pages/guides/using-avie-multistreaming-to-earn-more/page'));
 const ContentPlanningStrategy = React.lazy(() => import('./pages/guides/content-planning-strategy/page'));
 const ContentCalendarCreation = React.lazy(() => import('./pages/guides/content-calendar-creation/page'));
-const GrowthHackingTwitch = React.lazy(() => import('./pages/guides/growth-hacking-twitch/page'));
+const BuildingCommunity = React.lazy(() => import('./pages/guides/building-community/page'));
+const DiscordServerSetup = React.lazy(() => import('./pages/guides/discord-server-setup/page'));
 const SocialMediaForStreamers = React.lazy(() => import('./pages/guides/social-media-for-streamers/page'));
 const TwitchMonetization = React.lazy(() => import('./pages/guides/twitch-monetization/page'));
 const SponsorshipGuide = React.lazy(() => import('./pages/guides/sponsorship-guide/page'));
-const BuildingCommunity = React.lazy(() => import('./pages/guides/building-community/page'));
-const DiscordServerSetup = React.lazy(() => import('./pages/guides/discord-server-setup/page'));
+const GrowthHackingTwitch = React.lazy(() => import('./pages/guides/growth-hacking-twitch/page'));
 const HowMuchRevenueFromStreaming = React.lazy(() => import('./pages/guides/how-much-revenue-can-you-make-from-streaming/page'));
 
+// Category page lazy loading
+const StreamSetupCategory = React.lazy(() => import('./pages/category/stream-setup/page'));
+const ContentStrategyCategory = React.lazy(() => import('./pages/category/content-strategy/page'));
+const GrowthMarketingCategory = React.lazy(() => import('./pages/category/growth-marketing/page'));
+const MonetizationCategory = React.lazy(() => import('./pages/category/monetization/page'));
+const CommunityBuildingCategory = React.lazy(() => import('./pages/category/community-building/page'));
 
-// Lazy load category pages
-const StreamSetupPage = React.lazy(() => import('./pages/category/stream-setup/page'));
-const GrowthMarketingPage = React.lazy(() => import('./pages/category/growth-marketing/page'));
-const CommunityBuildingPage = React.lazy(() => import('./pages/category/community-building/page'));
-const MonetizationPage = React.lazy(() => import('./pages/category/monetization/page'));
-const ContentStrategyPage = React.lazy(() => import('./pages/category/content-strategy/page'));
-
-// Loading component for Suspense fallback
+// Optimized loading spinner with better UX
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center min-h-screen">
-    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+    <div className="loading-spinner"></div>
   </div>
 );
 
@@ -142,27 +141,27 @@ const App = () => {
           } />
           <Route path="/category/stream-setup" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <StreamSetupPage />
+              <StreamSetupCategory />
             </Suspense>
           } />
           <Route path="/category/growth-marketing" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <GrowthMarketingPage />
+              <GrowthMarketingCategory />
             </Suspense>
           } />
           <Route path="/category/community-building" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <CommunityBuildingPage />
+              <CommunityBuildingCategory />
             </Suspense>
           } />
           <Route path="/category/monetization" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <MonetizationPage />
+              <MonetizationCategory />
             </Suspense>
           } />
           <Route path="/category/content-strategy" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <ContentStrategyPage />
+              <ContentStrategyCategory />
             </Suspense>
           } />
           <Route path="/guides/earn-more-multi-streaming" element={

@@ -78,6 +78,11 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
     </noscript>
     
+    <!-- Critical resource preloading -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="modulepreload" href="/src/main.tsx" />
+    <link rel="modulepreload" href="/src/App.tsx" />
+    
     <!-- Resource hints for better performance -->
     <link rel="preload" href="/images/favicon.png" as="image" type="image/png" />
   </head>

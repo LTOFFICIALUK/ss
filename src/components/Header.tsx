@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+// Import optimized logo images
+import logo279x40 from '../assets/images/optimized/logo-279x40.png';
+import logo279x40_2x from '../assets/images/optimized/logo-279x40@2x.png';
+import logo200x29 from '../assets/images/optimized/logo-200x29.png';
+import logo200x29_2x from '../assets/images/optimized/logo-200x29@2x.png';
 
 const Header = () => {
   const location = useLocation();
@@ -63,11 +67,25 @@ const Header = () => {
               className="block hover:opacity-80 transition-opacity"
               aria-label="Successful Streamer Home"
             >
-              <img 
-                src={logo} 
-                alt="Successful Streamer" 
-                className="h-8 w-auto object-contain"
-              />
+              <picture>
+                {/* Mobile logo */}
+                <source 
+                  media="(max-width: 768px)" 
+                  srcSet={`${logo200x29} 1x, ${logo200x29_2x} 2x`}
+                  width="200"
+                  height="29"
+                />
+                {/* Desktop logo */}
+                <img 
+                  src={logo279x40}
+                  srcSet={`${logo279x40} 1x, ${logo279x40_2x} 2x`}
+                  alt="Successful Streamer" 
+                  className="h-8 w-auto object-contain"
+                  width="279"
+                  height="40"
+                  loading="eager"
+                />
+              </picture>
             </Link>
           </div>
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { GUIDE_CATEGORIES } from '../constants/guides';
-import logoImage from '../assets/images/logo.png';
+// Import optimized logo images
+import logo300x43 from '../assets/images/optimized/logo-300x43.png';
+import logo200x29 from '../assets/images/optimized/logo-200x29.png';
+import logo200x29_2x from '../assets/images/optimized/logo-200x29@2x.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,11 +31,24 @@ const Footer = () => {
           {/* Logo and About Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src={logoImage} 
-                alt="SuccessfulStreamer Logo" 
-                className="h-10 w-auto object-contain"
-              />
+              <picture>
+                {/* Mobile logo */}
+                <source 
+                  media="(max-width: 768px)" 
+                  srcSet={`${logo200x29} 1x, ${logo200x29_2x} 2x`}
+                  width="200"
+                  height="29"
+                />
+                {/* Desktop logo */}
+                <img 
+                  src={logo300x43}
+                  alt="SuccessfulStreamer Logo" 
+                  className="h-10 w-auto object-contain"
+                  width="300"
+                  height="43"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Your comprehensive resource for streaming success. Learn from expert guides, 

@@ -51,6 +51,17 @@ const GrowthMarketingGuide = React.lazy(() => import('./pages/GrowthMarketingGui
 const MonetizationGuide = React.lazy(() => import('./pages/MonetizationGuide'));
 const CommunityBuildingGuide = React.lazy(() => import('./pages/CommunityBuildingGuide'));
 const AVIEStreamingGuide = React.lazy(() => import('./pages/AVIEStreamingGuide'));
+const AudienceGrowthGuide = React.lazy(() => import('./pages/AudienceGrowthGuide'));
+
+// Audience Growth Cluster Pages
+const StreamAnalyticsGuide = React.lazy(() => import('./pages/guides/how-to-use-stream-analytics-to-understand-your-audience/page'));
+const StreamingScheduleGuide = React.lazy(() => import('./pages/guides/how-to-build-and-stick-to-a-streaming-schedule/page'));
+const ContentStrategyClusterGuide = React.lazy(() => import('./pages/guides/choosing-the-right-content-strategy-for-your-stream/page'));
+const ChatEngagementGuide = React.lazy(() => import('./pages/guides/top-chat-engagement-techniques-that-work/page'));
+const CommunityBuildingClusterGuide = React.lazy(() => import('./pages/guides/building-a-streaming-community-outside-of-twitch/page'));
+const StreamingMetricsGuide = React.lazy(() => import('./pages/guides/key-streaming-metrics-you-should-actually-track/page'));
+const StreamerNetworkingGuide = React.lazy(() => import('./pages/guides/how-to-network-with-other-streamers-without-feeling-cringe/page'));
+const ViewerRetentionGuide = React.lazy(() => import('./pages/guides/viewer-retention-techniques-before-during-after-your-stream/page'));
 
 // Optimized loading spinner with better UX
 const LoadingSpinner = () => (
@@ -242,6 +253,46 @@ const App = () => {
               <HowMuchRevenueFromStreaming />
             </Suspense>
           } />
+          <Route path="/guides/how-to-use-stream-analytics-to-understand-your-audience" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StreamAnalyticsGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/how-to-build-and-stick-to-a-streaming-schedule" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StreamingScheduleGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/choosing-the-right-content-strategy-for-your-stream" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ContentStrategyClusterGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/top-chat-engagement-techniques-that-work" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ChatEngagementGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/building-a-streaming-community-outside-of-twitch" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CommunityBuildingClusterGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/key-streaming-metrics-you-should-actually-track" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StreamingMetricsGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/how-to-network-with-other-streamers-without-feeling-cringe" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <StreamerNetworkingGuide />
+            </Suspense>
+          } />
+          <Route path="/guides/viewer-retention-techniques-before-during-after-your-stream" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ViewerRetentionGuide />
+            </Suspense>
+          } />
           <Route path="/stream-setup-guide" element={
             <Suspense fallback={<LoadingSpinner />}>
               <StreamSetupGuide />
@@ -270,6 +321,11 @@ const App = () => {
           <Route path="/avie-streaming-guide" element={
             <Suspense fallback={<LoadingSpinner />}>
               <AVIEStreamingGuide />
+            </Suspense>
+          } />
+          <Route path="/audience-growth-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <AudienceGrowthGuide />
             </Suspense>
           } />
           <Route path="*" element={

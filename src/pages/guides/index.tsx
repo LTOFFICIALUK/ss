@@ -38,7 +38,16 @@ const GuidesIndex: React.FC = () => {
       'grow-your-stream',
       'streaming-monetization-guide',
       'streamer-community-building-guide',
-      'avie-streaming-guide'
+      'avie-streaming-guide',
+      'audience-growth-guide',
+      'how-to-use-stream-analytics-to-understand-your-audience',
+      'how-to-build-and-stick-to-a-streaming-schedule',
+      'choosing-the-right-content-strategy-for-your-stream',
+      'top-chat-engagement-techniques-that-work',
+      'building-a-streaming-community-outside-of-twitch',
+      'key-streaming-metrics-you-should-actually-track',
+      'how-to-network-with-other-streamers-without-feeling-cringe',
+      'viewer-retention-techniques-before-during-after-your-stream'
     ].includes(slug);
   });
 
@@ -51,7 +60,8 @@ const GuidesIndex: React.FC = () => {
       'grow-your-stream': '/grow-your-stream',
       'streaming-monetization-guide': '/streaming-monetization-guide',
       'streamer-community-building-guide': '/streamer-community-building-guide',
-      'avie-streaming-guide': '/avie-streaming-guide'
+      'avie-streaming-guide': '/avie-streaming-guide',
+      'audience-growth-guide': '/audience-growth-guide'
     };
     
     return {

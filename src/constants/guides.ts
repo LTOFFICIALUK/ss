@@ -211,5 +211,68 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     category: 'stream-setup',
     readTime: '15 min',
     difficulty: 'Beginner'
+  },
+  'audience-growth-guide': {
+    title: 'How to Grow a Loyal Audience and Keep Your View Counts Rising',
+    description: 'Complete guide to building and retaining a loyal streaming audience. Learn proven strategies for viewer engagement, community building, and sustainable growth across all streaming platforms.',
+    category: 'growth-marketing',
+    readTime: '25 min',
+    difficulty: 'Intermediate'
+  },
+  'how-to-use-stream-analytics-to-understand-your-audience': {
+    title: 'How to Use Stream Analytics to Understand Your Audience',
+    description: 'Master streaming analytics to understand your audience behavior, optimize content strategy, and make data-driven decisions for sustainable growth.',
+    category: 'growth-marketing',
+    readTime: '12 min',
+    difficulty: 'Intermediate'
+  },
+  'how-to-build-and-stick-to-a-streaming-schedule': {
+    title: 'How to Build and Stick to a Streaming Schedule',
+    description: 'Master streaming schedule creation and consistency. Learn how to choose optimal times, maintain regular streaming habits, and build audience expectations.',
+    category: 'content-strategy',
+    readTime: '10 min',
+    difficulty: 'Beginner'
+  },
+  'choosing-the-right-content-strategy-for-your-stream': {
+    title: 'Choosing the Right Content Strategy for Your Stream',
+    description: 'Master streaming content strategy selection. Learn how to choose sustainable content focus, balance variety with consistency, and create content that grows loyal audiences.',
+    category: 'content-strategy',
+    readTime: '14 min',
+    difficulty: 'Intermediate'
+  },
+  'top-chat-engagement-techniques-that-work': {
+    title: 'Top Chat Engagement Techniques That Work',
+    description: 'Master streaming chat engagement with proven techniques that build active, loyal communities. Learn how to encourage participation and create memorable viewer interactions.',
+    category: 'community-building',
+    readTime: '11 min',
+    difficulty: 'Beginner'
+  },
+  'building-a-streaming-community-outside-of-twitch': {
+    title: 'Building a Streaming Community Outside of Twitch',
+    description: 'Master off-platform community building for streamers. Learn how to create thriving Discord servers, social media communities, and exclusive member experiences.',
+    category: 'community-building',
+    readTime: '13 min',
+    difficulty: 'Intermediate'
+  },
+  'key-streaming-metrics-you-should-actually-track': {
+    title: 'Key Streaming Metrics You Should Actually Track',
+    description: 'Master streaming analytics with focus on metrics that actually predict success. Learn which KPIs matter most and how to use data to drive sustainable growth.',
+    category: 'growth-marketing',
+    readTime: '15 min',
+    difficulty: 'Intermediate'
+  },
+  'how-to-network-with-other-streamers-without-feeling-cringe': {
+    title: 'How to Network with Other Streamers Without Feeling Cringe',
+    description: 'Master authentic streamer networking with genuine relationship-building strategies. Learn how to connect with fellow creators and build mutually beneficial collaborations.',
+    category: 'community-building',
+    readTime: '12 min',
+    difficulty: 'Beginner'
+  },
+  'viewer-retention-techniques-before-during-after-your-stream': {
+    title: 'Viewer Retention Techniques: Before, During & After Your Stream',
+    description: 'Master viewer retention with proven strategies for pre-stream anticipation, mid-stream engagement, and post-stream follow-up that keeps viewers returning consistently.',
+    category: 'content-strategy',
+    readTime: '16 min',
+    difficulty: 'Intermediate'
   }
 }; 

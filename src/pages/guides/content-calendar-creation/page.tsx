@@ -31,7 +31,7 @@ const ContentCalendarCreation: React.FC = () => {
               <li>Reduce stress by eliminating daily "what should I stream?" decisions</li>
             </ul>
             
-            <p className="mt-4">Whether you're streaming on <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, Twitch, YouTube, or multiple platforms, a well-structured content calendar transforms chaotic streaming into a strategic growth machine.</p>
+            <p className="mt-4">Whether you're streaming on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, Twitch, YouTube, or multiple platforms, a well-structured content calendar transforms chaotic streaming into a strategic growth machine.</p>
           </div>
         }
         className="mb-8"
@@ -71,8 +71,8 @@ const ContentCalendarCreation: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Streaming on AVIE",
-            href: "https://avie.live",
+            label: "Start Streaming on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -189,12 +189,12 @@ const ContentCalendarCreation: React.FC = () => {
           <div>
             <p>Different platforms require different approaches to content calendar planning:</p>
 
-            <h3 className="text-lg font-semibold mt-6">AVIE Streaming Calendar Strategy</h3>
-            <p className="mt-2"><a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>'s unique features create specific planning opportunities:</p>
+            <h3 className="text-lg font-semibold mt-6">Vibes Streaming Calendar Strategy</h3>
+            <p className="mt-2"><a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>'s unique features create specific planning opportunities:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Watch-to-Earn optimization:</strong> Plan longer-form content that rewards viewer engagement</li>
               <li><strong>Multistreaming integration:</strong> Schedule simultaneous broadcasts across platforms</li>
-              <li><strong>Community features:</strong> Plan interactive content that leverages AVIE's engagement tools</li>
+              <li><strong>Community features:</strong> Plan interactive content that leverages Vibes's engagement tools</li>
               <li><strong>Educational focus:</strong> Schedule tutorial and skill-building content that adds value</li>
             </ul>
 
@@ -315,8 +315,8 @@ const ContentCalendarCreation: React.FC = () => {
         description="Transform your streaming consistency and growth with a strategic content calendar that keeps you organized, engaged, and ahead of the competition."
         buttons={[
           {
-            label: "Create Your AVIE Account",
-            href: "https://https://avie.live",
+            label: "Create Your Vibes Account",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

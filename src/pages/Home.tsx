@@ -63,10 +63,10 @@ const implementedGuides = Object.entries(ALL_GUIDES)
     return [
       'how-to-start-streaming-on-twitch', 
       'how-to-live-stream', 
-      'how-to-live-stream-on-AVIE-Streaming', 
+      'how-to-live-stream-on-Vibes-Streaming', 
       'best-places-to-live-stream', 
       'how-to-stream-from-mobile', 
-      'earn-more-from-live-streaming-with-avie',
+      'earn-more-from-live-streaming-with-Vibes',
       'earn-more-multi-streaming',
       'monetize-your-live-stream-content',
       'monetize-your-clips',
@@ -83,13 +83,13 @@ const implementedGuides = Object.entries(ALL_GUIDES)
       'building-community',
       'discord-server-setup',
       'how-much-revenue-can-you-make-from-streaming',
-      'using-avie-multistreaming-to-earn-more',
+      'using-Vibes-multistreaming-to-earn-more',
       'stream-setup-guide',
       'content-strategy-for-streamers',
       'grow-your-stream',
       'streaming-monetization-guide',
       'streamer-community-building-guide',
-      'avie-streaming-guide'
+      'Vibes-streaming-guide'
     ].includes(slug);
   });
 
@@ -102,7 +102,7 @@ const availableGuides = implementedGuides.map(([slug, guide]) => {
     'grow-your-stream': '/grow-your-stream',
     'streaming-monetization-guide': '/streaming-monetization-guide',
     'streamer-community-building-guide': '/streamer-community-building-guide',
-    'avie-streaming-guide': '/avie-streaming-guide'
+    'Vibes-streaming-guide': '/Vibes-streaming-guide'
   };
   
   return {

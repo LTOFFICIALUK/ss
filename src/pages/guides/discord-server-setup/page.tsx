@@ -31,7 +31,7 @@ const DiscordServerSetup: React.FC = () => {
               <li>Integration with streaming platforms and bots</li>
             </ul>
             
-            <p className="mt-4">Whether you're streaming on <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, Twitch, YouTube, or multiple platforms, Discord serves as your community's home base where relationships deepen and loyalty grows.</p>
+            <p className="mt-4">Whether you're streaming on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, Twitch, YouTube, or multiple platforms, Discord serves as your community's home base where relationships deepen and loyalty grows.</p>
           </div>
         }
         className="mb-8"
@@ -89,8 +89,8 @@ const DiscordServerSetup: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Build Your Community on AVIE",
-            href: "https://avie.live",
+            label: "Build Your Community on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -301,7 +301,7 @@ const DiscordServerSetup: React.FC = () => {
               <li><strong>Go-live notifications:</strong> Alert Discord when you stream</li>
               <li><strong>Stream chat relay:</strong> Connect Discord to stream chat</li>
               <li><strong>Subscriber perks:</strong> Discord benefits for platform subscribers</li>
-              <li><strong>Multi-platform support:</strong> Integrate AVIE, Twitch, YouTube notifications</li>
+              <li><strong>Multi-platform support:</strong> Integrate Vibes, Twitch, YouTube notifications</li>
             </ul>
           </div>
         }
@@ -313,8 +313,8 @@ const DiscordServerSetup: React.FC = () => {
         description="Create a thriving Discord server that brings your streaming community together and builds lasting relationships beyond your live streams."
         buttons={[
           {
-            label: "Start Your Streaming Journey on AVIE",
-            href: "https://https://avie.live",
+            label: "Start Your Streaming Journey on Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

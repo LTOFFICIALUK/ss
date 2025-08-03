@@ -9,24 +9,24 @@ const MultiStreamRevenue: React.FC = () => {
 
   return (
     <GuideLayout
-      title="Maximize Your Income with AVIE's Free Multistreaming"
-      description="Learn how to leverage AVIE's free multistreaming feature to earn revenue from multiple platforms simultaneously while growing your audience across different platforms."
+      title="Maximize Your Income with Vibes's Free Multistreaming"
+      description="Learn how to leverage Vibes's free multistreaming feature to earn revenue from multiple platforms simultaneously while growing your audience across different platforms."
       publishDate={today}
       category="monetization"
     >
 
       <RichText
-        heading="1. What is AVIE Multistreaming?"
+        heading="1. What is Vibes Multistreaming?"
         content={
           <div>
-            <p>AVIE offers completely free multistreaming capabilities, allowing you to broadcast your content to multiple platforms simultaneously without any additional cost. This means you can:</p>
+            <p>Vibes offers completely free multistreaming capabilities, allowing you to broadcast your content to multiple platforms simultaneously without any additional cost. This means you can:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li>Stream to AVIE, Twitch, YouTube, and other platforms at the same time</li>
+              <li>Stream to Vibes, Twitch, YouTube, and other platforms at the same time</li>
               <li>Maintain your existing audience while growing on new platforms</li>
               <li>Collect revenue from multiple platforms in parallel</li>
               <li>Save money on third-party multistreaming services that can cost $20-100/month</li>
             </ul>
-            <p className="mt-4"><strong>Best part:</strong> Unlike other multistreaming services that charge monthly fees, AVIE's multistreaming feature is completely free for all users.</p>
+            <p className="mt-4"><strong>Best part:</strong> Unlike other multistreaming services that charge monthly fees, Vibes's multistreaming feature is completely free for all users.</p>
           </div>
         }
         className="mb-8"
@@ -38,7 +38,7 @@ const MultiStreamRevenue: React.FC = () => {
           <div>
             <p>By streaming to multiple platforms, you can take advantage of each platform's unique monetization features:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li><strong>AVIE:</strong> Earn from the 90/10 subscription split and 97/3 donation split</li>
+              <li><strong>Vibes:</strong> Earn from the 90/10 subscription split and 97/3 donation split</li>
               <li><strong>Twitch:</strong> Receive bits, subscriptions, and ad revenue</li>
               <li><strong>YouTube:</strong> Earn from Super Chats, channel memberships, and ad revenue</li>
               <li><strong>Other Platforms:</strong> Collect platform-specific donations and rewards</li>
@@ -67,17 +67,17 @@ const MultiStreamRevenue: React.FC = () => {
       />
 
       <RichText
-        heading="4. Setting Up Multistreaming on AVIE"
+        heading="4. Setting Up Multistreaming on Vibes"
         content={
           <div>
-            <p>Getting started with AVIE's multistreaming is simple:</p>
+            <p>Getting started with Vibes's multistreaming is simple:</p>
             <ol className="list-decimal pl-6 space-y-2 mt-4">
-              <li>Log into your AVIE dashboard</li>
+              <li>Log into your Vibes dashboard</li>
               <li>Navigate to the Stream Settings</li>
               <li>Add your stream keys from other platforms</li>
               <li>Start streaming once to reach all platforms</li>
             </ol>
-            <p className="mt-4"><strong>Pro Tip:</strong> AVIE's smart bandwidth management ensures high-quality streams to all platforms without requiring excessive upload speed.</p>
+            <p className="mt-4"><strong>Pro Tip:</strong> Vibes's smart bandwidth management ensures high-quality streams to all platforms without requiring excessive upload speed.</p>
           </div>
         }
         className="mb-8"
@@ -85,11 +85,11 @@ const MultiStreamRevenue: React.FC = () => {
 
       <CTAButtons
         title="Ready to Multiply Your Streaming Revenue?"
-        description="Start multistreaming with AVIE today and tap into multiple revenue streams without any additional costs!"
+        description="Start multistreaming with Vibes today and tap into multiple revenue streams without any additional costs!"
         buttons={[
           {
-            label: "Create Your Free AVIE Account",
-            href: "https://https://avie.live",
+            label: "Create Your Free Vibes Account",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

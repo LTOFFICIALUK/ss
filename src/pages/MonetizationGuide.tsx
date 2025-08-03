@@ -72,16 +72,16 @@ const MonetizationGuide: React.FC = () => {
     }
   ];
 
-  const avieMonetizationButtons = [
+  const VibesMonetizationButtons = [
     {
-      label: 'AVIE Monetization Guide',
-      href: '/guides/earn-more-from-live-streaming-with-avie',
+      label: 'Vibes Monetization Guide',
+      href: '/guides/earn-more-from-live-streaming-with-Vibes',
       variant: 'primary' as const,
-      ariaLabel: 'Learn about AVIE monetization features'
+      ariaLabel: 'Learn about Vibes monetization features'
     },
     {
       label: 'MultiStream Earnings',
-      href: '/guides/using-avie-multistreaming-to-earn-more',
+      href: '/guides/using-Vibes-multistreaming-to-earn-more',
       variant: 'outline' as const,
       ariaLabel: 'Maximize earnings with multi-platform streaming'
     }
@@ -166,7 +166,7 @@ const MonetizationGuide: React.FC = () => {
             <RichText
               heading="Subscription-Based Revenue: Building Recurring Income"
               headingLevel={2}
-              content="Subscriptions provide the most stable income stream for streamers. Platforms like Twitch, YouTube, and AVIE offer subscription systems with different revenue sharing models. Create compelling subscriber benefits including exclusive emotes, subscriber-only chat, Discord access, and special content. Develop multiple subscription tiers with escalating benefits to maximize revenue per subscriber. Promote subscriptions subtly through content value rather than aggressive sales tactics."
+              content="Subscriptions provide the most stable income stream for streamers. Platforms like Twitch, YouTube, and Vibes offer subscription systems with different revenue sharing models. Create compelling subscriber benefits including exclusive emotes, subscriber-only chat, Discord access, and special content. Develop multiple subscription tiers with escalating benefits to maximize revenue per subscriber. Promote subscriptions subtly through content value rather than aggressive sales tactics."
               maxWidth="6xl"
             />
 
@@ -188,14 +188,14 @@ const MonetizationGuide: React.FC = () => {
             <RichText
               heading="Platform-Specific Monetization Features"
               headingLevel={2}
-              content="Each platform offers unique monetization tools and revenue sharing models. Twitch provides bits, subscriptions, and ad revenue with 50/50 revenue sharing. YouTube offers super chats, channel memberships, and ad revenue with 70/30 sharing. AVIE provides competitive revenue sharing and innovative monetization features. Understanding platform-specific features helps optimize earnings across multiple channels."
+              content="Each platform offers unique monetization tools and revenue sharing models. Twitch provides bits, subscriptions, and ad revenue with 50/50 revenue sharing. YouTube offers super chats, channel memberships, and ad revenue with 70/30 sharing. Vibes provides competitive revenue sharing and innovative monetization features. Understanding platform-specific features helps optimize earnings across multiple channels."
               maxWidth="6xl"
             />
 
             <CTAButtons
-              title="Discover AVIE's Monetization Advantages"
-              description="Learn how AVIE's unique features can boost your streaming income"
-              buttons={avieMonetizationButtons}
+              title="Discover Vibes's Monetization Advantages"
+              description="Learn how Vibes's unique features can boost your streaming income"
+              buttons={VibesMonetizationButtons}
               align="center"
               maxWidth="6xl"
             />

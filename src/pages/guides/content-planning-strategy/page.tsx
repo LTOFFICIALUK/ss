@@ -30,7 +30,7 @@ const ContentPlanningStrategy: React.FC = () => {
               <li>Build anticipation and community around your content</li>
             </ul>
             
-            <p className="mt-4">Whether you're streaming on <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, Twitch, YouTube, or multiple platforms, having a content strategy gives you the roadmap to turn casual viewers into loyal followers.</p>
+            <p className="mt-4">Whether you're streaming on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, Twitch, YouTube, or multiple platforms, having a content strategy gives you the roadmap to turn casual viewers into loyal followers.</p>
           </div>
         }
         className="mb-8"
@@ -77,8 +77,8 @@ const ContentPlanningStrategy: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Streaming on AVIE",
-            href: "https://avie.live",
+            label: "Start Streaming on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -99,13 +99,13 @@ const ContentPlanningStrategy: React.FC = () => {
           <div>
             <p>Each streaming platform has unique characteristics that should influence your content planning approach:</p>
 
-            <h3 className="text-lg font-semibold mt-6">AVIE Streaming</h3>
-            <p className="mt-2"><a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>'s Watch-to-Earn ecosystem and multistreaming capabilities create unique opportunities:</p>
+            <h3 className="text-lg font-semibold mt-6">Vibes Streaming</h3>
+            <p className="mt-2"><a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>'s Watch-to-Earn ecosystem and multistreaming capabilities create unique opportunities:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Plan content that encourages longer viewing sessions to maximize AP rewards</li>
               <li>Create educational content that adds value to justify watch time</li>
               <li>Leverage multistreaming features to plan cross-platform content</li>
-              <li>Focus on community-building content that benefits from AVIE's engagement tools</li>
+              <li>Focus on community-building content that benefits from Vibes's engagement tools</li>
             </ul>
 
             <h3 className="text-lg font-semibold mt-6">Twitch</h3>
@@ -274,8 +274,8 @@ const ContentPlanningStrategy: React.FC = () => {
         description="Start implementing these content planning strategies today and watch your streaming career reach new heights with consistent, engaging content that your audience loves."
         buttons={[
           {
-            label: "Create Your AVIE Account",
-            href: "https://https://avie.live",
+            label: "Create Your Vibes Account",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

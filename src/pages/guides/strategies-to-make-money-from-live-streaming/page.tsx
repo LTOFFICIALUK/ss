@@ -25,7 +25,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Partner with eCommerce brands or use platforms like Amazon Live</li>
               <li>Add affiliate links in your stream overlay or chat</li>
-              <li>Use AVIE's overlay features to display product images, prices, and purchase prompts in real time</li>
+              <li>Use Vibes's overlay features to display product images, prices, and purchase prompts in real time</li>
             </ul>
           </div>
         }
@@ -40,12 +40,12 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
 
             <h3 className="text-lg font-medium mt-4">Tools to use:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>AVIE (built-in donation overlays)</li>
+              <li>Vibes (built-in donation overlays)</li>
               <li>Streamlabs, Ko-fi, Buy Me a Coffee</li>
               <li>Add alerts and goals to motivate tipping</li>
             </ul>
 
-            <p className="mt-4"><strong>Pro Tip:</strong> Use AVIE's follow and donation alerts natively—no setup needed.</p>
+            <p className="mt-4"><strong>Pro Tip:</strong> Use Vibes's follow and donation alerts natively—no setup needed.</p>
           </div>
         }
         className="mb-8"
@@ -59,13 +59,13 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
 
             <h3 className="text-lg font-medium mt-4">Where to offer subs:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>AVIE (easy setup, instant revenue share)</li>
+              <li>Vibes (easy setup, instant revenue share)</li>
               <li>Twitch (50/50 split for non-partners)</li>
               <li>YouTube (channel memberships)</li>
               <li>Kick (95/5 split)</li>
             </ul>
 
-            <p className="mt-4"><strong>Best Practice:</strong> Use AVIE's MultiStream plugin to reach new audiences while funneling them toward the platform with the best rev split for you (like AVIE or Kick).</p>
+            <p className="mt-4"><strong>Best Practice:</strong> Use Vibes's MultiStream plugin to reach new audiences while funneling them toward the platform with the best rev split for you (like Vibes or Kick).</p>
           </div>
         }
         className="mb-8"
@@ -113,12 +113,12 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
 
             <h3 className="text-lg font-medium mt-4">Top affiliate networks:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>AVIE Referral Program</li>
+              <li>Vibes Referral Program</li>
               <li>LTK</li>
               <li>Gaming gear brands like Razer, Logitech, or Elgato</li>
             </ul>
 
-            <p className="mt-4"><strong>Best used with:</strong> Product showcases, gear tutorials, or everyday stream gear shout-outs. Use AVIE's overlay system to display your affiliate links directly on stream.</p>
+            <p className="mt-4"><strong>Best used with:</strong> Product showcases, gear tutorials, or everyday stream gear shout-outs. Use Vibes's overlay system to display your affiliate links directly on stream.</p>
           </div>
         }
         className="mb-8"
@@ -137,7 +137,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
               <li>Shopify with Printful</li>
             </ul>
 
-            <p className="mt-4">The AVIE team is always open to new suggestions. If merch is something you'd like to offer to your audience, reach out to them on <a href="https://discord.com/invite/gpWuwPpWxp" className="text-blue-600 hover:text-blue-700">Discord</a>.</p>
+            <p className="mt-4">The Vibes team is always open to new suggestions. If merch is something you'd like to offer to your audience, reach out to them on <a href="https://discord.com/invite/gpWuwPpWxp" className="text-blue-600 hover:text-blue-700">Discord</a>.</p>
           </div>
         }
         className="mb-8"
@@ -155,7 +155,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
               <li>Ticketed Q&A or subscriber-only events</li>
             </ul>
 
-            <p className="mt-4">AVIE plans to roll out subscription-gated events in the future—ideal for creators with premium-tier content.</p>
+            <p className="mt-4">Vibes plans to roll out subscription-gated events in the future—ideal for creators with premium-tier content.</p>
           </div>
         }
         className="mb-8"
@@ -179,10 +179,10 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
       />
 
       <RichText
-        heading="10. Earn with the AVIE AP Reward System (Platform Exclusive)"
+        heading="10. Earn with the Vibes AP Reward System (Platform Exclusive)"
         content={
           <div>
-            <p>AVIE offers a unique AP (Activity Points) system that rewards creators just for doing what they love—streaming, engaging chat, building community.</p>
+            <p>Vibes offers a unique AP (Activity Points) system that rewards creators just for doing what they love—streaming, engaging chat, building community.</p>
 
             <h3 className="text-lg font-medium mt-4">What you earn AP for:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -202,13 +202,13 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
         heading="11. Bonus Strategy: Multistream to Multiply Your Income"
         content={
           <div>
-            <p>Why limit yourself to one audience? With AVIE's free MultiStream plugin, you can stream to Twitch, YouTube, Kick, and AVIE all at once—doubling (or tripling) your exposure without extra effort.</p>
+            <p>Why limit yourself to one audience? With Vibes's free MultiStream plugin, you can stream to Twitch, YouTube, Kick, and Vibes all at once—doubling (or tripling) your exposure without extra effort.</p>
 
             <h3 className="text-lg font-medium mt-4">Benefits of multistreaming:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Reach new audiences faster</li>
               <li>Test which platform performs best for engagement and monetization</li>
-              <li>Funnel traffic back to your highest-paying platform (like AVIE or Kick)</li>
+              <li>Funnel traffic back to your highest-paying platform (like Vibes or Kick)</li>
             </ul>
           </div>
         }
@@ -223,10 +223,10 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
             <p>No. Many monetization strategies work even with a small, loyal audience.</p>
 
             <h3 className="text-lg font-medium mt-4">Is multistreaming allowed on all platforms?</h3>
-            <p>Yes—for non-affiliates/partners. AVIE fully supports multistreaming by default.</p>
+            <p>Yes—for non-affiliates/partners. Vibes fully supports multistreaming by default.</p>
 
-            <h3 className="text-lg font-medium mt-4">Why should I use AVIE?</h3>
-            <p>AVIE is our recommended platform for live streaming. It is built for streamers, by streamers. They are always open to new suggestions and always improving the platform. If there is something you'd like to see, reach out to them on <a href="https://discord.com/invite/gpWuwPpWxp" className="text-blue-600 hover:text-blue-700">Discord</a>.</p>
+            <h3 className="text-lg font-medium mt-4">Why should I use Vibes?</h3>
+            <p>Vibes is our recommended platform for live streaming. It is built for streamers, by streamers. They are always open to new suggestions and always improving the platform. If there is something you'd like to see, reach out to them on <a href="https://discord.com/invite/gpWuwPpWxp" className="text-blue-600 hover:text-blue-700">Discord</a>.</p>
           </div>
         }
         className="mb-8"
@@ -240,7 +240,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
             
             <h3 className="text-lg font-medium mt-4">Start streaming smart:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>Use AVIE's MultiStream plugin to reach more people</li>
+              <li>Use Vibes's MultiStream plugin to reach more people</li>
               <li>Activate AP rewards to earn passively</li>
               <li>Set up subscriptions, merch, and tips across every platform</li>
             </ul>
@@ -251,11 +251,11 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
 
       <CTAButtons
         title="Ready to Start Your Streaming Journey?"
-        description="Create your AVIE account now and access built-in overlays, multistreaming, and monetization tools immediately—no third-party setup needed."
+        description="Create your Vibes account now and access built-in overlays, multistreaming, and monetization tools immediately—no third-party setup needed."
         buttons={[
           {
-            label: "Create Your AVIE Account",
-            href: "https://https://avie.live",
+            label: "Create Your Vibes Account",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           }

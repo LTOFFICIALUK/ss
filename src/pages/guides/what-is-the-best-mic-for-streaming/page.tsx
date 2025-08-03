@@ -44,7 +44,7 @@ const BestMicForStreaming: React.FC = () => {
               <li>Plug-and-play simplicity with USB-C connection</li>
               <li>Built-in Clipguard tech prevents distortion</li>
               <li>Integrated digital mixer for custom control</li>
-              <li>Great for AVIE Streaming, Twitch, YouTube, and casual streamers</li>
+              <li>Great for Vibes Streaming, Twitch, YouTube, and casual streamers</li>
             </ul>
 
             <h3 className="mt-6 mb-2"> <strong>Best XLR Mic for Streaming: Shure SM7B</strong></h3>
@@ -131,7 +131,7 @@ const BestMicForStreaming: React.FC = () => {
         buttons={[
           {
             label: "Ready To Start Streaming?",
-            href: "https://avie.live",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

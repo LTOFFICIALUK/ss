@@ -188,7 +188,7 @@ const ContentStrategyGuide: React.FC = () => {
             <RichText
               heading="Platform-Specific Content Strategies"
               headingLevel={2}
-              content="Each streaming platform has unique audience expectations and algorithms. Twitch favors interactive, gaming-focused content with strong community engagement. YouTube Live rewards educational and entertainment content with good SEO optimization. AVIE provides opportunities for diverse content types with better revenue sharing. Understanding platform-specific preferences helps tailor your content strategy for maximum impact on each platform."
+              content="Each streaming platform has unique audience expectations and algorithms. Twitch favors interactive, gaming-focused content with strong community engagement. YouTube Live rewards educational and entertainment content with good SEO optimization. Vibes provides opportunities for diverse content types with better revenue sharing. Understanding platform-specific preferences helps tailor your content strategy for maximum impact on each platform."
               maxWidth="6xl"
             />
 

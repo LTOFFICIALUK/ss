@@ -118,9 +118,9 @@ const StreamingEquipmentGuide: React.FC = () => {
             <p>Software is as important as hardware in your streaming setup.</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>OBS Studio / Streamlabs OBS</strong> - Top-rated streaming software</li>
-              <li><strong>AVIE's Free MultiStream Plugin</strong> - Stream to Twitch, YouTube, and more simultaneously</li>
+              <li><strong>Vibes's Free MultiStream Plugin</strong> - Stream to Twitch, YouTube, and more simultaneously</li>
               <li><strong>Voicemeeter Banana</strong> - For pro-level audio routing</li>
-              <li><strong>AVIE's Stream Overlays</strong> - Stream overlays for your stream</li>
+              <li><strong>Vibes's Stream Overlays</strong> - Stream overlays for your stream</li>
             </ul>
           </div>
         }
@@ -149,7 +149,7 @@ const StreamingEquipmentGuide: React.FC = () => {
         buttons={[
           {
             label: "Ready To Start Streaming?",
-            href: "https://avie.live",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

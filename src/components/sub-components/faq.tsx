@@ -10,7 +10,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'What do I need to stream on Twitch or YouTube?',
-      answer: 'You need: 1) A camera (webcam or DSLR), 2) A microphone for clear audio, 3) Proper lighting (ring light or softbox), 4) A stable PC with good CPU/GPU, 5) Streaming software like OBS Studio or AVIE\'s MultiStream plugin, and 6) A reliable internet connection (minimum 5 Mbps upload speed).'
+      answer: 'You need: 1) A camera (webcam or DSLR), 2) A microphone for clear audio, 3) Proper lighting (ring light or softbox), 4) A stable PC with good CPU/GPU, 5) Streaming software like OBS Studio or Vibes\'s MultiStream plugin, and 6) A reliable internet connection (minimum 5 Mbps upload speed).'
     },
     {
       question: 'Is a capture card necessary for PC streaming?',

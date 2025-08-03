@@ -25,17 +25,17 @@ const EarnMoreMultiStreaming: React.FC = () => {
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Internet Connection</strong> - Minimum 10Mbps upload speed for HD streaming</li>
               <li><strong>Hardware Requirements</strong> - CPU with 6+ cores recommended for multiple encodings</li>
-              <li><strong>Streaming Software</strong> - OBS Studio or Streamlabs (compatible with AVIE's plugin)</li>
+              <li><strong>Streaming Software</strong> - OBS Studio or Streamlabs (compatible with Vibes's plugin)</li>
               <li><strong>Platform Accounts</strong> - Active accounts on your target platforms</li>
-              <li><strong>AVIE MultiStream Plugin</strong> - Free plugin to manage multiple streams</li>
+              <li><strong>Vibes MultiStream Plugin</strong> - Free plugin to manage multiple streams</li>
             </ul>
 
             <h3 className="text-2xl font-semibold mt-6">Bandwidth Management</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Stream Quality</strong> - 720p60fps recommended for stability</li>
               <li><strong>Bitrate Settings</strong> - 4500-6000 kbps for optimal quality</li>
-              <li><strong>Server Selection</strong> - Choose closest AVIE server for best performance</li>
-              <li><strong>Network Monitoring</strong> - Use AVIE's built-in tools to track stability</li>
+              <li><strong>Server Selection</strong> - Choose closest Vibes server for best performance</li>
+              <li><strong>Network Monitoring</strong> - Use Vibes's built-in tools to track stability</li>
             </ul>
           </div>
         }
@@ -50,7 +50,7 @@ const EarnMoreMultiStreaming: React.FC = () => {
 
             <h3 className="text-2xl font-semibold mt-6">Chat Management Strategies</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>Unified Chat View</strong> - See all platform chats in one place with AVIE</li>
+              <li><strong>Unified Chat View</strong> - See all platform chats in one place with Vibes</li>
               <li><strong>Platform Indicators</strong> - Identify which platform viewers are from</li>
               <li><strong>Custom Commands</strong> - Create cross-platform commands for engagement</li>
               <li><strong>Moderator Tools</strong> - Assign platform-specific moderators</li>
@@ -61,7 +61,7 @@ const EarnMoreMultiStreaming: React.FC = () => {
               <li><strong>Platform-Specific Goals</strong> - Set milestones for each platform</li>
               <li><strong>Content Calendar</strong> - Plan streams that work across all platforms</li>
               <li><strong>Community Events</strong> - Create inclusive events for all viewers</li>
-              <li><strong>Cross-Promotion</strong> - Guide viewers to your AVIE hub strategically</li>
+              <li><strong>Cross-Promotion</strong> - Guide viewers to your Vibes hub strategically</li>
             </ul>
           </div>
         }
@@ -76,16 +76,16 @@ const EarnMoreMultiStreaming: React.FC = () => {
 
             <h3 className="text-2xl font-semibold mt-6">Revenue Optimization</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>AVIE AP Rewards</strong> - Earn based on engagement and viewer activity</li>
+              <li><strong>Vibes AP Rewards</strong> - Earn based on engagement and viewer activity</li>
               <li><strong>Platform-Specific Benefits</strong> - Leverage each platform's unique features</li>
               <li><strong>Subscription Management</strong> - Optimize sub perks across platforms</li>
-              <li><strong>Donation Integration</strong> - Centralize donations through AVIE</li>
+              <li><strong>Donation Integration</strong> - Centralize donations through Vibes</li>
             </ul>
 
             <h3 className="text-2xl font-semibold mt-6">Growth Metrics</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Analytics Dashboard</strong> - Track performance across platforms</li>
-              <li><strong>Viewer Migration</strong> - Monitor viewer movement to AVIE</li>
+              <li><strong>Viewer Migration</strong> - Monitor viewer movement to Vibes</li>
               <li><strong>Engagement Rates</strong> - Measure interaction across platforms</li>
               <li><strong>Revenue Tracking</strong> - Compare earnings between platforms</li>
             </ul>
@@ -102,17 +102,17 @@ const EarnMoreMultiStreaming: React.FC = () => {
 
             <h3 className="text-2xl font-semibold mt-6">Technical Solutions</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>CPU Usage</strong> - Using AVIE's MultiStream plugin means you can stream to multiple platforms at the same time, without the need for a powerful CPU.</li>
-              <li><strong>Network Issues</strong> - As long as your connection to AVIE is stable, you can stream to multiple platforms at the same time, without requiring stornger internet connection.</li>
-              <li><strong>Platform Sync</strong> - AVIE's MultiStream plugin automatically mirrors your streams, so you can focus on creating the best content.</li>
-              <li><strong>Quality Control</strong> - Monitor chat, viewers, donations and more all from AVIE's built in stream stats page.</li>
+              <li><strong>CPU Usage</strong> - Using Vibes's MultiStream plugin means you can stream to multiple platforms at the same time, without the need for a powerful CPU.</li>
+              <li><strong>Network Issues</strong> - As long as your connection to Vibes is stable, you can stream to multiple platforms at the same time, without requiring stornger internet connection.</li>
+              <li><strong>Platform Sync</strong> - Vibes's MultiStream plugin automatically mirrors your streams, so you can focus on creating the best content.</li>
+              <li><strong>Quality Control</strong> - Monitor chat, viewers, donations and more all from Vibes's built in stream stats page.</li>
             </ul>
 
             <h3 className="text-2xl font-semibold mt-6">Community Management</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Chat Moderation</strong> - Set up automod across platforms</li>
               <li><strong>Platform Rules</strong> - Maintain consistent guidelines</li>
-              <li><strong>Technical Support</strong> - Access AVIE's dedicated support team</li>
+              <li><strong>Technical Support</strong> - Access Vibes's dedicated support team</li>
               <li><strong>Viewer Experience</strong> - Ensure equal attention to all platforms</li>
             </ul>
           </div>
@@ -122,11 +122,11 @@ const EarnMoreMultiStreaming: React.FC = () => {
 
       <CTAButtons
         title="Ready to Start MultiStreaming?"
-        description="Join AVIE today and access our complete suite of multistreaming tools. Start growing your audience across all platforms while maximizing your earnings."
+        description="Join Vibes today and access our complete suite of multistreaming tools. Start growing your audience across all platforms while maximizing your earnings."
         buttons={[
           {
-            label: "Get Started with AVIE",
-            href: "https://avie.live",
+            label: "Get Started with Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

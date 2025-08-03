@@ -16,10 +16,10 @@ const MonetizeYourClips: React.FC = () => {
     >
 
       <RichText
-        heading="AVIE's AP Rewards System for Clips"
+        heading="Vibes's AP Rewards System for Clips"
         content={
           <div>
-            <p>AVIE's innovative AP program rewards creators in AVIE Points (AP), which is converted to $SOL, for clip creation, engagement, and sharing. Here's how to maximize your earnings:</p>
+            <p>Vibes's innovative AP program rewards creators in Vibes Points (AP), which is converted to $SOL, for clip creation, engagement, and sharing. Here's how to maximize your earnings:</p>
             
             <h3 className="text-lg font-medium mt-4">Earning AP Rewards</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -166,14 +166,14 @@ const MonetizeYourClips: React.FC = () => {
             <p>Combine multiple monetization methods to maximize your clip earnings:</p>
             
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li><strong>AVIE AP Rewards:</strong> Earn $SOL through clip creation and engagement</li>
+              <li><strong>Vibes AP Rewards:</strong> Earn $SOL through clip creation and engagement</li>
               <li><strong>Platform Revenue:</strong> Monetize through platform-specific programs</li>
               <li><strong>Brand Deals:</strong> Use clip performance metrics to attract sponsors</li>
               <li><strong>Cross-Promotion:</strong> Drive traffic to your monetized channels</li>
               <li><strong>Premium Content:</strong> Create exclusive clip compilations</li>
             </ul>
 
-            <p className="mt-4">Remember: Consistency and quality are key. Use AVIE's tools to streamline your workflow and focus on creating engaging content that resonates with your audience across all platforms.</p>
+            <p className="mt-4">Remember: Consistency and quality are key. Use Vibes's tools to streamline your workflow and focus on creating engaging content that resonates with your audience across all platforms.</p>
           </div>
         }
         className="mb-8"
@@ -184,8 +184,8 @@ const MonetizeYourClips: React.FC = () => {
         description="Start streaming and encourage your viewers to create clips of your best moments."
         buttons={[
           {
-            label: "Join AVIE Now",
-            href: "https://https://avie.live",
+            label: "Join Vibes Now",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

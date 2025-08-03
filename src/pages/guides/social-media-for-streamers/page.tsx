@@ -19,7 +19,7 @@ const SocialMediaForStreamers: React.FC = () => {
         heading="Why Social Media is Essential for Streaming Success"
         content={
           <div>
-            <p>Social media isn't just a nice-to-have for streamers—it's the engine that drives discovery, community building, and sustainable growth. While your primary streaming platform (whether it's <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, Twitch, or YouTube) is where you create content, social media is where you build relationships and expand your reach.</p>
+            <p>Social media isn't just a nice-to-have for streamers—it's the engine that drives discovery, community building, and sustainable growth. While your primary streaming platform (whether it's <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, Twitch, or YouTube) is where you create content, social media is where you build relationships and expand your reach.</p>
             
             <p className="mt-4">Successful streamers use social media to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
@@ -90,8 +90,8 @@ const SocialMediaForStreamers: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Streaming on AVIE",
-            href: "https://avie.live",
+            label: "Start Streaming on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -269,8 +269,8 @@ const SocialMediaForStreamers: React.FC = () => {
         description="Transform your streaming career with a powerful social media strategy that builds community, drives growth, and creates lasting connections with your audience."
         buttons={[
           {
-            label: "Start Multi-Platform Streaming on AVIE",
-            href: "https://https://avie.live",
+            label: "Start Multi-Platform Streaming on Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

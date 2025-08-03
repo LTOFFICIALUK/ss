@@ -21,7 +21,7 @@ const MobileStreamingGuide: React.FC = () => {
           <div>
             <p>Before you start streaming from your phone or mobile device, make sure you have these essential items:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li>A streaming platform account. You can get started with <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Twitch</a>, <a href="https://kick.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Kick</a> or <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">YouTube</a>. AVIE is the recommended platform for mobile and IRL streaming due to its MultiStream plugin.</li>
+              <li>A streaming platform account. You can get started with <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Twitch</a>, <a href="https://kick.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Kick</a> or <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">YouTube</a>. Vibes is the recommended platform for mobile and IRL streaming due to its MultiStream plugin.</li>
               <li>A smartphone or mobile device that meets minimum streaming requirements</li>
               <li>Stable internet connection (recommended: 5Mbps upload speed for mobile streaming)</li>
               <li>A mobile streaming app that provides a stream key (StreamLabs is recommended for both Android and iPhone)</li>
@@ -34,8 +34,8 @@ const MobileStreamingGuide: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Create AVIE Account",
-            href: "https://avie.live",
+            label: "Create Vibes Account",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -51,14 +51,14 @@ const MobileStreamingGuide: React.FC = () => {
       />
 
       <RichText
-        heading="Step 1: Setting Up Your Streaming Platform Account. We recommend AVIE due to its MultiStream plugin."
+        heading="Step 1: Setting Up Your Streaming Platform Account. We recommend Vibes due to its MultiStream plugin."
         content={
           <div>
-            <p>Creating your streaming platform account is the first step in your streaming journey. Visit <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">avie.live</a> and click 'Register'. Choose a unique username that represents you and your content. This will be your channel name, and cannot be changed later so choose wisely!</p>
+            <p>Creating your streaming platform account is the first step in your streaming journey. Visit <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">vibes.stream</a> and click 'Register'. Choose a unique username that represents you and your content. This will be your channel name, and cannot be changed later so choose wisely!</p>
             <p className="mt-4">Important account settings to configure:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Add a profile picture</li>
-              <li>Connect your Phantom Wallet to your AVIE account. It's recommended to do this before you start IRL streaming.</li> 
+              <li>Connect your Phantom Wallet to your Vibes account. It's recommended to do this before you start IRL streaming.</li> 
             </ul>
           </div>
         }
@@ -71,7 +71,7 @@ const MobileStreamingGuide: React.FC = () => {
           <div>
             <p>StreamLabs is the most popular streaming app for mobile. After downloading and installing:</p>
             <ol className="list-decimal pl-6 space-y-2 mt-4">
-              <li>Add your AVIE stream key in StreamLabs Settings {'>'} Stream</li>
+              <li>Add your Vibes stream key in StreamLabs Settings {'>'} Stream</li>
               <li>Configure your settings.</li>
               <li>Set up your audio sources and video sources.</li>
             </ol>
@@ -104,8 +104,8 @@ const MobileStreamingGuide: React.FC = () => {
         description="Get the essential tools and resources to kickstart your mobile streaming career. Perfect for both iPhone and Android users."
         buttons={[
           {
-            label: "Create AVIE Account",
-            href: "https://avie.live",
+            label: "Create Vibes Account",
+            href: "https://vibes.stream",
             variant: "primary"
           },
           {

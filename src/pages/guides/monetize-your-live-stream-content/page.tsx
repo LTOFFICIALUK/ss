@@ -26,7 +26,7 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
               <li>Grow your overall viewership faster</li>
             </ul>
             <h3 className="mt-4"><strong>How to Get Started with Multi-Streaming</strong></h3>
-            <p className="mt-2">AVIE's free MultiStream plugin makes it easy to stream to multiple platforms simultaneously. You can broadcast to AVIE, Twitch, YouTube, and other platforms without any additional hardware or complex setup. This means you can:</p>
+            <p className="mt-2">Vibes's free MultiStream plugin makes it easy to stream to multiple platforms simultaneously. You can broadcast to Vibes, Twitch, YouTube, and other platforms without any additional hardware or complex setup. This means you can:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Manage all your streams from a single dashboard</li>
               <li>Monitor chat messages across platforms</li>
@@ -41,8 +41,8 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Try AVIE MultiStream",
-            href: "https://avie.live",
+            label: "Try Vibes MultiStream",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -61,7 +61,7 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
         heading="Watch-to-Earn: Building a Loyal Audience"
         content={
           <div>
-            <p>AVIE's innovative Watch-to-Earn program offers a unique way to attract and retain viewers while generating income. Here's how it benefits both streamers and viewers:</p>
+            <p>Vibes's innovative Watch-to-Earn program offers a unique way to attract and retain viewers while generating income. Here's how it benefits both streamers and viewers:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li><strong>For Streamers:</strong>
                 <ul className="list-disc pl-6 space-y-1 mt-1">
@@ -79,7 +79,7 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
                 </ul>
               </li>
             </ul>
-            <p className="mt-4">By promoting Watch-to-Earn to your audience across all platforms, you can redirect viewers to AVIE where both you and your community can benefit from this unique ecosystem.</p>
+            <p className="mt-4">By promoting Watch-to-Earn to your audience across all platforms, you can redirect viewers to Vibes where both you and your community can benefit from this unique ecosystem.</p>
           </div>
         }
         className="mb-8"
@@ -89,9 +89,9 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
         heading="Short-Form Content: Maximize Your Content Value"
         content={
           <div>
-            <p>Transform your live streams into engaging short-form content to expand your reach and create additional revenue streams. AVIE's built-in clipping tools make this process seamless and efficient:</p>
+            <p>Transform your live streams into engaging short-form content to expand your reach and create additional revenue streams. Vibes's built-in clipping tools make this process seamless and efficient:</p>
             
-            <h3 className="text-lg font-medium mt-4">AVIE Clipping Features</h3>
+            <h3 className="text-lg font-medium mt-4">Vibes Clipping Features</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>One-Click Clipping:</strong> Create clips during your stream with a single click</li>
               <li><strong>Auto-Clip Highlights:</strong> AI-powered detection of engaging moments</li>
@@ -101,19 +101,19 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
             
             <h3 className="text-lg font-medium mt-4">Platform Strategy</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>YouTube Shorts:</strong> Export clips directly from AVIE in vertical format, perfect for highlight reels and tutorials</li>
-              <li><strong>TikTok:</strong> Use AVIE's clip editor to add trending sounds and effects before posting</li>
-              <li><strong>Instagram Reels:</strong> Convert stream highlights into engaging 30-second clips with AVIE's auto-resize feature</li>
+              <li><strong>YouTube Shorts:</strong> Export clips directly from Vibes in vertical format, perfect for highlight reels and tutorials</li>
+              <li><strong>TikTok:</strong> Use Vibes's clip editor to add trending sounds and effects before posting</li>
+              <li><strong>Instagram Reels:</strong> Convert stream highlights into engaging 30-second clips with Vibes's auto-resize feature</li>
               <li><strong>Twitter/X:</strong> Share instant clips with your community while you're still live</li>
             </ul>
 
             <h3 className="text-lg font-medium mt-4">Content Repurposing Tips</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>Use AVIE's clip templates for consistent branding across platforms</li>
-              <li>Enable auto-generated captions in AVIE's clip editor for accessibility</li>
-              <li>Schedule clips for automated posting using AVIE's publishing tools</li>
+              <li>Use Vibes's clip templates for consistent branding across platforms</li>
+              <li>Enable auto-generated captions in Vibes's clip editor for accessibility</li>
+              <li>Schedule clips for automated posting using Vibes's publishing tools</li>
               <li>Add custom calls-to-action directing viewers to your live streams</li>
-              <li>Track clip performance with AVIE's analytics to optimize your content strategy</li>
+              <li>Track clip performance with Vibes's analytics to optimize your content strategy</li>
             </ul>
           </div>
         }
@@ -187,7 +187,7 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
             <p>The key to successful monetization is diversifying your income streams while maintaining authenticity with your audience. Here's a checklist for sustainable growth:</p>
             
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li>Use AVIE's MultiStream to broadcast everywhere your audience is</li>
+              <li>Use Vibes's MultiStream to broadcast everywhere your audience is</li>
               <li>Leverage Watch-to-Earn to build a loyal, engaged community</li>
               <li>Consistently create and distribute short-form content</li>
               <li>Build meaningful collaborations with other creators</li>
@@ -203,11 +203,11 @@ const MonetizeYourLiveStreamContent: React.FC = () => {
 
       <CTAButtons
         title="Ready to Maximize Your Streaming Income?"
-        description="Start your journey to sustainable streaming income with AVIE's creator-first platform and MultiStream technology."
+        description="Start your journey to sustainable streaming income with Vibes's creator-first platform and MultiStream technology."
         buttons={[
           {
-            label: "Join AVIE Now",
-            href: "https://https://avie.live",
+            label: "Join Vibes Now",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

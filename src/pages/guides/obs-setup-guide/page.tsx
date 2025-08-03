@@ -25,7 +25,7 @@ const OBSSetupGuide: React.FC = () => {
               <li>It's a popular choice for streamers because it's easy to use and has a lot of features.</li>
               <li>It's a popular choice for streamers because it's easy to use and has a lot of features.</li>
             </ul>
-            <p className="mt-4">OBS Studio is a popular choice for streamers because it's easy to use and has a lot of features and set up is simple with platforms like AVIE.</p>
+            <p className="mt-4">OBS Studio is a popular choice for streamers because it's easy to use and has a lot of features and set up is simple with platforms like Vibes.</p>
           </div>
         }
         className="mb-8"
@@ -34,8 +34,8 @@ const OBSSetupGuide: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Create AVIE Account",
-            href: "https://avie.live",
+            label: "Create Vibes Account",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -54,7 +54,7 @@ const OBSSetupGuide: React.FC = () => {
         heading="How to Setup OBS Studio"
         content={
           <div>
-            <p>We will discuss the steps to setup OBS Studio for streaming with AVIE.</p>
+            <p>We will discuss the steps to setup OBS Studio for streaming with Vibes.</p>
             <p className="mt-4"> <strong>Step 1</strong> - Download OBS Studio from the official website.</p>
             <p className="mt-2"> <strong>Step 2</strong> - Open OBS Studio and click on the "Settings" button.</p>
             <p className="mt-2"> <strong>Step 3</strong> - Click on the "Output" tab.</p>
@@ -102,7 +102,7 @@ const OBSSetupGuide: React.FC = () => {
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Connect directly from Xbox or PlayStation without a capture card.</li>
               <li>No downloads or installations — runs entirely in your browser.</li>
-              <li>Easy AVIE & Twitch integration for quick streaming.</li>
+              <li>Easy Vibes & Twitch integration for quick streaming.</li>
             </ul> 
 
             <h2 className="text-2xl font-semibold mt-6">Restream Studio</h2>
@@ -110,7 +110,7 @@ const OBSSetupGuide: React.FC = () => {
             
             <h3 className="text-lg font-medium mt-4">Built for Multistreaming</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>Go live on Twitch, YouTube, <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, and more — all at the same time.</li>
+              <li>Go live on Twitch, YouTube, <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, and more — all at the same time.</li>
               <li>Supports over 30 platforms with one click.</li>
               <li>No encoding setup required; stream from your browser instantly.</li>
             </ul> 
@@ -132,7 +132,7 @@ const OBSSetupGuide: React.FC = () => {
 
       <CTAButtons
         title="Ready to Stream Seamlessly?"
-        description="Take the first step toward building a rewarding and sustainable streaming career with AVIE's creator-first platform."
+        description="Take the first step toward building a rewarding and sustainable streaming career with Vibes's creator-first platform."
         buttons={[
           {
             label: "OBS Studio Download",

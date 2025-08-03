@@ -31,7 +31,7 @@ const GrowthHackingTwitch: React.FC = () => {
               <li>Psychological triggers that encourage engagement</li>
             </ul>
             
-            <p className="mt-4">While platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> offer unique growth opportunities through their Watch-to-Earn ecosystem, Twitch remains a crucial platform for building a streaming career. The strategies in this guide will help you dominate Twitch's competitive landscape.</p>
+            <p className="mt-4">While platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> offer unique growth opportunities through their Watch-to-Earn ecosystem, Twitch remains a crucial platform for building a streaming career. The strategies in this guide will help you dominate Twitch's competitive landscape.</p>
           </div>
         }
         className="mb-8"
@@ -77,8 +77,8 @@ const GrowthHackingTwitch: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Multi-Platform Growth on AVIE",
-            href: "https://avie.live",
+            label: "Start Multi-Platform Growth on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -209,9 +209,9 @@ const GrowthHackingTwitch: React.FC = () => {
             </ul>
 
             <h3 className="text-lg font-semibold mt-6">Multi-Platform Streaming</h3>
-            <p className="mt-2">Consider platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> for additional growth:</p>
+            <p className="mt-2">Consider platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> for additional growth:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>AVIE's multistreaming:</strong> Broadcast to multiple platforms simultaneously</li>
+              <li><strong>Vibes's multistreaming:</strong> Broadcast to multiple platforms simultaneously</li>
               <li><strong>Watch-to-Earn benefits:</strong> Offer viewers additional value for watching</li>
               <li><strong>Cross-platform community:</strong> Build audiences across different platforms</li>
               <li><strong>Revenue diversification:</strong> Multiple income streams from different platforms</li>
@@ -272,8 +272,8 @@ const GrowthHackingTwitch: React.FC = () => {
         description="Implement these proven growth hacking strategies and watch your Twitch channel explode with engaged viewers and loyal community members."
         buttons={[
           {
-            label: "Start Multistreaming From AVIE",
-            href: "https://https://avie.live",
+            label: "Start Multistreaming From Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

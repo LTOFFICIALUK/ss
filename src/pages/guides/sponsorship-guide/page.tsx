@@ -28,7 +28,7 @@ const SponsorshipGuide: React.FC = () => {
               <li><strong>Viewers:</strong> Discover relevant products and services through authentic recommendations</li>
             </ul>
             
-            <p className="mt-4">Whether you're streaming on <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, Twitch, YouTube, or multiple platforms, sponsorships can provide the financial stability needed to pursue streaming full-time. The key is building a valuable audience and presenting yourself professionally to potential sponsors.</p>
+            <p className="mt-4">Whether you're streaming on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, Twitch, YouTube, or multiple platforms, sponsorships can provide the financial stability needed to pursue streaming full-time. The key is building a valuable audience and presenting yourself professionally to potential sponsors.</p>
           </div>
         }
         className="mb-8"
@@ -83,8 +83,8 @@ const SponsorshipGuide: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Build Your Brand on AVIE",
-            href: "https://avie.live",
+            label: "Build Your Brand on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -262,7 +262,7 @@ const SponsorshipGuide: React.FC = () => {
             </ul>
 
             <h3 className="text-lg font-semibold mt-6">Multi-Platform Opportunities</h3>
-            <p className="mt-2">Leverage platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> for enhanced sponsorship value:</p>
+            <p className="mt-2">Leverage platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> for enhanced sponsorship value:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Multistreaming reach:</strong> Broadcast sponsored content across multiple platforms</li>
               <li><strong>Watch-to-Earn integration:</strong> Provide additional viewer value during sponsored streams</li>
@@ -279,8 +279,8 @@ const SponsorshipGuide: React.FC = () => {
         description="Build a professional streaming brand that attracts sponsors and generates sustainable income through strategic partnerships."
         buttons={[
           {
-            label: "Start Building Your Brand on AVIE",
-            href: "https://https://avie.live",
+            label: "Start Building Your Brand on Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

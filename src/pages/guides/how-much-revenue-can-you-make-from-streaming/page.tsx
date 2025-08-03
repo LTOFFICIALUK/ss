@@ -81,7 +81,7 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
               <li><strong>Services:</strong> Coaching, custom content, and consultation</li>
             </ul>
             
-            <p className="mt-4">Platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> are revolutionizing streaming income through their Watch-to-Earn ecosystem, offering new revenue opportunities that benefit both creators and viewers. The rest of this guide will show you exactly how to reach these income levels and maximize your earning potential.</p>
+            <p className="mt-4">Platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> are revolutionizing streaming income through their Watch-to-Earn ecosystem, offering new revenue opportunities that benefit both creators and viewers. The rest of this guide will show you exactly how to reach these income levels and maximize your earning potential.</p>
           </div>
         }
         className="mb-8"
@@ -90,8 +90,8 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Earning on AVIE",
-            href: "https://avie.live",
+            label: "Start Earning on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -132,8 +132,8 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
               <li><strong>Requirements:</strong> 1,000 subscribers and 4,000 watch hours</li>
             </ul>
 
-            <h3 className="text-lg font-semibold mt-6">AVIE Streaming Revenue</h3>
-            <p className="mt-2"><a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>'s innovative Watch-to-Earn model:</p>
+            <h3 className="text-lg font-semibold mt-6">Vibes Streaming Revenue</h3>
+            <p className="mt-2"><a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>'s innovative Watch-to-Earn model:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Watch-to-Earn rewards:</strong> Viewers earn AP tokens for watching</li>
               <li><strong>Creator revenue share:</strong> Streamers earn from viewer engagement</li>
@@ -233,7 +233,7 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
               <li><strong>Multistreaming:</strong> Broadcast to multiple platforms simultaneously</li>
               <li><strong>Content repurposing:</strong> Turn streams into YouTube videos</li>
               <li><strong>Social media growth:</strong> Build audiences on Twitter, TikTok, Instagram</li>
-              <li><strong>AVIE integration:</strong> Leverage Watch-to-Earn rewards for additional income</li>
+              <li><strong>Vibes integration:</strong> Leverage Watch-to-Earn rewards for additional income</li>
             </ul>
 
             <h3 className="text-lg font-semibold mt-6">Long-term Revenue Building</h3>
@@ -329,10 +329,10 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
             </ul>
 
             <h3 className="text-lg font-semibold mt-6">Platform Strategy</h3>
-            <p className="mt-2">Leverage platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> for maximum income:</p>
+            <p className="mt-2">Leverage platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> for maximum income:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Multi-platform presence:</strong> Diversify your audience and income</li>
-              <li><strong>Watch-to-Earn integration:</strong> Benefit from AVIE's unique model</li>
+              <li><strong>Watch-to-Earn integration:</strong> Benefit from Vibes's unique model</li>
               <li><strong>Cross-promotion:</strong> Use each platform to grow others</li>
               <li><strong>Platform-specific content:</strong> Tailor content to each platform's strengths</li>
             </ul>
@@ -346,8 +346,8 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
         description="Begin building your streaming income with realistic expectations and proven strategies. Success takes time, but with dedication and the right approach, streaming can become a profitable career."
         buttons={[
           {
-            label: "Start Your Journey on AVIE",
-            href: "https://https://avie.live",
+            label: "Start Your Journey on Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

@@ -45,7 +45,7 @@ const GrowthMarketingGuide: React.FC = () => {
     },
     {
       question: 'Should I focus on one platform or stream to multiple platforms?',
-      answer: 'Start with one platform to build an initial audience, then expand to others. Multi-streaming can increase exposure but requires more effort. Use tools like AVIE MultiStream to efficiently reach multiple platforms simultaneously.'
+      answer: 'Start with one platform to build an initial audience, then expand to others. Multi-streaming can increase exposure but requires more effort. Use tools like Vibes MultiStream to efficiently reach multiple platforms simultaneously.'
     },
     {
       question: 'How do I get noticed in oversaturated streaming categories?',
@@ -74,16 +74,16 @@ const GrowthMarketingGuide: React.FC = () => {
 
   const multiStreamButtons = [
     {
-      label: 'Multi-Stream with AVIE',
+      label: 'Multi-Stream with Vibes',
       href: '/guides/earn-more-multi-streaming',
       variant: 'primary' as const,
       ariaLabel: 'Learn about multi-platform streaming'
     },
     {
-      label: 'AVIE Streaming Benefits',
-      href: '/guides/earn-more-from-live-streaming-with-avie',
+      label: 'Vibes Streaming Benefits',
+      href: '/guides/earn-more-from-live-streaming-with-Vibes',
       variant: 'outline' as const,
-      ariaLabel: 'Discover AVIE streaming advantages'
+      ariaLabel: 'Discover Vibes streaming advantages'
     }
   ];
 

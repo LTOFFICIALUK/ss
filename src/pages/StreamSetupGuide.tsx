@@ -10,7 +10,7 @@ const StreamSetupGuide: React.FC = () => {
   const quickStartSteps = [
     {
       name: 'Choose Your Streaming Platform',
-      text: 'Decide between Twitch, YouTube, AVIE, or other platforms based on your audience and goals. Each platform has different features and monetization options.'
+      text: 'Decide between Twitch, YouTube, Vibes, or other platforms based on your audience and goals. Each platform has different features and monetization options.'
     },
     {
       name: 'Set Up Your Hardware',
@@ -53,16 +53,16 @@ const StreamSetupGuide: React.FC = () => {
     },
     {
       question: 'What is the best streaming software for beginners?',
-      answer: 'OBS Studio is free and most popular, offering extensive features. Streamlabs OBS provides a more user-friendly interface. AVIE MultiStream plugin allows streaming to multiple platforms simultaneously.'
+      answer: 'OBS Studio is free and most popular, offering extensive features. Streamlabs OBS provides a more user-friendly interface. Vibes MultiStream plugin allows streaming to multiple platforms simultaneously.'
     }
   ];
 
   const ctaButtons = [
     {
-      label: 'Start Streaming on AVIE',
-      href: '/guides/how-to-live-stream-on-AVIE-Streaming',
+      label: 'Start Streaming on Vibes',
+      href: '/guides/how-to-live-stream-on-Vibes-Streaming',
       variant: 'primary' as const,
-      ariaLabel: 'Learn how to start streaming on AVIE platform'
+      ariaLabel: 'Learn how to start streaming on Vibes platform'
     },
     {
       label: 'OBS Setup Guide',
@@ -195,14 +195,14 @@ const StreamSetupGuide: React.FC = () => {
             <RichText
               heading="Streaming Software Setup"
               headingLevel={2}
-              content="OBS Studio (Free) is the most popular and powerful streaming software. Offers unlimited scenes, sources, and customization options. Perfect for users who want complete control over their stream. Streamlabs OBS is built on OBS but with added features like built-in alerts, themes, and easier setup. Great for beginners who want a more user-friendly interface. AVIE MultiStream allows streaming to multiple platforms simultaneously, maximizing your reach and potential revenue. Essential for serious streamers looking to grow their audience."
+              content="OBS Studio (Free) is the most popular and powerful streaming software. Offers unlimited scenes, sources, and customization options. Perfect for users who want complete control over their stream. Streamlabs OBS is built on OBS but with added features like built-in alerts, themes, and easier setup. Great for beginners who want a more user-friendly interface. Vibes MultiStream allows streaming to multiple platforms simultaneously, maximizing your reach and potential revenue. Essential for serious streamers looking to grow their audience."
               maxWidth="6xl"
             />
 
             <RichText
               heading="Platform-Specific Setup Guides"
               headingLevel={2}
-              content="Twitch Streaming is the most popular gaming platform with built-in monetization features. YouTube Live is excellent for educational content and long-form streams. Built-in audience from regular YouTube videos provides growth opportunities. AVIE Streaming is an emerging platform with innovative features and better revenue sharing. Perfect for streamers looking to diversify their platforms."
+              content="Twitch Streaming is the most popular gaming platform with built-in monetization features. YouTube Live is excellent for educational content and long-form streams. Built-in audience from regular YouTube videos provides growth opportunities. Vibes Streaming is an emerging platform with innovative features and better revenue sharing. Perfect for streamers looking to diversify their platforms."
               maxWidth="6xl"
             />
 

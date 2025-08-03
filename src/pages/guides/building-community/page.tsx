@@ -31,7 +31,7 @@ const BuildingCommunity: React.FC = () => {
               <li>The community maintains positive culture even when you're offline</li>
             </ul>
             
-            <p className="mt-4">Whether you're streaming on <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, Twitch, YouTube, or multiple platforms, the principles of community building remain consistent. The key is creating an environment where people feel valued, heard, and connected to both you and each other.</p>
+            <p className="mt-4">Whether you're streaming on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, Twitch, YouTube, or multiple platforms, the principles of community building remain consistent. The key is creating an environment where people feel valued, heard, and connected to both you and each other.</p>
           </div>
         }
         className="mb-8"
@@ -79,8 +79,8 @@ const BuildingCommunity: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Building on AVIE",
-            href: "https://avie.live",
+            label: "Start Building on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -173,7 +173,7 @@ const BuildingCommunity: React.FC = () => {
             <h3 className="text-lg font-semibold mt-6">Leveraging Platform Features</h3>
             <p className="mt-2">Use platform-specific tools to enhance community building:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>AVIE features:</strong> Utilize Watch-to-Earn rewards and community tools</li>
+              <li><strong>Vibes features:</strong> Utilize Watch-to-Earn rewards and community tools</li>
               <li><strong>Twitch integration:</strong> Channel points, predictions, and polls</li>
               <li><strong>YouTube community:</strong> Posts, polls, and community tab engagement</li>
               <li><strong>Discord bots:</strong> Automated welcome messages and role assignments</li>
@@ -278,8 +278,8 @@ const BuildingCommunity: React.FC = () => {
         description="Transform your viewers into a loyal, engaged community that supports your streaming journey and creates lasting friendships."
         buttons={[
           {
-            label: "Start Your Community on AVIE",
-            href: "https://https://avie.live",
+            label: "Start Your Community on Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

@@ -20,7 +20,7 @@ const Footer = () => {
   ];
 
   const streamingPlatforms = [
-    { name: 'AVIE Streaming', url: 'https://avie.tv', description: 'Multi-stream with AVIE' },
+    { name: 'Vibes Streaming', url: 'https://vibes.stream', description: 'Multi-stream with Vibes' },
     { name: 'Twitch', url: 'https://twitch.tv', description: 'Live streaming platform' },
     { name: 'YouTube', url: 'https://youtube.com', description: 'Video and live streaming' },
     { name: 'Kick', url: 'https://kick.com', description: 'Creator-focused streaming' },

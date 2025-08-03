@@ -21,7 +21,7 @@ const LiveStreamingGuide: React.FC = () => {
           <div>
             <p>Before you start streaming, make sure you have these essential items:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li>A streaming platform account. You can get started with <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a>, <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Twitch</a>, <a href="https://kick.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Kick</a> or <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">YouTube</a>.</li>
+              <li>A streaming platform account. You can get started with <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>, <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Twitch</a>, <a href="https://kick.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Kick</a> or <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">YouTube</a>.</li>
               <li>A computer that meets minimum streaming requirements</li>
               <li>Stable internet connection (recommended: 5Mbps upload speed)</li>
               <li>Broadcasting software (OBS, Streamlabs, etc.)</li>
@@ -35,8 +35,8 @@ const LiveStreamingGuide: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Create AVIE Account",
-            href: "https://avie.live",
+            label: "Create Vibes Account",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -52,14 +52,14 @@ const LiveStreamingGuide: React.FC = () => {
       />
 
       <RichText
-        heading="Step 1: Setting Up Your AVIE Account"
+        heading="Step 1: Setting Up Your Vibes Account"
         content={
           <div>
-            <p>Creating your AVIE account is the first step in your streaming journey. Visit <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">avie.live</a> and click 'Register'. Choose a unique username that represents you and your content. This will be your channel name, and cannot be changed later so choose wisely!</p>
+            <p>Creating your Vibes account is the first step in your streaming journey. Visit <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">vibes.stream</a> and click 'Register'. Choose a unique username that represents you and your content. This will be your channel name, and cannot be changed later so choose wisely!</p>
             <p className="mt-4">Important account settings to configure:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Add a profile picture</li>
-              <li>Connect your Phantom Wallet to your AVIE account</li> 
+              <li>Connect your Phantom Wallet to your Vibes account</li> 
             </ul>
           </div>
         }
@@ -72,8 +72,8 @@ const LiveStreamingGuide: React.FC = () => {
           <div>
             <p>OBS Studio is the most popular free streaming software. After downloading and installing:</p>
             <ol className="list-decimal pl-6 space-y-2 mt-4">
-              <li>Add your AVIE stream key in OBS Settings {'>'} Stream</li>
-              <li>Configure your video settings (AVIE provides recommended setting on their "Go Live" page)</li>
+              <li>Add your Vibes stream key in OBS Settings {'>'} Stream</li>
+              <li>Configure your video settings (Vibes provides recommended setting on their "Go Live" page)</li>
               <li>Set up your audio sources and video sources</li>
               <li>Create basic scenes (Starting Soon, Live, and Ending screens) and save them (OBS saves these automatically)</li>
             </ol>
@@ -87,7 +87,7 @@ const LiveStreamingGuide: React.FC = () => {
         heading="Step 3: Optimizing Your Stream Quality"
         content={
           <div>
-            <p>AVIE provides recommended settings for your stream quality and performance:</p>
+            <p>Vibes provides recommended settings for your stream quality and performance:</p>
             <div className="mt-4">
               <p>Start with these recommended settings:</p>
               <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -107,10 +107,10 @@ const LiveStreamingGuide: React.FC = () => {
         heading="Step 4: Creating Engaging Stream Content"
         content={
           <div>
-            <p>Success on AVIE isn't just about technical setup. Consider these content aspects:</p>
+            <p>Success on Vibes isn't just about technical setup. Consider these content aspects:</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
               <li>Choose your main content category (games, music, art, etc.)</li>
-              <li>Set a consistent streaming schedule (AVIE recommends 1-2 hours per day). Streaming around the same time each day will help you build a consistent audience.</li>
+              <li>Set a consistent streaming schedule (Vibes recommends 1-2 hours per day). Streaming around the same time each day will help you build a consistent audience.</li>
               <li>Interact with chat while streaming. This will help you build a relationship with your audience and increase your engagement.</li>
               <li>Use overlays and alerts to enhance viewer experience. This will help improve how your stream looks and make it more attractive to newcomers.</li>
               <li>Add a facecam to your stream. This will help your viewers feel like they're building a more personal connection with you.</li>
@@ -125,8 +125,8 @@ const LiveStreamingGuide: React.FC = () => {
         description="Get the essential tools and resources to kickstart your streaming career."
         buttons={[
           {
-            label: "Join AVIE Today",
-            href: "https://avie.live",
+            label: "Join Vibes Today",
+            href: "https://vibes.stream",
             variant: "primary"
           },
           {

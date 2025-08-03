@@ -30,7 +30,7 @@ const TwitchMonetization: React.FC = () => {
               <li>Understanding your audience's spending habits and preferences</li>
             </ul>
             
-            <p className="mt-4">While Twitch provides excellent monetization opportunities, platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> offer additional revenue potential through their Watch-to-Earn ecosystem and multistreaming capabilities, allowing you to maximize your earning potential across multiple platforms.</p>
+            <p className="mt-4">While Twitch provides excellent monetization opportunities, platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> offer additional revenue potential through their Watch-to-Earn ecosystem and multistreaming capabilities, allowing you to maximize your earning potential across multiple platforms.</p>
           </div>
         }
         className="mb-8"
@@ -85,8 +85,8 @@ const TwitchMonetization: React.FC = () => {
       <CTAButtons
         buttons={[
           {
-            label: "Start Multi-Platform Earning on AVIE",
-            href: "https://avie.live",
+            label: "Start Multi-Platform Earning on Vibes",
+            href: "https://vibes.stream",
             variant: "primary",
             isExternal: true
           },
@@ -140,7 +140,7 @@ const TwitchMonetization: React.FC = () => {
               <li><strong>YouTube:</strong> Ad revenue from highlights and tutorials</li>
               <li><strong>Patreon:</strong> Subscription-based exclusive content</li>
               <li><strong>Discord:</strong> Paid server memberships and perks</li>
-              <li><strong>AVIE:</strong> Watch-to-Earn rewards and multistreaming benefits</li>
+              <li><strong>Vibes:</strong> Watch-to-Earn rewards and multistreaming benefits</li>
             </ul>
           </div>
         }
@@ -181,7 +181,7 @@ const TwitchMonetization: React.FC = () => {
             </ul>
 
             <h3 className="text-lg font-semibold mt-6">Multi-Platform Revenue</h3>
-            <p className="mt-2">Leverage platforms like <a href="https://avie.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">AVIE</a> for additional income:</p>
+            <p className="mt-2">Leverage platforms like <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a> for additional income:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Multistreaming:</strong> Earn from multiple platforms simultaneously</li>
               <li><strong>Watch-to-Earn:</strong> Provide additional value to viewers</li>
@@ -272,8 +272,8 @@ const TwitchMonetization: React.FC = () => {
         description="Transform your passion for streaming into a sustainable income with proven monetization strategies and diverse revenue streams."
         buttons={[
           {
-            label: "Start Earning on AVIE",
-            href: "https://https://avie.live",
+            label: "Start Earning on Vibes",
+            href: "https://https://vibes.stream",
             variant: "primary",
             isExternal: true
           },

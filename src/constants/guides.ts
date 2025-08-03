@@ -39,7 +39,7 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
   },
   'strategies-to-make-money-from-live-streaming': {
     title: 'Strategies To Make Money From Live Streaming',
-    description: 'Maximize your income as a live streamer—on platforms like AVIE Streaming, from any device. Whether you are a gamer, musician, educator, or content creator, discover proven strategies to turn your passion into profit.',
+    description: 'Maximize your income as a live streamer—on platforms like Vibes Streaming, from any device. Whether you are a gamer, musician, educator, or content creator, discover proven strategies to turn your passion into profit.',
     category: 'monetization',
     readTime: '16 min',
     difficulty: 'Advanced'
@@ -58,23 +58,23 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     readTime: '5 min',
     difficulty: 'Intermediate'
   },
-  'earn-more-from-live-streaming-with-avie': {
-    title: 'How To Earn More From Live Streaming With AVIE',
-    description: 'Learn how to earn more as a live streamer on AVIE with our comprehensive guide. This guide will explain why its better than other platforms.',
+  'earn-more-from-live-streaming-with-Vibes': {
+    title: 'How To Earn More From Live Streaming With Vibes',
+    description: 'Learn how to earn more as a live streamer on Vibes with our comprehensive guide. This guide will explain why its better than other platforms.',
     category: 'growth-marketing',
     readTime: '10 min',
     difficulty: 'Beginner'
   },
   'how-much-revenue-can-you-make-from-streaming': {
     title: 'How Much Revenue Can You Make From Streaming?',
-    description: 'Explore the various ways to earn income through streaming platforms, including AVIE\'s unique AP reward system, subscriptions, donations, and more.',
+    description: 'Explore the various ways to earn income through streaming platforms, including Vibes\'s unique AP reward system, subscriptions, donations, and more.',
     category: 'monetization',
     readTime: '10 min',
     difficulty: 'Intermediate'
   },
-  'using-avie-multistreaming-to-earn-more': {
-    title: 'Using AVIE Multistreaming To Earn More',
-    description: 'Learn how to use AVIE\'s multistreaming feature to earn more from your streaming.',
+  'using-Vibes-multistreaming-to-earn-more': {
+    title: 'Using Vibes Multistreaming To Earn More',
+    description: 'Learn how to use Vibes\'s multistreaming feature to earn more from your streaming.',
     category: 'monetization',
     readTime: '10 min',
     difficulty: 'Intermediate'
@@ -93,9 +93,9 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     readTime: '5 min',
     difficulty: 'Beginner'
   },
-  'how-to-live-stream-on-AVIE-Streaming': {
-    title: 'How To Live Stream On AVIE Streaming',
-    description: 'Learn how to live stream on AVIE Streaming with our comprehensive guide. From setting up your account to going live, discover everything you need to become a successful streamer.',
+  'how-to-live-stream-on-Vibes-Streaming': {
+    title: 'How To Live Stream On Vibes Streaming',
+    description: 'Learn how to live stream on Vibes Streaming with our comprehensive guide. From setting up your account to going live, discover everything you need to become a successful streamer.',
     category: 'stream-setup',
     readTime: '5 min',
     difficulty: 'Beginner'
@@ -205,9 +205,9 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     readTime: '20 min',
     difficulty: 'Intermediate'
   },
-  'avie-streaming-guide': {
-    title: 'Streaming With AVIE: The Complete Guide to Next-Generation Streaming in 2025',
-    description: 'Master AVIE Streaming platform with this comprehensive guide. Learn about unique features, monetization advantages, multi-streaming capabilities, and why AVIE is the future of live streaming.',
+  'Vibes-streaming-guide': {
+    title: 'Streaming With Vibes: The Complete Guide to Next-Generation Streaming in 2025',
+    description: 'Master Vibes Streaming platform with this comprehensive guide. Learn about unique features, monetization advantages, multi-streaming capabilities, and why Vibes is the future of live streaming.',
     category: 'stream-setup',
     readTime: '15 min',
     difficulty: 'Beginner'

@@ -15,10 +15,10 @@ const GuidesIndex = React.lazy(() => import('./pages/guides'));
 // Lazy load guide pages
 const TwitchStreamingGuide = React.lazy(() => import('./pages/guides/how-to-start-streaming-on-twitch/page'));
 const LiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream/page'));
-const VibesLiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream-on-Vibes-Streaming/page'));
+const VibesLiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream-on-AVIE-Streaming/page'));
 const BestPlacesToLiveStream = React.lazy(() => import('./pages/guides/best-places-to-live-stream/page'));
 const MobileStreamingGuide = React.lazy(() => import('./pages/guides/how-to-stream-from-mobile/page'));
-const EarnMoreAsALiveStreamerWithVibes = React.lazy(() => import('./pages/guides/earn-more-from-live-streaming-with-Vibes/page'));
+const EarnMoreAsALiveStreamerWithVibes = React.lazy(() => import('./pages/guides/earn-more-from-live-streaming-with-avie/page'));
 const EarnMoreMultiStreaming = React.lazy(() => import('./pages/guides/earn-more-multi-streaming/page'));
 const MonetizeYourLiveStreamContent = React.lazy(() => import('./pages/guides/monetize-your-live-stream-content/page'));
 const MonetizeYourClips = React.lazy(() => import('./pages/guides/monetize-your-clips/page'));
@@ -26,7 +26,7 @@ const StrategiesToMakeMoneyFromLiveStreaming = React.lazy(() => import('./pages/
 const BestMicForStreaming = React.lazy(() => import('./pages/guides/what-is-the-best-mic-for-streaming/page'));
 const StreamingEquipmentGuide = React.lazy(() => import('./pages/guides/streaming-equipment-guide/page'));
 const OBSSetupGuide = React.lazy(() => import('./pages/guides/obs-setup-guide/page'));
-const MultiStreamRevenue = React.lazy(() => import('./pages/guides/using-Vibes-multistreaming-to-earn-more/page'));
+const MultiStreamRevenue = React.lazy(() => import('./pages/guides/using-avie-multistreaming-to-earn-more/page'));
 const ContentPlanningStrategy = React.lazy(() => import('./pages/guides/content-planning-strategy/page'));
 const ContentCalendarCreation = React.lazy(() => import('./pages/guides/content-calendar-creation/page'));
 const BuildingCommunity = React.lazy(() => import('./pages/guides/building-community/page'));
@@ -50,7 +50,7 @@ const ContentStrategyGuide = React.lazy(() => import('./pages/ContentStrategyGui
 const GrowthMarketingGuide = React.lazy(() => import('./pages/GrowthMarketingGuide'));
 const MonetizationGuide = React.lazy(() => import('./pages/MonetizationGuide'));
 const CommunityBuildingGuide = React.lazy(() => import('./pages/CommunityBuildingGuide'));
-const VibesStreamingGuide = React.lazy(() => import('./pages/VibesStreamingGuide'));
+const VibesStreamingGuide = React.lazy(() => import('./pages/AVIEStreamingGuide'));
 const AudienceGrowthGuide = React.lazy(() => import('./pages/AudienceGrowthGuide'));
 
 // Audience Growth Cluster Pages

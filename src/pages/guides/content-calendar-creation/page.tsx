@@ -13,6 +13,19 @@ const ContentCalendarCreation: React.FC = () => {
       description="Build a content calendar that keeps you organized and consistent. Learn templates, tools, and strategies to plan your streaming content weeks and months in advance."
       publishDate={today}
       category="content-strategy"
+      keywords={[
+        'content calendar for streamers',
+        'streaming content calendar',
+        'streamer content planning',
+        'streaming schedule calendar',
+        'content calendar template',
+        'streaming content organization',
+        'streamer content workflow',
+        'content calendar setup',
+        'streaming content planner',
+        'streaming content schedule'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/content-calendar-guide.jpg"
     >
 
       <RichText

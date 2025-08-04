@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { 
   HiChartBar, 
@@ -16,7 +17,22 @@ import {
 
 const About = () => {
   return (
-    <div className="max-w-4xl mx-auto space-y-12">
+    <>
+      <Helmet>
+        <title>About SuccessfulStreamer - Independent Streaming Research & Guides</title>
+        <meta name="description" content="Learn about SuccessfulStreamer's mission to provide independent, research-backed streaming guides and insights. We help content creators make informed decisions about their streaming careers." />
+        <meta name="keywords" content="streaming guides, content creator resources, streaming research, independent streaming advice, streaming platform comparison, streamer success tips" />
+        <meta property="og:title" content="About SuccessfulStreamer - Independent Streaming Research & Guides" />
+        <meta property="og:description" content="Learn about SuccessfulStreamer's mission to provide independent, research-backed streaming guides and insights. We help content creators make informed decisions about their streaming careers." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://successfulstreamer.com/about" />
+        <meta property="og:image" content="https://successfulstreamer.com/images/about-successfulstreamer.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About SuccessfulStreamer - Independent Streaming Research & Guides" />
+        <meta name="twitter:description" content="Learn about SuccessfulStreamer's mission to provide independent, research-backed streaming guides and insights." />
+        <meta name="twitter:image" content="https://successfulstreamer.com/images/about-successfulstreamer.jpg" />
+      </Helmet>
+      <div className="max-w-4xl mx-auto space-y-12">
       {/* Mission Section */}
       <section className="text-center">
         <h1 className="text-4xl font-bold mb-6">About SuccessfulStreamer</h1>
@@ -192,7 +208,8 @@ const About = () => {
           Explore Our Guides
         </Link>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

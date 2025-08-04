@@ -13,6 +13,19 @@ const GrowthHackingTwitch: React.FC = () => {
       description="Discover proven growth hacking strategies to grow your Twitch channel fast. Learn advanced techniques for increasing viewership, building community, and standing out in a crowded platform."
       publishDate={today}
       category="growth-marketing"
+      keywords={[
+        'growth hacking twitch',
+        'twitch growth strategies',
+        'twitch growth hacking',
+        'twitch follower growth',
+        'twitch viewer growth',
+        'twitch growth techniques',
+        'twitch growth tips',
+        'twitch growth strategies',
+        'twitch growth hacking guide',
+        'twitch growth optimization'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/growth-hacking-twitch.jpg"
     >
 
       <RichText

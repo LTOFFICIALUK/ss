@@ -13,6 +13,19 @@ const SponsorshipGuide: React.FC = () => {
       description="Everything you need to know about getting and maintaining sponsorships as a streamer. Learn how to find sponsors, negotiate deals, and build lasting partnerships."
       publishDate={today}
       category="monetization"
+      keywords={[
+        'streamer sponsorship guide',
+        'get sponsors streaming',
+        'streaming sponsorship tips',
+        'brand deals for streamers',
+        'sponsorship outreach streaming',
+        'streamer sponsorship pitch',
+        'monetize stream with sponsors',
+        'streaming brand partnerships',
+        'sponsorship email template',
+        'streamer sponsorship strategy'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/sponsorship-guide.jpg"
     >
       
       <RichText

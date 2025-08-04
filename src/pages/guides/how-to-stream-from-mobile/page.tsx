@@ -13,6 +13,19 @@ const MobileStreamingGuide: React.FC = () => {
       description="Learn how to easily stream from your phone or mobile device with our comprehensive guide. Perfect for IRL streaming and content creation on the go."
       publishDate={today}
       category="stream-setup"
+      keywords={[
+        'how to stream from mobile',
+        'mobile streaming guide',
+        'mobile streaming tutorial',
+        'streaming from phone',
+        'mobile streaming apps',
+        'streaming from mobile device',
+        'mobile streaming setup',
+        'phone streaming guide',
+        'mobile streaming tutorial',
+        'streaming from smartphone'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/mobile-streaming-guide.jpg"
     >
 
       <RichText

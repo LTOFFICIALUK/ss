@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Title from '../components/sub-components/title';
 import RichText from '../components/sub-components/rich-text';
 import CTAButtons from '../components/sub-components/cta-buttons';

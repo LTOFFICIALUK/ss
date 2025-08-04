@@ -96,7 +96,19 @@ const StreamingMetricsGuide: React.FC = () => {
       description="Master streaming analytics with focus on metrics that actually predict success. Learn which KPIs matter most, how to track them effectively, and how to use data to drive sustainable growth."
       publishDate={today}
       category="growth-marketing"
-      keywords={['streaming metrics', 'streaming KPIs', 'streaming analytics', 'streaming statistics', 'stream performance tracking', 'streaming data analysis', 'metrics that matter']}
+      keywords={[
+        'key streaming metrics',
+        'streaming metrics to track',
+        'streamer analytics',
+        'important stream metrics',
+        'streaming performance indicators',
+        'track stream growth',
+        'streaming kpis',
+        'streamer data analysis',
+        'streaming success metrics',
+        'streaming stats guide'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/streaming-metrics-guide.jpg"
       readingTime="15 min"
       wordCount={3500}
     >

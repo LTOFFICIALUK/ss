@@ -96,7 +96,19 @@ const StreamAnalyticsGuide: React.FC = () => {
       description="Master streaming analytics to understand your audience behavior, optimize content strategy, and make data-driven decisions for sustainable growth. Learn which metrics matter most and how to use them effectively."
       publishDate={today}
       category="growth-marketing"
-      keywords={['stream analytics', 'twitch analytics', 'streaming metrics', 'audience insights', 'viewer data', 'streaming statistics', 'content optimization']}
+      keywords={[
+        'stream analytics guide',
+        'understand streaming audience',
+        'streaming analytics tools',
+        'analyze stream performance',
+        'streamer audience insights',
+        'streaming data analysis',
+        'stream metrics explained',
+        'streaming analytics tutorial',
+        'improve stream with analytics',
+        'streamer growth analytics'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/stream-analytics-guide.jpg"
       readingTime="12 min"
       wordCount={2800}
     >

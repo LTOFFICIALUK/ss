@@ -14,6 +14,19 @@ const StreamingEquipmentGuide: React.FC = () => {
       description="Learn the must-have streaming equipment—from cameras & mics to lighting & capture cards. Follow our step-by-step guide to build your ideal streaming setup today."
       publishDate={today}
       category="stream-setup"
+      keywords={[
+        'streaming equipment guide',
+        'streaming setup equipment',
+        'streaming camera setup',
+        'streaming microphone setup',
+        'streaming lighting setup',
+        'capture card for streaming',
+        'streaming PC setup',
+        'streaming accessories',
+        'streaming gear guide',
+        'streaming equipment list'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/streaming-equipment-guide.jpg"
     >
 
       <RichText

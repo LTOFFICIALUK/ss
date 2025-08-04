@@ -96,7 +96,19 @@ const CommunityBuildingGuide: React.FC = () => {
       description="Master off-platform community building for streamers. Learn how to create thriving Discord servers, social media communities, and exclusive member experiences that deepen viewer loyalty and drive growth."
       publishDate={today}
       category="community-building"
-      keywords={['discord for streamers', 'streaming community building', 'off-platform community', 'streamer discord server', 'community management', 'viewer loyalty', 'streaming social media']}
+      keywords={[
+        'build streaming community',
+        'community outside twitch',
+        'streamer community building',
+        'grow stream audience',
+        'streaming community tips',
+        'streamer community guide',
+        'community engagement streaming',
+        'streamer audience growth',
+        'streaming community management',
+        'streaming community strategy'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/building-community-outside-twitch.jpg"
       readingTime="13 min"
       wordCount={3000}
     >

@@ -13,6 +13,19 @@ const EarnMoreMultiStreaming: React.FC = () => {
       description="Master the art of multistreaming to maximize your earnings and reach. Learn how to stream to multiple platforms simultaneously while building a sustainable streaming career."
       publishDate={today}
       category="growth-marketing"
+      keywords={[
+        'earn more multi streaming',
+        'multi streaming income',
+        'stream to multiple platforms',
+        'multi streaming guide',
+        'increase streaming revenue',
+        'multi streaming tutorial',
+        'multi platform streaming',
+        'multi streaming setup',
+        'multi streaming tips',
+        'multi streaming monetization'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/multi-streaming-guide.jpg"
     >
       
       <RichText

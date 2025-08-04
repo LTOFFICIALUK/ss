@@ -13,6 +13,19 @@ const OBSSetupGuide: React.FC = () => {
       description="Learn how to setup OBS Studio for streaming with our comprehensive guide."
       publishDate={today}
       category="stream-setup"
+      keywords={[
+        'OBS setup guide',
+        'OBS studio tutorial',
+        'OBS streaming setup',
+        'OBS configuration guide',
+        'OBS studio settings',
+        'OBS streaming tutorial',
+        'OBS setup for streaming',
+        'OBS studio guide',
+        'OBS streaming configuration',
+        'OBS setup tutorial'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/obs-setup-guide.jpg"
     >
 
       <RichText

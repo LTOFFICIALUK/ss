@@ -13,6 +13,19 @@ const ContentPlanningStrategy: React.FC = () => {
       description="Master content planning for streaming success. Learn proven strategies, tools, and frameworks to create engaging content that grows your audience and keeps viewers coming back."
       publishDate={today}
       category="content-strategy"
+      keywords={[
+        'content planning strategy',
+        'streaming content strategy',
+        'content planning for streamers',
+        'streaming content planning',
+        'content strategy guide',
+        'streaming content creation',
+        'content planning tips',
+        'streaming content strategy',
+        'content planning guide',
+        'streaming content development'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/content-planning-strategy.jpg"
     >
 
       <RichText

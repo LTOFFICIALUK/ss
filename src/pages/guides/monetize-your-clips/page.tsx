@@ -13,6 +13,19 @@ const MonetizeYourClips: React.FC = () => {
       description="Learn how to maximize your clip revenue across all major platforms. Master the art of clip creation, distribution, and monetization."
       publishDate={today}
       category="monetization"
+      keywords={[
+        'monetize stream clips',
+        'streaming clips income',
+        'make money from clips',
+        'clip monetization guide',
+        'streamer short form content',
+        'streaming highlights monetization',
+        'earn from stream clips',
+        'clip revenue streaming',
+        'streaming content repurposing',
+        'streamer clips strategy'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/monetize-clips-guide.jpg"
     >
 
       <RichText

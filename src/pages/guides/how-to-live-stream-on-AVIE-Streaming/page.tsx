@@ -13,6 +13,19 @@ const VibesLiveStreamingGuide: React.FC = () => {
       description="Learn how to live stream on Vibes Streaming with our comprehensive guide. From setting up your account to going live, discover everything you need to become a successful streamer."
       publishDate={today}
       category="stream-setup"
+      keywords={[
+        'how to live stream on vibes',
+        'vibes streaming guide',
+        'vibes streaming setup',
+        'vibes streaming tutorial',
+        'vibes platform guide',
+        'streaming on vibes',
+        'vibes streaming platform',
+        'vibes streamer guide',
+        'vibes streaming tutorial',
+        'vibes streaming setup guide'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/vibes-streaming-guide.jpg"
     >
 
       <RichText

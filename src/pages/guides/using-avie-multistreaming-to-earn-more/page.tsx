@@ -13,6 +13,19 @@ const MultiStreamRevenue: React.FC = () => {
       description="Learn how to leverage Vibes's free multistreaming feature to earn revenue from multiple platforms simultaneously while growing your audience across different platforms."
       publishDate={today}
       category="monetization"
+      keywords={[
+        'avie multistreaming',
+        'earn more streaming',
+        'multistreaming guide',
+        'stream to multiple platforms',
+        'avie streaming tips',
+        'increase streaming revenue',
+        'multistreaming tutorial',
+        'avie platform guide',
+        'streaming income boost',
+        'avie multistreaming setup'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/avie-multistreaming-guide.jpg"
     >
 
       <RichText

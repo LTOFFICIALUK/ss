@@ -13,6 +13,19 @@ const LiveStreamingGuide: React.FC = () => {
       description="Learn how to set up your live stream with our comprehensive guide. From setting up your account to going live, discover everything you need to become a successful streamer."
       publishDate={today}
       category="stream-setup"
+      keywords={[
+        'how to live stream',
+        'live streaming setup',
+        'streaming setup guide',
+        'streaming tutorial',
+        'live streaming tutorial',
+        'streaming for beginners',
+        'how to start streaming',
+        'streaming setup guide',
+        'live streaming guide',
+        'streaming basics'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/how-to-live-stream.jpg"
     >
 
       <RichText

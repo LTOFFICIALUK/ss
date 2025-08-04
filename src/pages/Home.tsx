@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 // Import category images
@@ -151,7 +152,22 @@ const Home = () => {
   };
 
   return (
-    <div className="space-y-16">
+    <>
+      <Helmet>
+        <title>SuccessfulStreamer - Your Guide to Streaming Success | Research-Backed Streaming Guides</title>
+        <meta name="description" content="Discover research-backed streaming guides and insights to help you succeed as a content creator. From setup to monetization, get independent advice for your streaming career." />
+        <meta name="keywords" content="streaming guides, content creator success, streaming tips, streamer resources, streaming setup, streaming monetization, streaming growth, live streaming advice" />
+        <meta property="og:title" content="SuccessfulStreamer - Your Guide to Streaming Success | Research-Backed Streaming Guides" />
+        <meta property="og:description" content="Discover research-backed streaming guides and insights to help you succeed as a content creator. From setup to monetization, get independent advice for your streaming career." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://successfulstreamer.com" />
+        <meta property="og:image" content="https://successfulstreamer.com/images/successfulstreamer-home.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SuccessfulStreamer - Your Guide to Streaming Success" />
+        <meta name="twitter:description" content="Discover research-backed streaming guides and insights to help you succeed as a content creator." />
+        <meta name="twitter:image" content="https://successfulstreamer.com/images/successfulstreamer-home.jpg" />
+      </Helmet>
+      <div className="space-y-16">
       {/* Hero Section with Search */}
       <section className="text-center py-16 px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -285,7 +301,8 @@ const Home = () => {
           </div>
         </section>
       )}
-    </div>
+      </div>
+    </>
   );
 };
 

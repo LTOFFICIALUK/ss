@@ -96,9 +96,19 @@ const StreamerNetworkingGuide: React.FC = () => {
       description="Master authentic streamer networking with genuine relationship-building strategies. Learn how to connect with fellow creators, build mutually beneficial collaborations, and grow your network without being pushy or fake."
       publishDate={today}
       category="community-building"
-      keywords={['streamer networking', 'streaming collaborations', 'creator networking', 'streamer community', 'streaming partnerships', 'authentic networking', 'streamer relationships']}
-      readingTime="12 min"
-      wordCount={2900}
+      keywords={[
+        'network with streamers',
+        'streamer networking tips',
+        'collaborate with streamers',
+        'streamer networking guide',
+        'streamer community building',
+        'streamer collab ideas',
+        'networking for streamers',
+        'streamer partnership tips',
+        'streamer networking etiquette',
+        'streamer networking strategies'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/streamer-networking-guide.jpg"
     >
       <RichText
         heading="Why Authentic Networking Is Essential for Streaming Success"

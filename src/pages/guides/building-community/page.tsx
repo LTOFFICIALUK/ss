@@ -13,6 +13,19 @@ const BuildingCommunity: React.FC = () => {
       description="Learn how to create and nurture an engaged community around your stream. Discover strategies for building lasting relationships, increasing viewer retention, and creating a loyal fanbase."
       publishDate={today}
       category="community-building"
+      keywords={[
+        'building streaming community',
+        'stream community building',
+        'streamer community management',
+        'viewer retention strategies',
+        'loyal fanbase building',
+        'streaming community engagement',
+        'community building for streamers',
+        'streaming audience growth',
+        'community management tips',
+        'streaming community strategies'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/building-streaming-community.jpg"
     >
 
       <RichText

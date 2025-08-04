@@ -96,9 +96,19 @@ const ViewerRetentionGuide: React.FC = () => {
       description="Master viewer retention with proven strategies for pre-stream anticipation, mid-stream engagement, and post-stream follow-up. Learn how to keep viewers watching longer and returning consistently."
       publishDate={today}
       category="content-strategy"
-      keywords={['viewer retention', 'stream retention', 'keeping viewers engaged', 'stream audience retention', 'viewer engagement techniques', 'streaming watch time', 'loyal viewers']}
-      readingTime="16 min"
-      wordCount={3800}
+      keywords={[
+        'viewer retention techniques',
+        'keep viewers on stream',
+        'streaming audience retention',
+        'increase stream watch time',
+        'stream engagement tips',
+        'retain live stream viewers',
+        'streaming retention strategies',
+        'before during after stream tips',
+        'streamer audience loyalty',
+        'streaming growth retention'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/viewer-retention-guide.jpg"
     >
       <RichText
         heading="Why Viewer Retention Is Your Most Important Streaming Metric"

@@ -13,6 +13,19 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
       description="Discover realistic income expectations for streamers. Learn about revenue streams, earning potential, and strategies to maximize your streaming income across platforms."
       publishDate={today}
       category="monetization"
+      keywords={[
+        'streaming revenue potential',
+        'how much can you make streaming',
+        'streamer income guide',
+        'streaming earnings explained',
+        'streaming payout guide',
+        'streamer salary',
+        'streaming income calculator',
+        'streaming revenue breakdown',
+        'streaming monetization',
+        'streamer earnings 2024'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/streaming-revenue-guide.jpg"
     >
 
       <RichText

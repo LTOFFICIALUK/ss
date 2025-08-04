@@ -13,6 +13,19 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
       description="Discover why Vibes is the best platform for maximizing your streaming income. Learn about unique features like the AP Reward System and MultiStream plugin that help you earn more while streaming."
       publishDate={today}
       category="growth-marketing"
+      keywords={[
+        'earn more live streaming',
+        'avie streaming income',
+        'increase streaming revenue',
+        'avie platform guide',
+        'streaming monetization avie',
+        'avie streamer tips',
+        'avie streaming tutorial',
+        'avie income strategies',
+        'avie streaming earnings',
+        'avie platform monetization'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/avie-earn-more-guide.jpg"
     >
 
       <RichText

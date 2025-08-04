@@ -96,7 +96,19 @@ const ContentStrategyGuide: React.FC = () => {
       description="Master streaming content strategy selection. Learn how to choose sustainable content focus, balance variety with consistency, and create content that grows loyal audiences while staying true to your brand."
       publishDate={today}
       category="content-strategy"
-      keywords={['streaming content strategy', 'stream content planning', 'content variety streaming', 'streaming niche selection', 'content pillars streaming', 'streaming content mix']}
+      keywords={[
+        'content strategy for streamers',
+        'choose streaming content',
+        'streaming content ideas',
+        'streaming content strategy',
+        'streamer content planning',
+        'streaming content guide',
+        'content strategy tips',
+        'streaming content selection',
+        'streaming content plan',
+        'streaming content approach'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/choosing-content-strategy.jpg"
       readingTime="14 min"
       wordCount={3200}
     >

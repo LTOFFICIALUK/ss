@@ -13,6 +13,19 @@ const TwitchStreamingGuide: React.FC = () => {
       description="Learn how to start streaming on Twitch with our comprehensive guide. From setting up your account to going live, discover everything you need to become a successful Twitch streamer."
       publishDate={today}
       category="stream-setup"
+      keywords={[
+        'how to start streaming on twitch',
+        'twitch streaming guide',
+        'beginner twitch streamer',
+        'twitch setup guide',
+        'streaming on twitch',
+        'twitch streaming tutorial',
+        'twitch streamer tips',
+        'twitch broadcasting software',
+        'OBS twitch setup',
+        'twitch stream quality'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/twitch-streaming-guide.jpg"
     >
 
       <RichText

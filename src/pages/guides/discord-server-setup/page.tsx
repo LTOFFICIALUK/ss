@@ -13,6 +13,19 @@ const DiscordServerSetup: React.FC = () => {
       description="Learn how to create and manage a Discord server for your streaming community. Complete guide with setup instructions, moderation tips, and community building strategies."
       publishDate={today}
       category="community-building"
+      keywords={[
+        'discord server setup',
+        'streamer discord guide',
+        'discord for streamers',
+        'discord community setup',
+        'discord server tips',
+        'discord moderation streaming',
+        'discord engagement streaming',
+        'discord server growth',
+        'discord bots for streamers',
+        'discord streaming integration'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/discord-server-setup.jpg"
     >
 
       <RichText

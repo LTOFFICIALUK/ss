@@ -13,6 +13,19 @@ const TwitchMonetization: React.FC = () => {
       description="Learn all the ways to monetize your Twitch stream and turn your passion into income. Discover subscriptions, donations, sponsorships, and advanced revenue strategies."
       publishDate={today}
       category="monetization"
+      keywords={[
+        'twitch monetization',
+        'make money on twitch',
+        'twitch affiliate program',
+        'twitch partner program',
+        'twitch revenue streams',
+        'twitch bits and subs',
+        'twitch ad revenue',
+        'twitch donations',
+        'twitch streamer income',
+        'twitch payout guide'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/twitch-monetization-guide.jpg"
     >
 
       <RichText

@@ -96,7 +96,19 @@ const StreamingScheduleGuide: React.FC = () => {
       description="Master streaming schedule creation and consistency. Learn how to choose optimal times, maintain regular streaming habits, and build audience expectations that drive loyal viewership and sustainable growth."
       publishDate={today}
       category="content-strategy"
-      keywords={['streaming schedule', 'consistent streaming', 'stream timing', 'streaming routine', 'viewer habits', 'streaming consistency', 'stream planning']}
+      keywords={[
+        'streaming schedule guide',
+        'build streaming schedule',
+        'stick to streaming schedule',
+        'streamer time management',
+        'streaming consistency tips',
+        'streaming schedule template',
+        'streaming routine',
+        'streaming planning',
+        'streamer productivity',
+        'streaming schedule strategy'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/streaming-schedule-guide.jpg"
       readingTime="10 min"
       wordCount={2500}
     >

@@ -13,6 +13,19 @@ const SocialMediaForStreamers: React.FC = () => {
       description="Master social media marketing for streaming success. Learn how to leverage Twitter, TikTok, Instagram, and YouTube to grow your streaming audience and build a loyal community."
       publishDate={today}
       category="growth-marketing"
+      keywords={[
+        'social media for streamers',
+        'streamer social media tips',
+        'promote stream on social media',
+        'grow streaming audience',
+        'streamer twitter tips',
+        'streamer instagram guide',
+        'streamer tiktok strategy',
+        'streaming content promotion',
+        'social media engagement streaming',
+        'streamer branding social'
+      ]}
+      featuredImage="https://successfulstreamer.com/images/social-media-for-streamers.jpg"
     >
       
       <RichText

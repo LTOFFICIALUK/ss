@@ -37,6 +37,9 @@ const StreamSetupPage = () => {
       description="Everything you need to know about setting up your streaming equipment and software"
       headerImage={streamSetupImg}
       category="stream-setup"
+      metaTitle="Streaming Setup Guide - Equipment, Software & Configuration Tips"
+      metaDescription="Learn how to set up your streaming equipment and software properly. From OBS configuration to hardware selection, get everything you need for professional streaming."
+      metaKeywords="streaming setup, obs setup, streaming equipment, streaming software, stream configuration, streaming hardware, obs studio setup"
     >
       <div className="space-y-12">
         {/* Quick Start Guide */}

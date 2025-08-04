@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ALL_GUIDES, GUIDE_CATEGORIES } from '../../constants/guides';
 import { GuideCategory } from '../../types';
 
@@ -90,6 +91,36 @@ const GuidesIndex: React.FC = () => {
     );
   }, [searchQuery, availableGuides]);
 
+  // Generate dynamic meta data based on available guides
+  const generateMetaData = () => {
+    const totalGuides = availableGuides.length;
+    const categories = Object.keys(guidesByCategory).length;
+    const popularTopics = ['Twitch', 'Monetization', 'Setup', 'Growth', 'Community'];
+    
+    const title = `Complete Streaming Guides (${totalGuides}+ Tutorials) - From Setup to Monetization`;
+    const description = `Master streaming with ${totalGuides}+ expert guides covering ${categories} categories. Learn Twitch setup, monetization strategies, audience growth, and community building. Step-by-step tutorials for beginners to advanced streamers.`;
+    const keywords = [
+      'streaming guides',
+      'twitch setup guide',
+      'streaming monetization',
+      'how to stream',
+      'streamer tips',
+      'live streaming tutorial',
+      'streaming equipment',
+      'streaming software',
+      'audience growth',
+      'community building',
+      'streaming income',
+      'obs setup',
+      'streaming tips',
+      'content creation'
+    ].join(', ');
+
+    return { title, description, keywords };
+  };
+
+  const { title, description, keywords } = generateMetaData();
+
   // Group implemented guides by category
   const guidesByCategory = implementedGuides.reduce((acc, [slug, guide]) => {
     if (!acc[guide.category]) {
@@ -118,9 +149,27 @@ const GuidesIndex: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <Helmet>
+        <title>{title} | SuccessfulStreamer</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://successfulstreamer.com/guides" />
+        <meta property="og:image" content="https://successfulstreamer.com/images/streaming-guides.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://successfulstreamer.com/images/streaming-guides.jpg" />
+        <link rel="canonical" href="https://successfulstreamer.com/guides" />
+      </Helmet>
       <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-        Streaming Guides
+        Complete Streaming Guides
       </h1>
+      <p className="text-xl text-gray-600 text-center mb-8">
+        {availableGuides.length}+ expert tutorials covering everything from setup to monetization
+      </p>
       
       {/* Search Section */}
       <div className="max-w-2xl mx-auto mb-12">

@@ -43,6 +43,9 @@ const ContentStrategyPage = () => {
       description="Develop a winning content strategy that engages your audience and grows your channel"
       headerImage={contentStrategyImg}
       category="content-strategy"
+      metaTitle="Streaming Content Strategy Guide - Plan, Create & Engage Your Audience"
+      metaDescription="Learn how to develop a winning content strategy for your streaming channel. Discover content planning, scheduling, and engagement techniques to grow your audience."
+      metaKeywords="streaming content strategy, content planning, stream scheduling, content calendar, streaming content ideas, audience engagement"
     >
       <div className="space-y-12">
         {/* Content Planning */}

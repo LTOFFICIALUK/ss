@@ -43,6 +43,9 @@ const MonetizationPage = () => {
       description="Learn how to turn your streaming passion into a sustainable income"
       headerImage={monetizationImg}
       category="monetization"
+      metaTitle="Streaming Monetization Guide - How to Make Money Streaming in 2024"
+      metaDescription="Learn proven strategies to monetize your streaming content. Discover multiple revenue streams, platform-specific tips, and how to build a sustainable streaming income."
+      metaKeywords="streaming monetization, make money streaming, streaming income, streamer revenue, streaming revenue streams, monetize twitch, streaming business"
     >
       <div className="space-y-12">
         {/* Income Potential */}

@@ -1,9 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const NotFound = () => {
   return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+    <>
+      <Helmet>
+        <title>404 - Page Not Found | SuccessfulStreamer</title>
+        <meta name="description" content="The page you're looking for doesn't exist. Find streaming guides, tips, and resources on our homepage." />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:title" content="404 - Page Not Found | SuccessfulStreamer" />
+        <meta property="og:description" content="The page you're looking for doesn't exist. Find streaming guides, tips, and resources on our homepage." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://successfulstreamer.com/404" />
+        <link rel="canonical" href="https://successfulstreamer.com/404" />
+      </Helmet>
+      <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-6xl font-bold text-gray-900 mb-4">404</h1>
       <h2 className="text-2xl font-semibold text-gray-700 mb-6">
         Page Not Found
@@ -32,6 +44,7 @@ const NotFound = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

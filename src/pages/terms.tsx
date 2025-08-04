@@ -1,8 +1,23 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Terms = () => {
   return (
-    <div className="max-w-4xl mx-auto space-y-8">
+    <>
+      <Helmet>
+        <title>Terms of Service - SuccessfulStreamer | Website Usage Terms & Conditions</title>
+        <meta name="description" content="Read SuccessfulStreamer's terms of service and conditions of use. Learn about your rights and responsibilities when using our streaming guides and resources." />
+        <meta name="keywords" content="terms of service, website terms, successfulstreamer terms, streaming website terms, usage conditions" />
+        <meta property="og:title" content="Terms of Service - SuccessfulStreamer | Website Usage Terms & Conditions" />
+        <meta property="og:description" content="Read SuccessfulStreamer's terms of service and conditions of use. Learn about your rights and responsibilities when using our streaming guides and resources." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://successfulstreamer.com/terms" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terms of Service - SuccessfulStreamer" />
+        <meta name="twitter:description" content="Read SuccessfulStreamer's terms of service and conditions of use." />
+        <link rel="canonical" href="https://successfulstreamer.com/terms" />
+      </Helmet>
+      <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <section className="text-center">
         <h1 className="text-4xl font-bold mb-4">Terms of Service</h1>
@@ -164,6 +179,7 @@ const Terms = () => {
         </p>
       </section>
     </div>
+    </>
   );
 };
 

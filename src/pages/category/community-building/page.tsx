@@ -43,6 +43,9 @@ const CommunityBuildingPage = () => {
       description="Create and nurture an engaged streaming community that grows together"
       headerImage={communityBuildingImg}
       category="community-building"
+      metaTitle="Streaming Community Building Guide - Build Loyal Audience & Engagement"
+      metaDescription="Learn how to build and nurture an engaged streaming community. Discover Discord setup, viewer engagement, and moderation strategies for loyal audience growth."
+      metaKeywords="streaming community building, discord server setup, viewer engagement, streamer community, audience building, streaming moderation"
     >
       <div className="space-y-12">
         {/* Community Values */}

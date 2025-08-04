@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 interface CategoryLayoutProps {
   title: string;
@@ -6,6 +7,9 @@ interface CategoryLayoutProps {
   children: React.ReactNode;
   headerImage: string;
   category?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
 }
 
 // Category-specific color schemes
@@ -50,11 +54,35 @@ const CategoryLayout: React.FC<CategoryLayoutProps> = ({
   children,
   headerImage,
   category,
+  metaTitle,
+  metaDescription,
+  metaKeywords,
 }) => {
   const colors = getCategoryColors(category || '');
   
+  // Default meta tags if not provided
+  const titleMeta = metaTitle || `${title} - Streaming Guides & Tips | SuccessfulStreamer`;
+  const descriptionMeta = metaDescription || `Learn everything about ${title.toLowerCase()} for streamers. Discover proven strategies, tips, and guides to improve your streaming success.`;
+  const keywordsMeta = metaKeywords || `${title.toLowerCase()}, streaming guides, streamer tips, live streaming, content creation`;
+  
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>{titleMeta}</title>
+        <meta name="description" content={descriptionMeta} />
+        <meta name="keywords" content={keywordsMeta} />
+        <meta property="og:title" content={titleMeta} />
+        <meta property="og:description" content={descriptionMeta} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://successfulstreamer.com/category/${category}`} />
+        <meta property="og:image" content={headerImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={titleMeta} />
+        <meta name="twitter:description" content={descriptionMeta} />
+        <meta name="twitter:image" content={headerImage} />
+        <link rel="canonical" href={`https://successfulstreamer.com/category/${category}`} />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <div className={`relative h-64 md:h-96 overflow-hidden bg-gradient-to-br ${colors.gradient}`}>
         <div className="absolute inset-0">
@@ -78,6 +106,7 @@ const CategoryLayout: React.FC<CategoryLayoutProps> = ({
         {children}
       </div>
     </div>
+    </>
   );
 };
 

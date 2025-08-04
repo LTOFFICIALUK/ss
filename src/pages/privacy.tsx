@@ -1,8 +1,23 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Privacy = () => {
   return (
-    <div className="max-w-4xl mx-auto space-y-8">
+    <>
+      <Helmet>
+        <title>Privacy Policy - SuccessfulStreamer | How We Protect Your Data</title>
+        <meta name="description" content="Learn how SuccessfulStreamer protects your privacy and personal information. Our comprehensive privacy policy explains data collection, usage, and your rights." />
+        <meta name="keywords" content="privacy policy, data protection, streaming privacy, successfulstreamer privacy, user data protection" />
+        <meta property="og:title" content="Privacy Policy - SuccessfulStreamer | How We Protect Your Data" />
+        <meta property="og:description" content="Learn how SuccessfulStreamer protects your privacy and personal information. Our comprehensive privacy policy explains data collection, usage, and your rights." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://successfulstreamer.com/privacy" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Privacy Policy - SuccessfulStreamer" />
+        <meta name="twitter:description" content="Learn how SuccessfulStreamer protects your privacy and personal information." />
+        <link rel="canonical" href="https://successfulstreamer.com/privacy" />
+      </Helmet>
+      <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <section className="text-center">
         <h1 className="text-4xl font-bold mb-4">Privacy Policy</h1>
@@ -132,6 +147,7 @@ const Privacy = () => {
         </p>
       </section>
     </div>
+    </>
   );
 };
 

@@ -43,6 +43,9 @@ const GrowthMarketingPage = () => {
       description="Proven strategies to grow your streaming channel and build your audience"
       headerImage={growthMarketingImg}
       category="growth-marketing"
+      metaTitle="Streaming Growth & Marketing Strategies - Grow Your Channel in 2024"
+      metaDescription="Discover proven strategies to grow your streaming channel and build a loyal audience. Learn social media marketing, content strategy, and community building techniques."
+      metaKeywords="streaming growth, streamer marketing, grow twitch channel, streaming audience, streamer promotion, streaming strategy, channel growth tips"
     >
       <div className="space-y-12">
         {/* Growth Statistics */}

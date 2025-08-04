@@ -375,7 +375,7 @@ const GuideLayout: React.FC<GuideLayoutProps> = ({
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <article className="py-6 sm:py-12 lg:pr-80" itemScope itemType="https://schema.org/Article">
-          <div className="max-w-4xl">
+          <div className="max-w-2xl">
             {/* Breadcrumbs */}
             <nav className="mb-6 sm:mb-8 overflow-x-auto whitespace-nowrap" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2 text-sm text-gray-500">

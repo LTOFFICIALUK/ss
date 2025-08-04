@@ -9,8 +9,8 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
   
   return (
     <GuideLayout
-      title="How to Make Money Live Streaming: 11 Tried & Tested Strategies"
-      description="Maximize your income as a live streamer—on any platform, from any device. Whether you're a gamer, musician, educator, or content creator, discover proven strategies to turn your passion into profit."
+      title="How to Make Money Live Streaming: 11 Proven Strategies"
+      description="Discover 11 proven ways to monetize your live streams—from product showcases and fan donations to subscriptions, ads & sponsorships. Start earning today!"
       publishDate={today}
       category="monetization"
       keywords={[

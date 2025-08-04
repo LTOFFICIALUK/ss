@@ -118,12 +118,12 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
     >
       <div className="prose prose-lg max-w-none">
         <p className="lead text-xl text-gray-700 mb-8">
-          Vibes Streaming today announced the rollout of its "Watch-to-Earn" feature, a new engagement model that rewards viewers in real time for watching live streams. Building on its existing Vibe Points (VP) reward system, the platform now allows audiences to accrue VP simply by tuning into streams—turning passive viewing into an active, tokenized experience.
+          Vibes Streaming today announced the rollout of its "Watch-to-Earn" feature, a new engagement model that rewards viewers in real time for watching live streams. Building on its existing Vibe Points (VP) reward system, the platform now allows audiences to accrue VP through a sophisticated algorithm that recognizes genuine engagement—turning passive viewing into an active, tokenized experience.
         </p>
 
         <h2>Turning Viewers into Earners</h2>
         <p>
-          With Watch-to-Earn, every minute spent watching a Vibes livestream automatically generates VP for the viewer. Points accrue at a base rate of 1 VP per minute, with bonus multipliers for interactive actions such as:
+          With Watch-to-Earn, viewers are rewarded through a sophisticated algorithm that analyzes engagement patterns and rewards genuine participation. The system recognizes various forms of interaction such as:
         </p>
         <ul>
           <li><strong>Chat Participation:</strong> Sending messages, using custom emotes or replying to polls</li>
@@ -141,12 +141,12 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
 
         <h2>Incentivizing Deeper Engagement</h2>
         <p>
-          Beyond simple watch time, Watch-to-Earn is designed to drive richer interaction:
+          Beyond simple watch time, Watch-to-Earn is designed to drive richer interaction through its sophisticated reward algorithm:
         </p>
         <ul>
-          <li><strong>Progress Milestones:</strong> Viewers unlock multipliers (+10% VP) when they hit cumulative view-time milestones (e.g. 60, 120, 240 minutes).</li>
-          <li><strong>Streak Bonuses:</strong> Returning to the same streamer for consecutive days boosts daily VP by up to 25%.</li>
-          <li><strong>Event Challenges:</strong> Streamers can create custom "Watch Party" events with special VP rewards for participation thresholds.</li>
+          <li><strong>Progress Milestones:</strong> Viewers unlock bonus rewards when they hit cumulative view-time milestones, with the algorithm recognizing sustained engagement patterns.</li>
+          <li><strong>Streak Bonuses:</strong> Returning to the same streamer for consecutive days triggers enhanced reward multipliers based on loyalty patterns.</li>
+          <li><strong>Event Challenges:</strong> Streamers can create custom "Watch Party" events with special reward opportunities for participation thresholds.</li>
         </ul>
 
         <p>
@@ -159,7 +159,7 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
         </p>
 
         <p>
-          The feature integrates directly into the Vibes web and mobile players, with a real-time VP counter displayed prominently during streams. Viewers can monitor their earning rate, unlock badges for achievement tiers, and see combined "live VP earned" overlays in the stream's HUD.
+          The feature integrates directly into the Vibes web and mobile players, with a real-time reward counter displayed prominently during streams. Viewers can monitor their earning progress, unlock badges for achievement tiers, and see live reward updates in the stream's HUD.
         </p>
 
         <h2>Fueling the Vibes Flywheel</h2>
@@ -179,11 +179,11 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
 
         <h2>Available Now</h2>
         <p>
-          The Watch-to-Earn feature is live today to all Vibes users globally. To start earning, visitors can head to any live stream on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">vibes.stream</a>, connect their Phantom wallet, and begin accruing Vibe Points immediately.
+          The Watch-to-Earn feature is live today to all Vibes users globally. To start earning, visitors can head to any live stream on <a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">vibes.stream</a>, connect their Phantom wallet, and begin earning rewards through the platform's sophisticated algorithm immediately.
         </p>
 
         <p>
-          For more information, visit the Vibes Streaming Help Center or contact press@vibes.stream for media inquiries.
+          For more information, visit the Vibes Streaming Documentation or contact the team on Discord for media inquiries.
         </p>
 
         <h2>About Vibes Streaming</h2>
@@ -199,7 +199,7 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
             <li><strong>Blockchain:</strong> Solana</li>
             <li><strong>Wallet Support:</strong> Phantom Wallet</li>
             <li><strong>Reward Token:</strong> Vibe Points (VP)</li>
-            <li><strong>Base Rate:</strong> 1 VP per minute</li>
+            <li><strong>Reward System:</strong> Sophisticated engagement algorithm</li>
             <li><strong>Transactions:</strong> 10M+ on-chain transactions</li>
           </ul>
         </div>

@@ -132,11 +132,11 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
         </ul>
 
         <p>
-          At the end of each viewing session—or any time via the viewer dashboard—points can be converted on-chain into Vibes' native $VIBE token or any whitelisted creator token. VIBE tokens settle directly to the viewer's connected Phantom wallet, while creator tokens distribute according to each streamer's subscription settings.
+          VP accrues continuously during viewing sessions, with payouts occurring every 2 weeks. At the end of each VP period, rewards are distributed on-chain based on each viewer's VP earned relative to the total VP earned by all users during that period. Viewers can currently claim their rewards in $SOL directly to their connected Phantom wallet, with plans to offer $VIBE token claims to bring more volume to the token. Creator tokens distribute according to each streamer's subscription settings.
         </p>
 
         <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-700">
-          "We believe that every second of attention deserves value," said Avery Chen, CEO of Vibes Streaming. "Watch-to-Earn democratizes the streaming economy by giving viewers a stake in the content they love. It's not just gamification—it's real, on-chain rewards that power community growth."
+          "Web3 Live Streaming is here to stay," said Bradyn Ricca, CEO of Vibes Streaming. "Vibes Streaming is the first platform to offer a sophisticated Watch-to-Earn feature that rewards viewers for their engagement, turning passive viewing into an active, tokenized experience."
         </blockquote>
 
         <h2>Incentivizing Deeper Engagement</h2>
@@ -150,16 +150,16 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
         </ul>
 
         <p>
-          These incentives not only reward loyal fans but also help creators build more sustained communities. Early beta tests showed streamers on Vibes achieved a 40% increase in average watch time and a 30% uplift in chat activity.
+          These incentives not only reward loyal fans but also help creators build more sustained communities. Early beta tests showed streamers on Vibes achieved significant increases in average watch time and chat activity.
         </p>
 
         <h2>Seamless, No-Gatekeeping Experience</h2>
         <p>
-          In keeping with Vibes' emphasis on accessibility, Watch-to-Earn requires no additional setup beyond a standard Phantom wallet connection at signup. Walletless viewers on desktop or mobile default to a custodial flow that mints VP on their behalf—eliminating crypto onboarding friction.
+          In keeping with Vibes' emphasis on accessibility, Watch-to-Earn requires no additional setup beyond a standard Phantom wallet connection at signup. Walletless viewers on desktop or mobile default to a custodial flow that tracks VP on their behalf—eliminating crypto onboarding friction. VP is a platform currency similar to Twitch bits or TikTok gems, with no backing and designed for in-platform use.
         </p>
 
         <p>
-          The feature integrates directly into the Vibes web and mobile players, with a real-time reward counter displayed prominently during streams. Viewers can monitor their earning progress, unlock badges for achievement tiers, and see live reward updates in the stream's HUD.
+          The feature integrates directly into the Vibes web and mobile players. Viewers can monitor their earning progress, unlock badges for achievement tiers, and track their engagement through the platform's dashboard.
         </p>
 
         <h2>Fueling the Vibes Flywheel</h2>
@@ -174,7 +174,7 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
         </ol>
 
         <p>
-          According to Vibes data, VP-driven engagement has already generated over 10 million on-chain transactions since the platform's launch in early 2025.
+          According to Vibes data, VP-driven engagement has already generated significant on-chain activity since the platform's launch in early 2025.
         </p>
 
         <h2>Available Now</h2>
@@ -200,7 +200,6 @@ const VibesStreamingWatchToEarnLaunch: React.FC = () => {
             <li><strong>Wallet Support:</strong> Phantom Wallet</li>
             <li><strong>Reward Token:</strong> Vibe Points (VP)</li>
             <li><strong>Reward System:</strong> Sophisticated engagement algorithm</li>
-            <li><strong>Transactions:</strong> 10M+ on-chain transactions</li>
           </ul>
         </div>
 

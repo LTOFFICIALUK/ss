@@ -148,7 +148,7 @@ const HowMuchRevenueFromStreaming: React.FC = () => {
             <h3 className="text-lg font-semibold mt-6">Vibes Streaming Revenue</h3>
             <p className="mt-2"><a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>'s innovative Watch-to-Earn model:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>Watch-to-Earn rewards:</strong> Viewers earn AP tokens for watching</li>
+              <li><strong>Watch-to-Earn rewards:</strong> Viewers earn VP tokens for watching</li>
               <li><strong>Creator revenue share:</strong> Streamers earn from viewer engagement</li>
               <li><strong>Multistreaming benefits:</strong> Broadcast to multiple platforms simultaneously</li>
               <li><strong>Lower barriers:</strong> Easier monetization requirements</li>

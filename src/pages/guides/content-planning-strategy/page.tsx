@@ -115,7 +115,7 @@ const ContentPlanningStrategy: React.FC = () => {
             <h3 className="text-lg font-semibold mt-6">Vibes Streaming</h3>
             <p className="mt-2"><a href="https://vibes.stream" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">Vibes</a>'s Watch-to-Earn ecosystem and multistreaming capabilities create unique opportunities:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>Plan content that encourages longer viewing sessions to maximize AP rewards</li>
+              <li>Plan content that encourages longer viewing sessions to maximize VP rewards</li>
               <li>Create educational content that adds value to justify watch time</li>
               <li>Leverage multistreaming features to plan cross-platform content</li>
               <li>Focus on community-building content that benefits from Vibes's engagement tools</li>

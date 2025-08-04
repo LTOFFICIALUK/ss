@@ -17,7 +17,17 @@ const TwitchStreamingGuide = React.lazy(() => import('./pages/guides/how-to-star
 const LiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream/page'));
 const VibesLiveStreamingGuide = React.lazy(() => import('./pages/guides/how-to-live-stream-on-AVIE-Streaming/page'));
 const BestPlacesToLiveStream = React.lazy(() => import('./pages/guides/best-places-to-live-stream/page'));
+const WhatIsVibesStreaming = React.lazy(() => import('./pages/guides/what-is-vibes-streaming/page'));
 const MobileStreamingGuide = React.lazy(() => import('./pages/guides/how-to-stream-from-mobile/page'));
+
+// Lazy load blog pages
+const BlogIndexPage = React.lazy(() => import('./pages/blog'));
+const VibesStreamingWatchToEarnLaunch = React.lazy(() => import('./pages/blog/vibes-streaming-launches-watch-to-earn-feature/page'));
+const NewStreamingPlatformRegulations = React.lazy(() => import('./pages/blog/new-streaming-platform-regulations/page'));
+const FutureOfMultiPlatformStreaming = React.lazy(() => import('./pages/blog/future-of-multi-platform-streaming/page'));
+const HowToBuildLoyalStreamingCommunity2025 = React.lazy(() => import('./pages/blog/how-to-build-loyal-streaming-community-2025/page'));
+const Top10StreamingEquipmentUpgrades2025 = React.lazy(() => import('./pages/blog/top-10-streaming-equipment-upgrades-2025/page'));
+const MonetizationStrategiesThatActuallyWork2025 = React.lazy(() => import('./pages/blog/monetization-strategies-that-actually-work-2025/page'));
 const EarnMoreAsALiveStreamerWithVibes = React.lazy(() => import('./pages/guides/earn-more-from-live-streaming-with-avie/page'));
 const EarnMoreMultiStreaming = React.lazy(() => import('./pages/guides/earn-more-multi-streaming/page'));
 const MonetizeYourLiveStreamContent = React.lazy(() => import('./pages/guides/monetize-your-live-stream-content/page'));
@@ -113,6 +123,11 @@ const App = () => {
               <GuidesIndex />
             </Suspense>
           } />
+          <Route path="/blog" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <BlogIndexPage />
+            </Suspense>
+          } />
           <Route path="/guides/how-to-start-streaming-on-twitch" element={
             <Suspense fallback={<LoadingSpinner />}>
               <TwitchStreamingGuide />
@@ -131,6 +146,11 @@ const App = () => {
           <Route path="/guides/best-places-to-live-stream" element={
             <Suspense fallback={<LoadingSpinner />}>
               <BestPlacesToLiveStream />
+            </Suspense>
+          } />
+          <Route path="/guides/what-is-vibes-streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <WhatIsVibesStreaming />
             </Suspense>
           } />
           <Route path="/guides/how-to-live-stream" element={
@@ -326,6 +346,36 @@ const App = () => {
           <Route path="/audience-growth-guide" element={
             <Suspense fallback={<LoadingSpinner />}>
               <AudienceGrowthGuide />
+            </Suspense>
+          } />
+          <Route path="/blog/vibes-streaming-launches-watch-to-earn-feature" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <VibesStreamingWatchToEarnLaunch />
+            </Suspense>
+          } />
+          <Route path="/blog/new-streaming-platform-regulations" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <NewStreamingPlatformRegulations />
+            </Suspense>
+          } />
+          <Route path="/blog/future-of-multi-platform-streaming" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <FutureOfMultiPlatformStreaming />
+            </Suspense>
+          } />
+          <Route path="/blog/how-to-build-loyal-streaming-community-2025" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <HowToBuildLoyalStreamingCommunity2025 />
+            </Suspense>
+          } />
+          <Route path="/blog/top-10-streaming-equipment-upgrades-2025" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Top10StreamingEquipmentUpgrades2025 />
+            </Suspense>
+          } />
+          <Route path="/blog/monetization-strategies-that-actually-work-2025" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MonetizationStrategiesThatActuallyWork2025 />
             </Suspense>
           } />
           <Route path="*" element={

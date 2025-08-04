@@ -29,20 +29,20 @@ const MonetizeYourClips: React.FC = () => {
     >
 
       <RichText
-        heading="Vibes's AP Rewards System for Clips"
+        heading="Vibes's VP Rewards System for Clips"
         content={
           <div>
-            <p>Vibes's innovative AP program rewards creators in Vibes Points (AP), which is converted to $SOL, for clip creation, engagement, and sharing. Here's how to maximize your earnings:</p>
+            <p>Vibes's innovative VP program rewards creators in Vibes Points (VP), which is converted to $SOL, for clip creation, engagement, and sharing. Here's how to maximize your earnings:</p>
             
-            <h3 className="text-lg font-medium mt-4">Earning AP Rewards</h3>
+            <h3 className="text-lg font-medium mt-4">Earning VP Rewards</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>Clip Creation:</strong> Earn AP rewards for creating engaging clips from your streams</li>
+              <li><strong>Clip Creation:</strong> Earn VP rewards for creating engaging clips from your streams</li>
               <li><strong>Viewer Engagement:</strong> Additional rewards when viewers interact with your clips</li>
               <li><strong>Sharing Incentives:</strong> Earn more when your community shares your clips</li>
               <li><strong>Viral Bonuses:</strong> Special rewards for clips that achieve high engagement</li>
             </ul>
 
-            <h3 className="text-lg font-medium mt-4">Maximizing AP Rewards</h3>
+            <h3 className="text-lg font-medium mt-4">Maximizing VP Rewards</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Encourage viewers to create clips of exciting moments</li>
               <li>Build a community of active clippers and sharers</li>
@@ -179,7 +179,7 @@ const MonetizeYourClips: React.FC = () => {
             <p>Combine multiple monetization methods to maximize your clip earnings:</p>
             
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li><strong>Vibes AP Rewards:</strong> Earn $SOL through clip creation and engagement</li>
+              <li><strong>Vibes VP Rewards:</strong> Earn $SOL through clip creation and engagement</li>
               <li><strong>Platform Revenue:</strong> Monetize through platform-specific programs</li>
               <li><strong>Brand Deals:</strong> Use clip performance metrics to attract sponsors</li>
               <li><strong>Cross-Promotion:</strong> Drive traffic to your monetized channels</li>

@@ -192,12 +192,12 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
       />
 
       <RichText
-        heading="10. Earn with the Vibes AP Reward System (Platform Exclusive)"
+        heading="10. Earn with the Vibes VP Reward System (Platform Exclusive)"
         content={
           <div>
-            <p>Vibes offers a unique AP (Activity Points) system that rewards creators just for doing what they love—streaming, engaging chat, building community.</p>
+            <p>Vibes offers a unique VP (Vibes Points) system that rewards creators just for doing what they love—streaming, engaging chat, building community.</p>
 
-            <h3 className="text-lg font-medium mt-4">What you earn AP for:</h3>
+            <h3 className="text-lg font-medium mt-4">What you earn VP for:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Streaming consistently</li>
               <li>Attracting new viewers</li>
@@ -205,7 +205,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
               <li>Gaining subs, donations, and chat activity</li>
             </ul>
 
-            <p className="mt-4"><strong>Why it matters:</strong> AP translates into real-world payouts for creators and viewers alike—something no other platform currently offers.</p>
+            <p className="mt-4"><strong>Why it matters:</strong> VP translates into real-world payouts for creators and viewers alike—something no other platform currently offers.</p>
           </div>
         }
         className="mb-8"
@@ -254,7 +254,7 @@ const StrategiesToMakeMoneyFromLiveStreaming: React.FC = () => {
             <h3 className="text-lg font-medium mt-4">Start streaming smart:</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Use Vibes's MultiStream plugin to reach more people</li>
-              <li>Activate AP rewards to earn passively</li>
+              <li>Activate VP rewards to earn passively</li>
               <li>Set up subscriptions, merch, and tips across every platform</li>
             </ul>
           </div>

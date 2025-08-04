@@ -67,7 +67,7 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
   },
   'how-much-revenue-can-you-make-from-streaming': {
     title: 'How Much Revenue Can You Make From Streaming?',
-    description: 'Explore the various ways to earn income through streaming platforms, including Vibes\'s unique AP reward system, subscriptions, donations, and more.',
+    description: 'Explore the various ways to earn income through streaming platforms, including Vibes\'s unique VP reward system, subscriptions, donations, and more.',
     category: 'monetization',
     readTime: '10 min',
     difficulty: 'Intermediate'
@@ -91,6 +91,13 @@ export const ALL_GUIDES: Record<string, { title: string; description: string; ca
     description: 'Learn about the best places to live stream with our comprehensive guide. We\'ll discuss the pros and cons of each platform and help you decide which one is right for you.',
     category: 'content-strategy',
     readTime: '5 min',
+    difficulty: 'Beginner'
+  },
+  'what-is-vibes-streaming': {
+    title: 'What is Vibes Streaming?',
+    description: 'Discover Vibes Streaming - the next-generation creator-first platform that blends Web2 simplicity with Web3 rewards. Learn how creators and viewers can earn together.',
+    category: 'content-strategy',
+    readTime: '8 min',
     difficulty: 'Beginner'
   },
   'how-to-live-stream-on-Vibes-Streaming': {

@@ -10,7 +10,7 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
   return (
     <GuideLayout
       title="How To Earn More As A Live Streamer With Vibes"
-      description="Discover why Vibes is the best platform for maximizing your streaming income. Learn about unique features like the AP Reward System and MultiStream plugin that help you earn more while streaming."
+      description="Discover why Vibes is the best platform for maximizing your streaming income. Learn about unique features like the VP Reward System and MultiStream plugin that help you earn more while streaming."
       publishDate={today}
       category="growth-marketing"
       keywords={[
@@ -34,12 +34,12 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
           <div>
             <p>When it comes to earning potential in live streaming, not all platforms are created equal. Vibes stands out with its creator-first approach and innovative monetization features that help you earn more from day one.</p>
             <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li><strong>Vibes's AP Reward System</strong> - A unique earning model that rewards streamers for engagement, consistency, and community growth—not just subscriptions or donations. Start earning immediately without waiting for affiliate status.</li>
+              <li><strong>Vibes's VP Reward System</strong> - A unique earning model that rewards streamers for engagement, consistency, and community growth—not just subscriptions or donations. Start earning immediately without waiting for affiliate status.</li>
               <li><strong>MultiStream Plugin</strong> - Stream simultaneously to Twitch, YouTube, and Kick while directing viewers to your Vibes channel where earning potential is highest. Maximize your reach and multiply your income.</li>
               <li><strong>Built-in Monetization Tools</strong> - Access professional-grade overlays, alerts, and engagement features without additional setup or cost. Focus on creating content while Vibes handles the technical details.</li>
               <li><strong>Cross-Platform Subscriptions</strong> - Manage subscriptions across multiple platforms while maintaining your primary income through Vibes's creator-friendly revenue model.</li>
             </ul>
-            <p className="mt-4">Our Take: Vibes is revolutionizing streaming income by putting creators first. With immediate monetization options, multistreaming capabilities, and the innovative AP Reward System, Vibes provides the most comprehensive toolkit for streamers looking to maximize their earnings.</p>
+            <p className="mt-4">Our Take: Vibes is revolutionizing streaming income by putting creators first. With immediate monetization options, multistreaming capabilities, and the innovative VP Reward System, Vibes provides the most comprehensive toolkit for streamers looking to maximize their earnings.</p>
           </div>
         }
         className="mb-8"
@@ -67,7 +67,7 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
             <h3 className="text-2xl font-semibold mt-6">Vibes's Superior Earning Model</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>90/10 Subscription Split- Vibes takes 10% of your subscription earnings, and 3% of your donation earnings</li>
-              <li>AP Reward System - Earn from day one based on engagement and community growth</li>
+              <li>VP Reward System - Earn from day one based on engagement and community growth</li>
               <li>MultiStream Integration - Tap into multiple revenue streams simultaneously</li>
               <li>Built-in Professional Tools - Save money on third-party services</li>
             </ul>
@@ -107,7 +107,7 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
             <h3 className="text-2xl font-semibold mt-6">Built-in Revenue Features</h3>
             <p className="mt-2">Vibes provides everything you need to maximize earnings:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>AP Reward System - Earn based on engagement metrics</li>
+              <li>VP Reward System - Earn based on engagement metrics</li>
               <li>Subscription Management - Handle multiple revenue streams</li>
               <li>Donation Systems - Built-in support for viewer contributions</li>
               <li>Analytics Dashboard - Track and optimize your earnings</li>
@@ -142,7 +142,7 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
             
             <p className="text-xl font-semibold mt-4">Why Vibes Is the Best Place to Earn More as a Streamer</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>Monetize From Day One</strong> with the Vibes AP Reward System</li>
+              <li><strong>Monetize From Day One</strong> with the Vibes VP Reward System</li>
               <li><strong>Multistream Seamlessly</strong> to reach wider audiences while maintaining earnings</li>
               <li><strong>Built-in Professional Tools</strong> save money on third-party services</li>
               <li><strong>Cross-Platform Monetization</strong> maximizes your revenue streams</li>
@@ -156,7 +156,7 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
 
       <CTAButtons
         title="Ready to Start Earning More from Your Streams?"
-        description="Join Vibes today and access the most comprehensive toolkit for maximizing your streaming income. Start earning immediately with our AP Reward System and MultiStream capabilities."
+        description="Join Vibes today and access the most comprehensive toolkit for maximizing your streaming income. Start earning immediately with our VP Reward System and MultiStream capabilities."
         buttons={[
           {
             label: "Create Your Vibes Account",
@@ -165,7 +165,7 @@ const EarnMoreAsALiveStreamerWithVibes: React.FC = () => {
             isExternal: true
           },
           {
-            label: "Learn More About AP Rewards",
+            label: "Learn More About VP Rewards",
             href: "https://x.com/Vibesstreaming/status/1935006935918485722",
             variant: "secondary",
             isExternal: true

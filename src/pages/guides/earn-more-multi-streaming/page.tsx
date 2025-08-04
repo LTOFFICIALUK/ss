@@ -89,7 +89,7 @@ const EarnMoreMultiStreaming: React.FC = () => {
 
             <h3 className="text-2xl font-semibold mt-6">Revenue Optimization</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>Vibes AP Rewards</strong> - Earn based on engagement and viewer activity</li>
+              <li><strong>Vibes VP Rewards</strong> - Earn based on engagement and viewer activity</li>
               <li><strong>Platform-Specific Benefits</strong> - Leverage each platform's unique features</li>
               <li><strong>Subscription Management</strong> - Optimize sub perks across platforms</li>
               <li><strong>Donation Integration</strong> - Centralize donations through Vibes</li>

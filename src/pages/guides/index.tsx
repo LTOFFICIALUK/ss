@@ -77,6 +77,15 @@ const GuidesIndex: React.FC = () => {
     };
   });
 
+  // Group implemented guides by category
+  const guidesByCategory = implementedGuides.reduce((acc, [slug, guide]) => {
+    if (!acc[guide.category]) {
+      acc[guide.category] = [];
+    }
+    acc[guide.category].push({ slug, ...guide });
+    return acc;
+  }, {} as Record<GuideCategory, Array<{ slug: string } & typeof ALL_GUIDES[keyof typeof ALL_GUIDES]>>);
+
   // Memoize search results to avoid unnecessary recalculations
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
@@ -120,15 +129,6 @@ const GuidesIndex: React.FC = () => {
   };
 
   const { title, description, keywords } = generateMetaData();
-
-  // Group implemented guides by category
-  const guidesByCategory = implementedGuides.reduce((acc, [slug, guide]) => {
-    if (!acc[guide.category]) {
-      acc[guide.category] = [];
-    }
-    acc[guide.category].push({ slug, ...guide });
-    return acc;
-  }, {} as Record<GuideCategory, Array<{ slug: string } & typeof ALL_GUIDES[keyof typeof ALL_GUIDES]>>);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
